@@ -1,6 +1,6 @@
 /* Effets propres à MTCloud (le socle gère ouverture, voile, en-tête, menu, apparitions et bibliothèque d'effets).
    Effets du plan : souvenirs, tri-photos, synchro, boitier, socle-boitier, configurateur, cote, tele. */
-import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=1';
+import { demarrer, boucle, etat, versObjet, quand } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -25,7 +25,7 @@ function arriveePremierEcran(delai = 0) {
   elts.forEach((el, i) => {
     if (el === h1 && window.SplitText) {
       gsap.set(el, { opacity: 1 });
-      const s = new window.SplitText(el, { type: 'lines', linesClass: 'ligne-arrivee' });
+      const s = new window.SplitText(el, { type: 'lines', linesClass: 'ligne-arrivee', reduceWhiteSpace: false });
       tl.fromTo(s.lines, { yPercent: 45, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.8, stagger: 0.09, onComplete: () => s.revert() }, i * 0.07);
     } else {
       tl.fromTo(el, { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, i * 0.07);
@@ -46,7 +46,7 @@ function introTuiles(tl) {
     panneau.appendChild(t);
     const a = (i / SOUVENIRS.length) * Math.PI * 2 + 0.4;
     tl.fromTo(t, { x: Math.cos(a) * r, y: Math.sin(a) * r * 0.7, rotation: i % 2 ? -18 : 14, opacity: 0, scale: 1 },
-      { keyframes: [{ opacity: 1, duration: 0.15 }, { x: 0, y: 0, rotation: 0, scale: 0.25, duration: 0.55, ease: 'power2.in' }, { opacity: 0, duration: 0.08 }] }, 0.08 + i * 0.07);
+      { keyframes: [{ opacity: 1, duration: 0.12 }, { x: 0, y: 0, rotation: 0, scale: 0.25, duration: 0.5, ease: 'power2.in' }, { opacity: 0, duration: 0.08 }] }, 0.05 + i * 0.06);
   });
 }
 
@@ -98,13 +98,14 @@ function souvenirs() {
 /* ---------- tri-photos : la grille du téléphone se range par personnes, lieux ou dates (FLIP) ---------- */
 function triPhotos() {
   $$('[data-tri]').forEach((tel) => {
-    const boutons = $$('[data-tri-choix]', tel), photos = $$('.tel-photo', tel);
+    const boutons = $$('[data-tri-choix]', tel), photos = $$('.tel-photo', tel), compte = $('[data-tri-compte]', tel);
     let auto = null, touche = false;
     const trier = (choix, anime = true) => {
       const avant = new Map(photos.map((p) => [p, p.getBoundingClientRect()]));
       boutons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.triChoix === choix)));
       const garde = (p) => choix === 'tout' || p.dataset.tags.split(' ').includes(choix);
       photos.forEach((p) => p.classList.toggle('hors-tri', !garde(p)));
+      if (compte) compte.textContent = compte.dataset.triCompte.replace('{n}', String(photos.filter(garde).length));
       if (!anime || !gsap) return;
       photos.filter((p) => !p.classList.contains('hors-tri')).forEach((p, i) => {
         const a = avant.get(p), b = p.getBoundingClientRect();
@@ -128,7 +129,7 @@ function triPhotos() {
 function synchro() {
   const s = $('[data-synchro]');
   if (!s || !ST) return;
-  const lignes = $$('.synchro-fichier', s), ordi = $$('.ordi-ecran .synchro-icone', s), tel = $$('.mini-tel-ecran .synchro-icone', s);
+  const lignes = $$('.synchro-fichier', s), ordi = $$('.ordi-ecran .synchro-icone', s), tel = $$('.mini-tel-ecran .synchro-icone', s), etat = $('[data-synchro-etat]', s);
   let max = retour() ? 1 : 0;
   const poser = (p) => {
     lignes.forEach((l, i) => {
@@ -138,9 +139,11 @@ function synchro() {
       if (ordi[i]) ordi[i].style.opacity = String(1 - local * 0.65);
       if (tel[i]) tel[i].style.opacity = String(local >= 1 ? 1 : 0.12);
     });
+    if (etat) etat.textContent = p >= 0.17 * (lignes.length - 1) + 0.32 ? etat.dataset.fini : etat.dataset.enCours;
   };
   poser(max);
-  ST.create({ trigger: s, start: 'top 85%', end: 'bottom 45%', onUpdate: (st) => { if (st.progress > max) { max = st.progress; poser(max); } } });
+  const suivre = (st) => { if (st.progress > max) { max = st.progress; poser(max); } };
+  ST.create({ trigger: s, start: 'top 85%', end: 'bottom 45%', onUpdate: suivre, onRefresh: suivre });
 }
 
 /* ---------- boitier : le boîtier tourne au défilement ---------- */
@@ -175,6 +178,7 @@ function configurateurs() {
   $$('[data-config]').forEach((cfg) => {
     const base = +cfg.dataset.base, noms = JSON.parse(cfg.dataset.noms || '{}');
     const total = $('[data-config-total]', cfg), jauge = $('[data-config-jauge]', cfg), mois = $('[data-config-mois]', cfg);
+    const segments = $$('[data-segment]', cfg), mini = $('[data-config-mini]', cfg), raccourcis = $$('[data-mois]', cfg);
     const rentable = $('[data-config-rentable]', cfg), devis = $('[data-config-devis]', cfg);
     const prix = (n, signe = '') => (fr ? `${signe}${n} €` : `${signe}€${n}`);
     const choix = (nom) => cfg.querySelector(`input[name$="-${nom}"]:checked`);
@@ -186,7 +190,10 @@ function configurateurs() {
       if (anime && gsap) gsap.to({ v: valeur }, { v: t, duration: 0.6, ease: 'power2.out', onUpdate() { total.textContent = Math.round(this.targets()[0].v); } });
       else total.textContent = t;
       valeur = t;
-      if (jauge) jauge.style.setProperty('--jauge', s.dataset.jauge || '0.125');
+      const rang = segments.findIndex((g) => g.dataset.segment === s.value);
+      segments.forEach((g, i) => g.classList.toggle('plein', i <= rang));
+      if (mini) mini.textContent = prix(t);
+      raccourcis.forEach((b) => b.setAttribute('aria-pressed', String(+b.dataset.mois === parseFloat(String(mois.value).replace(',', '.')))));
       const ligne = (n, p) => { const el = cfg.querySelector(`[data-config-ligne="${n}"]`); if (el) el.textContent = prix(p, '+'); };
       ligne('memoire', pm); ligne('stockage', ps); ligne('acces', pa);
       const mensuel = parseFloat(String(mois.value).replace(',', '.'));
@@ -200,17 +207,18 @@ function configurateurs() {
     };
     cfg.addEventListener('change', () => calculer());
     mois.addEventListener('input', () => calculer(false));
+    raccourcis.forEach((b) => b.addEventListener('click', () => { mois.value = b.dataset.mois; calculer(false); }));
     calculer(false);
-    /* À l'arrivée à l'écran : la jauge se remplit et le total se compte depuis le prix de base. */
+    /* À l'arrivée à l'écran : les segments de la jauge montent et le total se compte depuis le prix de base. */
     if (!retour() && gsap && jauge) {
       const fin = valeur;
-      const cible = parseFloat(jauge.style.getPropertyValue('--jauge')) || 0.125;
-      gsap.set(jauge, { '--jauge': 0 });
+      const barres = segments.map((g) => $('i', g));
+      gsap.set(barres, { scaleY: 0 });
       let fait = false;
       surVisible(cfg, (vu) => {
         if (!vu || fait) return;
         fait = true;
-        gsap.to(jauge, { '--jauge': cible, duration: 1.1, ease: 'power3.out' });
+        gsap.to(barres, { scaleY: 1, duration: 0.7, stagger: 0.12, ease: 'back.out(1.6)', clearProps: 'transform' });
         gsap.fromTo({ v: base }, { v: base }, { v: fin, duration: 1.1, ease: 'power2.out', onUpdate() { total.textContent = Math.round(this.targets()[0].v); }, onComplete: () => { total.textContent = valeur; } });
       }, '-15% 0px');
     }
@@ -232,8 +240,8 @@ function cote() {
     };
     if (retour() || !ST) { poser(1); return; }
     poser(0);
-    ST.create({ trigger: f, start: 'top 85%', end: 'bottom 55%', onUpdate: (st) => { if (st.progress > max) { max = st.progress; poser(max); } },
-      onLeave: () => { max = 1; poser(1); } });
+    const suivre = (st) => { if (st.progress > max) { max = st.progress; poser(max); } };
+    ST.create({ trigger: f, start: 'top 85%', end: 'bottom 55%', onUpdate: suivre, onRefresh: suivre, onLeave: () => { max = 1; poser(1); } });
   });
 }
 
@@ -261,6 +269,26 @@ function tele() {
   });
 }
 
+/* ---------- ecrans : la même photo s'affiche sur le téléphone, l'ordinateur puis la télé ; profondeur au défilement ---------- */
+function ecrans() {
+  const sc = $('[data-effet="ecrans"]');
+  if (!sc || !gsap) return;
+  const tel = $('[data-se="tel"]', sc), ordi = $('[data-se="ordi"]', sc), tele = $('[data-se="tele"]', sc);
+  const allumer = () => {
+    sc.classList.add('allume');
+    const tl = gsap.timeline({ defaults: { ease: 'power2.out' } });
+    tl.fromTo($$('.se-grille .se-photo', tel), { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.4, stagger: 0.06 })
+      .fromTo($$('.se-grille .se-photo', ordi), { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.4, stagger: 0.04 }, 0.35)
+      .fromTo($('.se-photo.actif', tele), { opacity: 0 }, { opacity: 1, duration: 0.8, clearProps: 'opacity' }, 0.7);
+    /* La télé fait défiler trois souvenirs, puis s'arrête (moins de 5 s). */
+    const diapos = $$('.se-tele-ecran .se-photo', tele);
+    diapos.slice(1).forEach((d, i) => tl.call(() => { diapos.forEach((x) => x.classList.toggle('actif', x === d)); }, null, 2.2 + i * 1.4));
+  };
+  if (retour()) { sc.classList.add('allume'); return; }
+  quand('pret', allumer);
+  if (ST) [[tele, -18], [ordi, 26], [tel, 46]].forEach(([el, y]) => gsap.to(el, { y, ease: 'none', scrollTrigger: { trigger: sc, start: 'top top', end: 'bottom top', scrub: 0.6 } }));
+}
+
 /* ---------- Démonstration du lien de partage ---------- */
 function lienDemo() {
   $$('[data-lien-demo]').forEach((d) => {
@@ -284,16 +312,17 @@ demarrer({
     configurateurs();
     cote();
     tele();
+    ecrans();
     lienDemo();
   },
   jouer() {
     if (!gsap) return null;
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
     introTuiles(tl);
-    tl.fromTo('.ouverture-trait', { scaleX: 0 }, { scaleX: 1, duration: 0.5 }, 0.3)
-      .to('.ouverture-nom, .ouverture-ligne, .ouverture-trait', { opacity: 0, duration: 0.25 }, 0.9);
-    versObjet(tl, { a: 1.0 });
-    tl.add(arriveePremierEcran(), 1.55);
+    tl.fromTo('.ouverture-trait', { scaleX: 0 }, { scaleX: 1, duration: 0.45 }, 0.25)
+      .to('.ouverture-nom, .ouverture-ligne, .ouverture-trait', { opacity: 0, duration: 0.22 }, 0.78);
+    versObjet(tl, { a: 0.85 });
+    tl.add(arriveePremierEcran(), 1.38);
     return tl;
   },
   etatFinal() {

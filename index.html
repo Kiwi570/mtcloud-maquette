@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -38,14 +38,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F4EEE3">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -164,7 +164,9 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="tel-ecran">
       <div class="tel-tete"><span class="tel-titre">Photos</span><img src="/assets/images/logo.svg" alt="" width="22" height="22"></div>
       <div class="tel-tris"><button type="button" class="tel-tri" data-tri-choix="tout" aria-pressed="true" aria-controls="tel-accueil-grille">Tout</button><button type="button" class="tel-tri" data-tri-choix="personnes" aria-pressed="false" aria-controls="tel-accueil-grille">Personnes</button><button type="button" class="tel-tri" data-tri-choix="lieux" aria-pressed="false" aria-controls="tel-accueil-grille">Lieux</button><button type="button" class="tel-tri" data-tri-choix="dates" aria-pressed="false" aria-controls="tel-accueil-grille">Dates</button></div>
+      <p class="tel-compte" data-tri-compte="{n} photos">9 photos</p>
       <ul class="tel-grille" id="tel-accueil-grille"><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-plage-480.webp" alt="Plage de sable, serviette rayée et chapeau de paille" width="480" height="640" loading="lazy" decoding="async"><span>Plage · juillet</span></li><li class="tel-photo" data-tags="personnes"><img src="/assets/images/grok/souvenir-mains-480.webp" alt="Mains d&#39;une personne âgée tenues par une main plus jeune" width="480" height="640" loading="lazy" decoding="async"><span>Mamie</span></li><li class="tel-photo" data-tags="dates personnes"><img src="/assets/images/grok/souvenir-anniversaire-480.webp" alt="Gâteau d&#39;anniversaire aux fruits rouges et bougies allumées" width="480" height="640" loading="lazy" decoding="async"><span>Anniversaire · mai</span></li><li class="tel-photo" data-tags="lieux"><img src="/assets/images/grok/souvenir-voilier-480.webp" alt="Voilier blanc devant une côte boisée" width="480" height="640" loading="lazy" decoding="async"><span>En mer</span></li><li class="tel-photo" data-tags="personnes"><img src="/assets/images/grok/souvenir-chien-480.webp" alt="Chien couché sur des tomettes" width="480" height="640" loading="lazy" decoding="async"><span>Le chien</span></li><li class="tel-photo" data-tags="lieux"><img src="/assets/images/grok/souvenir-village-480.webp" alt="Village perché aux toits de tuiles et son clocher" width="480" height="640" loading="lazy" decoding="async"><span>Village</span></li><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-velo-480.webp" alt="Vélo à panier contre un mur de pierre, sous un olivier" width="480" height="640" loading="lazy" decoding="async"><span>Balade · avril</span></li><li class="tel-photo" data-tags="dates personnes"><img src="/assets/images/grok/souvenir-repas-480.webp" alt="Table dressée sur une terrasse face à la mer" width="480" height="640" loading="lazy" decoding="async"><span>Dimanche · août</span></li><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-neige-480.webp" alt="Montagnes enneigées et sapins sous un ciel bleu" width="480" height="640" loading="lazy" decoding="async"><span>Montagne · février</span></li></ul>
+      <p class="tel-onglets" aria-hidden="true"><span class="actif">Photos</span><span class="">Albums</span><span class="">Partage</span></p>
     </div>
   </div>
   <p class="tel-aide">Touchez un tri : la grille se range.</p>
@@ -191,12 +193,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="ordi"><div class="ordi-ecran"><span class="synchro-icone synchro-icone--0"></span><span class="synchro-icone synchro-icone--1"></span><span class="synchro-icone synchro-icone--2"></span><span class="synchro-icone synchro-icone--3"></span></div><div class="ordi-pied"></div></div>
     <p>Ordinateur</p>
   </div>
-  <ol class="synchro-fichiers"><li class="synchro-fichier" style="--i:0"><span class="synchro-icone synchro-icone--0" aria-hidden="true"></span><span class="synchro-nom">Factures 2026</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:1"><span class="synchro-icone synchro-icone--1" aria-hidden="true"></span><span class="synchro-nom">Contrat maison.pdf</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:2"><span class="synchro-icone synchro-icone--2" aria-hidden="true"></span><span class="synchro-nom">Recettes de mamie.docx</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:3"><span class="synchro-icone synchro-icone--3" aria-hidden="true"></span><span class="synchro-nom">Vacances.zip</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li></ol>
+  <ol class="synchro-fichiers"><li class="synchro-fichier" style="--i:0"><span class="synchro-icone synchro-icone--0" aria-hidden="true"></span><span class="synchro-nom">Factures 2026</span><span class="synchro-barre" aria-hidden="true"><span class="synchro-plein"></span><span class="synchro-paquet synchro-icone synchro-icone--0"></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:1"><span class="synchro-icone synchro-icone--1" aria-hidden="true"></span><span class="synchro-nom">Contrat maison.pdf</span><span class="synchro-barre" aria-hidden="true"><span class="synchro-plein"></span><span class="synchro-paquet synchro-icone synchro-icone--1"></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:2"><span class="synchro-icone synchro-icone--2" aria-hidden="true"></span><span class="synchro-nom">Recettes de mamie.docx</span><span class="synchro-barre" aria-hidden="true"><span class="synchro-plein"></span><span class="synchro-paquet synchro-icone synchro-icone--2"></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:3"><span class="synchro-icone synchro-icone--3" aria-hidden="true"></span><span class="synchro-nom">Vacances.zip</span><span class="synchro-barre" aria-hidden="true"><span class="synchro-plein"></span><span class="synchro-paquet synchro-icone synchro-icone--3"></span></span><span class="synchro-ok" aria-hidden="true"></span></li></ol>
   <div class="synchro-appareil synchro-appareil--tel" aria-hidden="true">
     <div class="mini-tel"><div class="mini-tel-ecran"><span class="synchro-icone synchro-icone--0"></span><span class="synchro-icone synchro-icone--1"></span><span class="synchro-icone synchro-icone--2"></span><span class="synchro-icone synchro-icone--3"></span></div></div>
     <p>Téléphone</p>
   </div>
-  <p class="synchro-etat"><span class="led" aria-hidden="true"></span>Synchronisé · Illustration</p>
+  <p class="synchro-etat"><span class="led" aria-hidden="true"></span><span data-synchro-etat data-fini="Synchronisé" data-en-cours="Synchronisation en cours">Synchronisé</span> · Illustration</p>
 </div>
     <ul class="fichiers-points" data-anime="cascade"><li><strong>Synchronisation</strong><span>Ordinateur et téléphone, automatiquement.</span></li><li><strong>Partage par lien</strong><span>Un lien sécurisé pour envoyer un dossier.</span></li><li><strong>Contacts et agendas</strong><span>Synchronisés sur tous vos appareils.</span></li><li><strong>Documents en ligne</strong><span>Modifiez-les depuis un navigateur.</span></li></ul>
     <p class="fichiers-fin"><span class="adieu">Adieu Google Drive et son espace qui se remplit.</span> <span class="propulse">Propulsé par <strong>OpenCloud</strong></span></p>
@@ -247,6 +249,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     data-noms='{"memoire":{"8":"Essentiel 8 Go","16":"Confort 16 Go"},"stockage":{"250":"250 Go","500":"500 Go","1000":"1 To","2000":"2 To"},"acces":{"local":"À la maison","partout":"Accès partout"}}'
     data-texte-rentable="Le boîtier est rentabilisé en {mois} mois." data-texte-vide="Tapez un montant pour voir en combien de mois le boîtier est rentabilisé." data-texte-recap="Ma configuration : {config}">
   <div class="config-choix">
+    <p class="config-mini" aria-hidden="true" data-superpose><span>Total</span><strong data-config-mini>275 €</strong></p>
     <fieldset class="config-groupe">
     <legend><span class="config-num">2</span>Le stockage</legend>
     <p class="config-aide">Prenez de la place pour les années à venir : vos photos s&#39;accumulent.</p>
@@ -277,8 +280,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </fieldset>
   </div>
   <div class="config-recap" data-grille="retour">
-    <div class="config-jauge" aria-hidden="true" data-visuel>
-      <div class="config-jauge-boite"><span class="config-jauge-plein" data-config-jauge style="--jauge:0.125"></span><span class="led"></span></div>
+    <div class="config-jauge" aria-hidden="true" data-visuel data-config-jauge>
+      <div class="config-segments"><span class="config-segment plein" data-segment="250" style="--i:0"><i></i><b>250 Go</b></span><span class="config-segment" data-segment="500" style="--i:1"><i></i><b>500 Go</b></span><span class="config-segment" data-segment="1000" style="--i:2"><i></i><b>1 To</b></span><span class="config-segment" data-segment="2000" style="--i:3"><i></i><b>2 To</b></span></div>
       <p>Place pour vos souvenirs</p>
     </div>
     <p class="config-total-libelle">Total</p>
@@ -287,6 +290,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="config-economie">
       <label for="cfg-accueil-mois">Vous payez aujourd&#39;hui</label>
       <span class="config-economie-champ"><input id="cfg-accueil-mois" type="number" inputmode="decimal" min="0" max="500" step="0.01" placeholder="0" data-config-mois><span>€ par mois</span></span>
+      <span class="config-raccourcis"><span>Exemples :</span><button type="button" data-mois="5" aria-controls="cfg-accueil-mois">5 €</button><button type="button" data-mois="10" aria-controls="cfg-accueil-mois">10 €</button><button type="button" data-mois="20" aria-controls="cfg-accueil-mois">20 €</button></span>
       <p class="config-rentable" data-config-rentable aria-live="polite">Tapez un montant pour voir en combien de mois le boîtier est rentabilisé.</p>
       <p class="config-note">Calcul indicatif, hors électricité (6 W en continu).</p>
     </div>

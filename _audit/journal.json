@@ -105,6 +105,61 @@
       "effetsRetires": [],
       "grilleDispenses": {},
       "notes": "favoris.json absent du dépôt de la bibliothèque : liste recréée en local avec 7 favorites. Pages construites avec des visuels provisoires pendant l'attente des images Grok. Drapeaux « floue » de 16 images Grok corrigés après regard (flou de profondeur demandé dans les consignes, mesure de contraste hors Mac)."
+    },
+    {
+      "version": 2,
+      "skill": "v11.1",
+      "perimetre": [
+        "accueil",
+        "services",
+        "boitier",
+        "a-propos",
+        "contact",
+        "404"
+      ],
+      "etapes": [
+        {
+          "etape": "revue complète et audit complet de la v1",
+          "budget": 45,
+          "debut": "2026-11-16T23:09:00+01:00",
+          "fin": "2026-11-16T23:52:00+01:00"
+        },
+        {
+          "etape": "corrections et améliorations",
+          "budget": 30,
+          "debut": "2026-11-16T23:15:00+01:00",
+          "fin": "2026-11-16T23:52:00+01:00"
+        },
+        {
+          "etape": "audit complet de la v2",
+          "budget": 45,
+          "debut": "2026-11-16T23:52:00+01:00",
+          "fin": "2026-11-17T00:32:00+01:00"
+        },
+        {
+          "etape": "livraison",
+          "budget": 5,
+          "debut": "2026-11-17T00:33:00+01:00",
+          "fin": ""
+        }
+      ],
+      "attentes": [],
+      "allersRetours": 0,
+      "modules": [],
+      "audit": {
+        "niveau": "complet",
+        "echecsPremierPassage": 0,
+        "relances": 1,
+        "corrections": [
+          "titres découpés : espaces insécables gardées",
+          "ouverture de Services redessinée (photo floue retirée)",
+          "total collant du configurateur sur tablette et téléphone",
+          "états liés au défilement recalculés après rechargement"
+        ]
+      },
+      "effetsRetires": [],
+      "grilleDispenses": {},
+      "notes": "Demande de l'utilisateur : audit complet et analyse approfondie, puis version optimale."
     }
   ]
 }

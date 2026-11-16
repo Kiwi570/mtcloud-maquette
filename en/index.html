@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-v="1">
+<html lang="en" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -38,14 +38,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F4EEE3">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -164,7 +164,9 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="tel-ecran">
       <div class="tel-tete"><span class="tel-titre">Photos</span><img src="/assets/images/logo.svg" alt="" width="22" height="22"></div>
       <div class="tel-tris"><button type="button" class="tel-tri" data-tri-choix="tout" aria-pressed="true" aria-controls="tel-accueil-grille">All</button><button type="button" class="tel-tri" data-tri-choix="personnes" aria-pressed="false" aria-controls="tel-accueil-grille">People</button><button type="button" class="tel-tri" data-tri-choix="lieux" aria-pressed="false" aria-controls="tel-accueil-grille">Places</button><button type="button" class="tel-tri" data-tri-choix="dates" aria-pressed="false" aria-controls="tel-accueil-grille">Dates</button></div>
+      <p class="tel-compte" data-tri-compte="{n} photos">9 photos</p>
       <ul class="tel-grille" id="tel-accueil-grille"><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-plage-480.webp" alt="Sandy beach, striped towel and straw hat" width="480" height="640" loading="lazy" decoding="async"><span>Beach · July</span></li><li class="tel-photo" data-tags="personnes"><img src="/assets/images/grok/souvenir-mains-480.webp" alt="An elderly person&#39;s hands held by a younger hand" width="480" height="640" loading="lazy" decoding="async"><span>Grandma</span></li><li class="tel-photo" data-tags="dates personnes"><img src="/assets/images/grok/souvenir-anniversaire-480.webp" alt="Berry birthday cake with lit candles" width="480" height="640" loading="lazy" decoding="async"><span>Birthday · May</span></li><li class="tel-photo" data-tags="lieux"><img src="/assets/images/grok/souvenir-voilier-480.webp" alt="White sailing boat off a wooded coast" width="480" height="640" loading="lazy" decoding="async"><span>At sea</span></li><li class="tel-photo" data-tags="personnes"><img src="/assets/images/grok/souvenir-chien-480.webp" alt="Dog lying on terracotta tiles" width="480" height="640" loading="lazy" decoding="async"><span>The dog</span></li><li class="tel-photo" data-tags="lieux"><img src="/assets/images/grok/souvenir-village-480.webp" alt="Hilltop village with tiled roofs and a bell tower" width="480" height="640" loading="lazy" decoding="async"><span>Village</span></li><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-velo-480.webp" alt="Bicycle with a basket against a stone wall, under an olive tree" width="480" height="640" loading="lazy" decoding="async"><span>Ride · April</span></li><li class="tel-photo" data-tags="dates personnes"><img src="/assets/images/grok/souvenir-repas-480.webp" alt="Table laid on a sea-view terrace" width="480" height="640" loading="lazy" decoding="async"><span>Sunday · August</span></li><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-neige-480.webp" alt="Snowy mountains and fir trees under a blue sky" width="480" height="640" loading="lazy" decoding="async"><span>Mountains · February</span></li></ul>
+      <p class="tel-onglets" aria-hidden="true"><span class="actif">Photos</span><span class="">Albums</span><span class="">Sharing</span></p>
     </div>
   </div>
   <p class="tel-aide">Tap a filter: the grid sorts itself.</p>
@@ -191,12 +193,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="ordi"><div class="ordi-ecran"><span class="synchro-icone synchro-icone--0"></span><span class="synchro-icone synchro-icone--1"></span><span class="synchro-icone synchro-icone--2"></span><span class="synchro-icone synchro-icone--3"></span></div><div class="ordi-pied"></div></div>
     <p>Computer</p>
   </div>
-  <ol class="synchro-fichiers"><li class="synchro-fichier" style="--i:0"><span class="synchro-icone synchro-icone--0" aria-hidden="true"></span><span class="synchro-nom">Invoices 2026</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:1"><span class="synchro-icone synchro-icone--1" aria-hidden="true"></span><span class="synchro-nom">House contract.pdf</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:2"><span class="synchro-icone synchro-icone--2" aria-hidden="true"></span><span class="synchro-nom">Grandma&#39;s recipes.docx</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:3"><span class="synchro-icone synchro-icone--3" aria-hidden="true"></span><span class="synchro-nom">Holidays.zip</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li></ol>
+  <ol class="synchro-fichiers"><li class="synchro-fichier" style="--i:0"><span class="synchro-icone synchro-icone--0" aria-hidden="true"></span><span class="synchro-nom">Invoices 2026</span><span class="synchro-barre" aria-hidden="true"><span class="synchro-plein"></span><span class="synchro-paquet synchro-icone synchro-icone--0"></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:1"><span class="synchro-icone synchro-icone--1" aria-hidden="true"></span><span class="synchro-nom">House contract.pdf</span><span class="synchro-barre" aria-hidden="true"><span class="synchro-plein"></span><span class="synchro-paquet synchro-icone synchro-icone--1"></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:2"><span class="synchro-icone synchro-icone--2" aria-hidden="true"></span><span class="synchro-nom">Grandma&#39;s recipes.docx</span><span class="synchro-barre" aria-hidden="true"><span class="synchro-plein"></span><span class="synchro-paquet synchro-icone synchro-icone--2"></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:3"><span class="synchro-icone synchro-icone--3" aria-hidden="true"></span><span class="synchro-nom">Holidays.zip</span><span class="synchro-barre" aria-hidden="true"><span class="synchro-plein"></span><span class="synchro-paquet synchro-icone synchro-icone--3"></span></span><span class="synchro-ok" aria-hidden="true"></span></li></ol>
   <div class="synchro-appareil synchro-appareil--tel" aria-hidden="true">
     <div class="mini-tel"><div class="mini-tel-ecran"><span class="synchro-icone synchro-icone--0"></span><span class="synchro-icone synchro-icone--1"></span><span class="synchro-icone synchro-icone--2"></span><span class="synchro-icone synchro-icone--3"></span></div></div>
     <p>Phone</p>
   </div>
-  <p class="synchro-etat"><span class="led" aria-hidden="true"></span>Synced · Illustration</p>
+  <p class="synchro-etat"><span class="led" aria-hidden="true"></span><span data-synchro-etat data-fini="Synced" data-en-cours="Syncing">Synced</span> · Illustration</p>
 </div>
     <ul class="fichiers-points" data-anime="cascade"><li><strong>Sync</strong><span>Computer and phone, automatically.</span></li><li><strong>Link sharing</strong><span>A secure link to send a folder.</span></li><li><strong>Contacts and calendars</strong><span>Synced on all your devices.</span></li><li><strong>Online documents</strong><span>Edit them from a browser.</span></li></ul>
     <p class="fichiers-fin"><span class="adieu">Goodbye Google Drive and its storage that keeps filling up.</span> <span class="propulse">Powered by <strong>OpenCloud</strong></span></p>
@@ -247,6 +249,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     data-noms='{"memoire":{"8":"Essential 8 GB","16":"Comfort 16 GB"},"stockage":{"250":"250 GB","500":"500 GB","1000":"1 TB","2000":"2 TB"},"acces":{"local":"At home","partout":"Everywhere access"}}'
     data-texte-rentable="The box pays for itself in {mois} months." data-texte-vide="Type in an amount to see how many months it takes for the box to pay for itself." data-texte-recap="My configuration: {config}">
   <div class="config-choix">
+    <p class="config-mini" aria-hidden="true" data-superpose><span>Total</span><strong data-config-mini>€275</strong></p>
     <fieldset class="config-groupe">
     <legend><span class="config-num">2</span>Storage</legend>
     <p class="config-aide">Leave room for the years ahead: photos keep piling up.</p>
@@ -277,8 +280,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </fieldset>
   </div>
   <div class="config-recap" data-grille="retour">
-    <div class="config-jauge" aria-hidden="true" data-visuel>
-      <div class="config-jauge-boite"><span class="config-jauge-plein" data-config-jauge style="--jauge:0.125"></span><span class="led"></span></div>
+    <div class="config-jauge" aria-hidden="true" data-visuel data-config-jauge>
+      <div class="config-segments"><span class="config-segment plein" data-segment="250" style="--i:0"><i></i><b>250 GB</b></span><span class="config-segment" data-segment="500" style="--i:1"><i></i><b>500 GB</b></span><span class="config-segment" data-segment="1000" style="--i:2"><i></i><b>1 TB</b></span><span class="config-segment" data-segment="2000" style="--i:3"><i></i><b>2 TB</b></span></div>
       <p>Room for your memories</p>
     </div>
     <p class="config-total-libelle">Total</p>
@@ -287,6 +290,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="config-economie">
       <label for="cfg-accueil-mois">You pay today</label>
       <span class="config-economie-champ"><input id="cfg-accueil-mois" type="number" inputmode="decimal" min="0" max="500" step="0.01" placeholder="0" data-config-mois><span>€ per month</span></span>
+      <span class="config-raccourcis"><span>Examples:</span><button type="button" data-mois="5" aria-controls="cfg-accueil-mois">€5</button><button type="button" data-mois="10" aria-controls="cfg-accueil-mois">€10</button><button type="button" data-mois="20" aria-controls="cfg-accueil-mois">€20</button></span>
       <p class="config-rentable" data-config-rentable aria-live="polite">Type in an amount to see how many months it takes for the box to pay for itself.</p>
       <p class="config-note">Rough estimate, electricity not included (6 W, running continuously).</p>
     </div>

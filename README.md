@@ -1,4 +1,4 @@
-# MTCloud · maquette v1
+# MTCloud · maquette v2
 
 Maquette de présentation du site de **MTCloud** (Mon Terminal Cloud), Michael Tourneur, artisan à Mandelieu-la-Napoule.
 Adresse prévue : https://mtcloud-maquette.vercel.app · site actuel : https://mtcloud.tourneur.work
@@ -11,7 +11,7 @@ Le boîtier et les écrans sont dessinés en code (aucune fausse photo de produi
 | Page | Adresse | Ouverture |
 |---|---|---|
 | Accueil | `/` | titre et grande photo d'un salon face à la mer, souvenirs qui rentrent dans le boîtier |
-| Services | `/services` | grand titre puis bandeau |
+| Services | `/services` | grand titre puis bandeau dessiné : télé, ordinateur et téléphone avec les mêmes souvenirs |
 | Le boîtier | `/boitier` | prix en très grand, boîtier qui tourne ; configurateur complet |
 | À propos | `/a-propos` | scindée, la côte à fond perdu |
 | Contact | `/contact` | courte ; formulaire prérempli par le configurateur |
@@ -38,6 +38,9 @@ Version anglaise sous `/en/…`.
 - Questions fréquentes : rédigées uniquement à partir des informations du site actuel (prix, appareils, accès partout, consommation, zone, suivi).
 - Le tableau « Abonnement en ligne ou boîtier chez vous ? » reprend les constats de la page À propos actuelle ; à valider par le client.
 - Fichiers et albums de démonstration (« Factures 2026 », « Vacances.zip », lien de partage) : fictifs, marqués « Illustration ».
+
+## Images à régénérer en meilleure définition (conseillé)
+Les images Grok ont été livrées entre 900 et 1 600 px, agrandies depuis des planches : elles sont un peu douces sur écran Retina. À régénérer en définition native pour le site final, dans l'ordre : `boitier-etagere` (page Le boîtier), `contact-ouverture`, `appel-village`, `apropos-visite`, `accueil-boite-souvenirs`, `apropos-atelier` (à refaire aussi pour montrer des outils d'informaticien plutôt qu'un marteau). L'image `services-ouverture`, trop floue, n'est plus utilisée.
 
 ## Défauts du site actuel relevés
 - Message d'erreur du widget Cloudflare Turnstile visible sous le formulaire (`PUBLIC_TURNSTILE_SITE_KEY` non réglée).

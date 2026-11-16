@@ -3,7 +3,7 @@
 import { html, brut } from '../../outils/gabarit.mjs';
 import { surtitre, titre, appel } from '../gabarits/composants.mjs';
 
-export const page = { cle: 'services', fichier: 'services', imagePartage: 'grok/services-ouverture-1280.webp' };
+export const page = { cle: 'services', fichier: 'services', imagePartage: 'grok/services-bureau-1200.webp' };
 
 export default (c) => {
   const s = c.donnees.souvenirs;
@@ -18,8 +18,12 @@ export default (c) => {
     </div>
   </div>
   <div class="ouv-bandeau-image">
-    ${c.media({ nom: 'grok/services-ouverture', alt: c.s('services.hero.alt'), cadrage: '50% 42%', priorite: true, classe: 'ouv-bandeau-media', sizes: '100vw', attrs: 'data-fx="zoom" data-fx-force="10" data-iris-centre' })}
-    <ul class="appareils" data-anime="cascade">${c.a('services.hero.appareils').map((a, i) => html`<li style="--i:${i}">${a}</li>`)}</ul>
+    <div class="scene-ecrans" data-grok data-effet="ecrans" data-iris-centre data-visuel role="img" aria-label="${c.s('services.hero.scene')}">
+      <div class="se-tele" data-se="tele"><div class="se-tele-ecran">${[s[3], s[0], s[5]].map((x, i) => html`<img class="se-photo${i ? '' : ' actif'}" src="/assets/images/${x.nom}-960.webp" alt="" width="960" height="1280" decoding="async"${brut(i ? '' : ' fetchpriority="high"')}>`)}</div><div class="se-tele-pied"></div></div>
+      <div class="se-ordi" data-se="ordi"><div class="se-ordi-ecran"><div class="se-grille">${s.slice(0, 8).map((x) => html`<img class="se-photo" src="/assets/images/${x.nom}-480.webp" alt="" width="480" height="640" decoding="async">`)}</div></div><div class="se-ordi-base"></div></div>
+      <div class="se-tel" data-se="tel"><div class="se-tel-ecran"><div class="se-grille se-grille--tel">${s.slice(0, 6).map((x) => html`<img class="se-photo" src="/assets/images/${x.nom}-480.webp" alt="" width="480" height="640" decoding="async">`)}</div></div></div>
+      <p class="mention-ia">${c.t('commun.mentionIa')}</p>
+    </div>
   </div>
 </section>
 

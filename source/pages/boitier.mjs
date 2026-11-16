@@ -1,6 +1,14 @@
 /* Le boîtier : ouverture « prix en très grand », le boîtier qui tourne, où il se pose, le configurateur complet,
    ce qui est compris, appel. */
-import { html } from '../../outils/gabarit.mjs';
+import { html, brut } from '../../outils/gabarit.mjs';
+
+/* Icônes dessinées pour « Ce qui est compris » : boîtier, maison, prise en main, suivi. */
+const ICONES = [
+  '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12l11-5 11 5v9l-11 5-11-5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M5 12l11 5 11-5M16 17v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="22" cy="18" r="1.6" fill="#F59E0B"/></svg>',
+  '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 15L16 6l11 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 13v13h16V13" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="13" y="18" width="6" height="8" rx="1" fill="#F59E0B"/></svg>',
+  '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="7" width="24" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 26h8M16 22v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 11.5v6l5-3z" fill="#F59E0B"/></svg>',
+  '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M20.5 5.5a6 6 0 0 0-7.6 7.6L5.5 20.5a2.1 2.1 0 0 0 3 3l7.4-7.4a6 6 0 0 0 7.6-7.6l-3.6 3.6-3-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="7" cy="22" r="1.4" fill="#F59E0B"/></svg>'
+];
 import { surtitre, titre, boitier, configurateur, appel } from '../gabarits/composants.mjs';
 
 export const page = { cle: 'boitier', fichier: 'boitier', imagePartage: 'grok/boitier-etagere-1280.webp' };
@@ -66,7 +74,7 @@ export default (c) => html`
   <div class="conteneur">
     ${surtitre(c, 'boitierPage.compris.surtitre')}
     ${titre(c, 'boitierPage.compris.titre')}
-    <ol class="compris-liste" data-anime="cascade">${c.a('boitierPage.compris.items').map((x, i) => html`<li><span class="compris-icone compris-icone--${i}" aria-hidden="true"></span><h3>${x.t}</h3><p>${x.d}</p></li>`)}</ol>
+    <ol class="compris-liste" data-anime="cascade">${c.a('boitierPage.compris.items').map((x, i) => html`<li><span class="compris-icone" aria-hidden="true">${brut(ICONES[i])}</span><h3>${x.t}</h3><p>${x.d}</p></li>`)}</ol>
   </div>
 </section>
 

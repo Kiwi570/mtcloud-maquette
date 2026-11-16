@@ -125,7 +125,7 @@ h3 { font-size: clamp(1.2rem, 1.05rem + .5vw, 1.5rem); line-height: 1.15; }
 /* Photos : téléphone de démonstration. */
 .photos-grille { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(28px, 6vw, 96px); align-items: center; }
 .tel-bloc { display: grid; justify-items: center; gap: 12px; }
-.tel { width: min(330px, 84vw); aspect-ratio: 9 / 17.4; padding: 11px; border-radius: 46px; background: var(--nuit); box-shadow: 0 40px 70px -30px rgba(15, 23, 42, .55), inset 0 0 0 2px #2b3650; }
+.tel { width: min(320px, 80vw); aspect-ratio: 9 / 17; padding: 11px; border-radius: 46px; background: var(--nuit); box-shadow: 0 40px 70px -30px rgba(15, 23, 42, .55), inset 0 0 0 2px #2b3650; }
 .tel-ecran { height: 100%; display: flex; flex-direction: column; border-radius: 36px; background: var(--creme); overflow: hidden; }
 .tel-tete { display: flex; align-items: center; justify-content: space-between; padding: 22px 18px 6px; }
 .tel-titre { font-family: var(--police-titres); font-size: 1.45rem; font-weight: 600; }
@@ -133,8 +133,8 @@ h3 { font-size: clamp(1.2rem, 1.05rem + .5vw, 1.5rem); line-height: 1.15; }
 .tel-tri { flex: 1 1 auto; min-height: 44px; min-width: 44px; padding: 0 8px; border: 0; border-radius: 999px; background: var(--creme); font-weight: 600; font-size: .82rem; color: var(--nuit);
   box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--nuit) 16%, transparent); }
 .tel-tri[aria-pressed="true"] { background: var(--nuit); color: var(--creme); box-shadow: none; }
-.tel-grille { flex: 1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: min-content; gap: 4px; margin: 0; padding: 0 8px 8px; list-style: none; align-content: start; overflow: hidden; }
-.tel-photo { position: relative; aspect-ratio: 1; border-radius: 12px; overflow: hidden; background: var(--lin); }
+.tel-grille { flex: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: min-content; gap: 4px; margin: 0; padding: 0 8px 8px; list-style: none; align-content: start; overflow: hidden; }
+.tel-photo { position: relative; aspect-ratio: 1; border-radius: 8px; overflow: hidden; background: var(--lin); }
 .tel-photo img { width: 100%; height: 100%; object-fit: cover; }
 .tel-photo span { display: none; }
 .tel-photo.hors-tri { display: none; }
@@ -173,7 +173,6 @@ h3 { font-size: clamp(1.2rem, 1.05rem + .5vw, 1.5rem); line-height: 1.15; }
 .synchro-fichier .synchro-icone { grid-row: span 2; }
 .synchro-nom { font-weight: 600; overflow-wrap: anywhere; }
 .synchro-barre { grid-column: 2; height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--nuit) 10%, transparent); overflow: hidden; }
-.synchro-barre span { display: block; height: 100%; background: var(--ambre); transform-origin: 0 50%; transform: scaleX(var(--avance, 1)); }
 .synchro-ok { grid-column: 3; grid-row: 1 / span 2; width: 24px; height: 24px; border-radius: 50%; opacity: var(--ok, 1); transform: scale(calc(.6 + var(--ok, 1) * .4));
   background: var(--nuit) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 12.5l3.2 3L17 9' fill='none' stroke='%23F59E0B' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat; }
 .mini-tel-ecran .synchro-icone, .ordi-ecran .synchro-icone { transition: opacity .3s; }
@@ -227,9 +226,6 @@ h3 { font-size: clamp(1.2rem, 1.05rem + .5vw, 1.5rem); line-height: 1.15; }
 .config-recap { position: sticky; top: calc(var(--entete-h) + 24px); display: grid; gap: 4px; padding: clamp(22px, 2.6vw, 34px); border-radius: var(--rayon-grand); background: var(--nuit); color: var(--sable); box-shadow: var(--ombre); }
 .config-jauge { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
 .config-jauge p { margin: 0; font-size: .95rem; color: color-mix(in srgb, var(--sable) 80%, var(--nuit)); }
-.config-jauge-boite { position: relative; width: 150px; height: 60px; border-radius: 8px; background: linear-gradient(180deg, #e7eaee, #b9bfc8); overflow: hidden; flex: none; }
-.config-jauge-plein { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; transform-origin: 0 50%; transform: scaleX(var(--jauge, .125)); background: linear-gradient(90deg, #f6c35c, var(--ambre)); opacity: .9; transition: transform .6s var(--courbe); }
-.config-jauge-boite .led { position: absolute; right: 8px; top: 50%; margin-top: -4.5px; }
 .config-lignes { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 6px; font-size: .98rem; }
 .config-lignes li { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 6px; border-bottom: 1px dashed color-mix(in srgb, var(--sable) 22%, transparent); }
 .config-lignes li span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -288,7 +284,6 @@ h3 { font-size: clamp(1.2rem, 1.05rem + .5vw, 1.5rem); line-height: 1.15; }
 .ouv-bandeau-ligne .ouv-intro { margin: 0; }
 .ouv-bandeau-ligne .ouv-actions { margin: 0; justify-content: flex-end; }
 .ouv-bandeau-image { position: relative; margin-inline: var(--gouttiere); }
-.ouv-bandeau-media { height: min(64svh, 680px); min-height: 300px; border-radius: var(--rayon-grand); }
 .appareils { position: absolute; left: clamp(16px, 3vw, 40px); bottom: clamp(16px, 3vw, 36px); display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; z-index: 2; }
 .appareils li { padding: 9px 16px; border-radius: 999px; background: var(--creme); color: var(--nuit); font-weight: 600; box-shadow: var(--ombre); }
 /* Le boîtier : prix en très grand. */
@@ -382,11 +377,6 @@ h3 { font-size: clamp(1.2rem, 1.05rem + .5vw, 1.5rem); line-height: 1.15; }
 .compris-liste { list-style: none; padding: 0; margin: clamp(24px, 4vw, 44px) 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; counter-reset: c; }
 .compris-liste li { padding: 24px; border-radius: 22px; background: var(--creme); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--nuit) 8%, transparent); }
 .compris-liste p { margin: 0; }
-.compris-icone { display: grid; place-items: center; width: 52px; height: 52px; margin-bottom: 18px; border-radius: 50%; background: var(--nuit); }
-.compris-icone::before { content: ''; width: 18px; height: 18px; border-radius: 50%; background: var(--ambre); box-shadow: 0 0 14px var(--ambre); }
-.compris-icone--1::before { border-radius: 4px; }
-.compris-icone--2::before { width: 10px; height: 22px; border-radius: 6px; }
-.compris-icone--3::before { width: 24px; height: 8px; border-radius: 4px; }
 
 /* ---------- À propos ---------- */
 .pourquoi-grille { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
@@ -552,3 +542,88 @@ html.js:not(.secours):not([data-arrivee="retour"]) .cote-nom:not(.vu), html.js:n
   .ouv-courte, .ouv-bandeau { padding-top: calc(var(--entete-h) + 16px); }
   .ouv-scindee-texte { padding-top: calc(var(--entete-h) + 16px); padding-bottom: 16px; }
 }
+
+/* ---------- v2 ---------- */
+.tel-compte { margin: 0; padding: 0 14px 8px; font-size: .8rem; font-weight: 600; color: color-mix(in srgb, var(--nuit) 70%, var(--creme)); }
+.tel-onglets { display: flex; justify-content: space-around; margin: 0; padding: 10px 8px 14px; border-top: 1px solid color-mix(in srgb, var(--nuit) 10%, transparent); background: var(--creme); font-size: .78rem; font-weight: 600; color: color-mix(in srgb, var(--nuit) 66%, var(--creme)); }
+.tel-onglets .actif { color: var(--nuit); }
+.tel-onglets .actif::before { content: ''; display: block; width: 6px; height: 6px; margin: 0 auto 4px; border-radius: 50%; background: var(--ambre); }
+
+/* Synchro : appareils plus grands, un fichier voyage sur chaque barre. */
+.ordi { max-width: 340px; }
+.mini-tel { width: min(140px, 100%); }
+.synchro-barre { position: relative; overflow: visible; container-type: inline-size; height: 6px; }
+.synchro-plein { position: absolute; inset: 0; border-radius: 3px; background: var(--ambre); transform-origin: 0 50%; transform: scaleX(var(--avance, 1)); }
+.synchro-barre .synchro-paquet { display: block; position: absolute; left: 0; top: 50%; width: 14px; height: 18px; margin: -9px 0 0 -7px; border-radius: 2px 5px 2px 2px;
+  transform: translateX(calc(var(--avance, 1) * 100cqw)); opacity: calc(1 - var(--ok, 1)); box-shadow: 0 2px 6px rgba(15, 23, 42, .25); }
+.synchro-barre .synchro-paquet.synchro-icone--0 { width: 18px; height: 14px; margin: -7px 0 0 -9px; }
+
+/* Configurateur : jauge en segments, raccourcis, total collant sur tablette et téléphone. */
+.config-jauge { align-items: flex-end; }
+.config-segments { display: flex; align-items: flex-end; gap: 6px; height: 66px; flex: none; }
+.config-segment { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 4px; width: 42px; height: 100%; }
+.config-segment i { display: block; flex: none; width: 100%; height: calc(14px + var(--i) * 10px); border-radius: 6px; background: color-mix(in srgb, var(--sable) 14%, transparent); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--sable) 30%, transparent); transform-origin: 50% 100%; transition: background-color .35s var(--courbe), box-shadow .35s; }
+.config-segment.plein i { background: var(--ambre); box-shadow: 0 0 14px color-mix(in srgb, var(--ambre) 45%, transparent); }
+.config-segment b { font-size: .75rem; font-weight: 600; white-space: nowrap; color: color-mix(in srgb, var(--sable) 80%, var(--nuit)); }
+.config-segment.plein b { color: var(--ambre-clair); }
+.config-raccourcis { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: .9rem; }
+.config-raccourcis button { min-height: 44px; min-width: 52px; padding: 0 12px; border: 0; border-radius: 999px; background: var(--nuit); color: var(--creme); font-weight: 600; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--sable) 35%, transparent); }
+.config-raccourcis button[aria-pressed="true"] { background: var(--ambre); color: var(--nuit); box-shadow: none; }
+.config-mini { display: none; }
+@media (max-width: 1100px) {
+  .config-mini { position: sticky; top: calc(var(--entete-h) + 10px); z-index: 4; display: flex; align-items: center; gap: 12px; width: fit-content; margin: 0 0 18px auto;
+    padding: 8px 18px; border-radius: 999px; background: var(--nuit); color: var(--creme); box-shadow: var(--ombre); font-weight: 600; }
+  .config-mini strong { font-family: var(--police-titres); font-size: 1.4rem; font-weight: 500; color: var(--ambre); font-variant-numeric: tabular-nums; white-space: nowrap; }
+}
+
+/* Ce qui est compris : icônes dessinées. */
+.compris-icone { display: grid; place-items: center; width: 56px; height: 56px; margin-bottom: 18px; border-radius: 16px; background: var(--nuit); color: var(--creme); }
+.compris-icone::before { content: none; }
+.compris-icone svg { width: 30px; height: 30px; }
+
+/* Contact : et après votre message. */
+.apres { margin-top: 28px; padding: 24px; border-radius: 22px; background: var(--creme); }
+.apres-titre { font-size: 1.35rem; margin-bottom: 14px; }
+.apres-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.apres-liste li { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 14px; align-items: start; }
+.apres-liste .etape-num { margin: 0; box-shadow: none; }
+.apres-liste p { margin: 2px 0 0; font-size: .96rem; }
+
+/* À propos : les constats se barrent d'une croix en apparaissant. */
+.constats li::before, .constats li::after { transition: transform .45s var(--courbe) calc(var(--i, 0) * 120ms + 250ms); }
+html.js:not(.secours):not([data-arrivee="retour"]) .constats:not(.vu) li::before { transform: rotate(45deg) scaleX(0); }
+html.js:not(.secours):not([data-arrivee="retour"]) .constats:not(.vu) li::after { transform: rotate(-45deg) scaleX(0); }
+
+/* Services : la même photo sur la télé, l'ordinateur et le téléphone (dessin, net à toutes les tailles). */
+.ouv-bandeau-image { position: relative; }
+.scene-ecrans { position: relative; height: min(60svh, 640px); min-height: 320px; border-radius: var(--rayon-grand); overflow: hidden;
+  background: radial-gradient(70% 90% at 50% 30%, var(--creme), var(--lin) 75%); }
+.scene-ecrans .se-photo { width: 100%; height: 100%; object-fit: cover; display: block; }
+.se-tele { position: absolute; left: 27%; top: 7%; width: 46%; }
+.se-tele-ecran { position: relative; aspect-ratio: 16 / 9; border: 10px solid #111827; border-radius: 12px; overflow: hidden; background: linear-gradient(180deg, #9cc7d9, #2f6f93 60%, #c9a77a); box-shadow: 0 30px 50px -28px rgba(15, 23, 42, .55); }
+.se-tele-ecran .se-photo { position: absolute; inset: 0; opacity: 0; transition: opacity 1s ease; }
+.se-tele-ecran .se-photo.actif { opacity: 1; }
+.se-tele-pied { width: 30%; height: 10px; margin: 0 auto; border-radius: 0 0 8px 8px; background: linear-gradient(180deg, #2a3242, #111827); }
+.se-ordi { position: absolute; left: 7%; bottom: 6%; width: min(36%, 470px); }
+.se-ordi-ecran { aspect-ratio: 16 / 10; border: 8px solid var(--nuit); border-bottom-width: 12px; border-radius: 12px; background: var(--creme); overflow: hidden; padding: 6px; box-shadow: 0 24px 40px -24px rgba(15, 23, 42, .55); }
+.se-grille { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; height: 100%; }
+.se-grille .se-photo { border-radius: 4px; aspect-ratio: auto; background: var(--lin); }
+.se-ordi-base { width: 116%; margin-left: -8%; height: 10px; border-radius: 0 0 12px 12px; background: linear-gradient(180deg, #c9ced5, #8f96a1); }
+.se-tel { position: absolute; right: 9%; bottom: 6%; width: min(13%, 150px); }
+.se-tel-ecran { aspect-ratio: 9 / 18; padding: 5px; border-radius: 18px; background: var(--nuit); box-shadow: 0 24px 40px -22px rgba(15, 23, 42, .6); }
+.se-grille--tel { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; padding: 0; border-radius: 13px; overflow: hidden; background: var(--creme); }
+.ouv-bandeau-image .appareils { position: absolute; left: clamp(16px, 3vw, 36px); top: clamp(14px, 2.4vw, 28px); bottom: auto; }
+.scene-ecrans .mention-ia { right: 12px; bottom: 10px; }
+html.js:not(.secours):not([data-arrivee="retour"]) .scene-ecrans:not(.allume) :is(.se-grille, .se-tele-ecran) .se-photo { opacity: 0; }
+@media (max-width: 760px) {
+  .scene-ecrans { height: 52svh; min-height: 300px; }
+  .se-tele { width: 78%; left: 11%; top: 16%; }
+  .se-ordi { width: 60%; left: 4%; bottom: 5%; }
+  .se-tel { width: 24%; right: 5%; bottom: 5%; }
+  .se-grille { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .se-grille .se-photo:nth-child(n+7) { display: none; }
+  .ouv-bandeau-image .appareils { display: none; }
+}
+@media (max-height: 820px) and (min-width: 761px) { .scene-ecrans { height: 52svh; } }
+@media (max-height: 500px) and (min-width: 761px) { .scene-ecrans { height: 60svh; min-height: 200px; } .ouv-bandeau-image .appareils { display: none; } }
+[data-synchro-etat] { display: inline-block; min-width: 11.5em; }

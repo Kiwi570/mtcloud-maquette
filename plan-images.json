@@ -141,24 +141,6 @@
   "alt": "Montagnes enneigées et sapins"
  },
  {
-  "source": "recu/grok/services-ouverture.jpg",
-  "nom": "grok/services-ouverture",
-  "role": "ouverture",
-  "page": "services",
-  "emplacement": "Ouverture de Services, bandeau pleine largeur sous le grand titre",
-  "priorite": "Indispensable",
-  "mobile": "4:5",
-  "zone_texte": "bas",
-  "consigne_scene": "A cosy Mediterranean living room at dusk, a linen sofa seen from behind with a soft throw, a large flat television on a light-oak console glowing with a soft warm abstract gradient and no picture content, the last blue light of evening through a tall window, a table lamp on, nobody in the room",
-  "beaute": 4,
-  "alt": "Salon ouvert sur la mer, canapé clair et coussins bleus",
-  "largeurs": [
-   640,
-   1280,
-   1600
-  ]
- },
- {
   "source": "recu/grok/services-bureau.jpg",
   "nom": "grok/services-bureau",
   "role": "section-fond",

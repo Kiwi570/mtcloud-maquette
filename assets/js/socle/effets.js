@@ -30,9 +30,11 @@
    Secours, retour arrière : rien ne bouge à l'arrivée, tout est dans son état final.
    Sans JavaScript : contenu normal. Aucune lecture de mise en page pendant le défilement : les textes sont découpés
    à l'avance, pendant les temps morts, et rétablis quand le défilement s'arrête. */
-import { html, etat, quand, stockage } from './etat.js?v=1';
+import { html, etat, quand, stockage } from './etat.js?v=2';
 
 const ENTREES = ['lignes', 'mots', 'lettres', 'cascade', 'rideau'];
+
+const GARDE_INSECABLES = { reduceWhiteSpace: false };
 const DECOUPES = '[data-anime="lignes"]:not(.vu), [data-anime="mots"]:not(.vu), [data-anime="lettres"]:not(.vu)';
 const decoupes = new Set();
 const sourisFine = () => window.matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -61,9 +63,10 @@ function decouper(el) {
      pixel ou d'une ligne) : la page ne bouge jamais, les positions des scènes restent justes. */
   if (type === 'lettres') el.style.height = el.offsetHeight + 'px';
   try {
-    d = type === 'lignes' ? new window.SplitText(el, { type: 'lines', mask: 'lines', linesClass: 'fx-ligne' })
-      : type === 'lettres' ? new window.SplitText(el, { type: 'words,chars', wordsClass: 'fx-mot-l', charsClass: 'fx-lettre' })
-      : new window.SplitText(el, { type: 'words', wordsClass: 'fx-mot' });
+    /* Les espaces insécables (avant « ? ! : ; », dans « 11,90 € ») ne coupent jamais un mot : seul l'espace ordinaire sépare. */
+    d = type === 'lignes' ? new window.SplitText(el, { type: 'lines', mask: 'lines', linesClass: 'fx-ligne', ...GARDE_INSECABLES })
+      : type === 'lettres' ? new window.SplitText(el, { type: 'words,chars', wordsClass: 'fx-mot-l', charsClass: 'fx-lettre', ...GARDE_INSECABLES })
+      : new window.SplitText(el, { type: 'words', wordsClass: 'fx-mot', ...GARDE_INSECABLES });
   } catch (err) { el.style.height = ''; console.error('[effets] découpe', err); return; }
   const morceaux = (type === 'lignes' ? d.lines : type === 'lettres' ? d.chars : d.words) || [];
   const max = type === 'lettres' ? 48 : 14;
@@ -422,7 +425,7 @@ export function initEffets() {
   try { vitesse([...document.querySelectorAll('[data-fx="vitesse"]')], gsap); } catch (err) { console.error('[effets] vitesse', err); }
   try { survol(gsap); } catch (err) { console.error('[effets] survol', err); }
   if (document.querySelector('[data-fx="onde"]')) {
-    return import('./onde.js?v=1').then((m) => m.initOnde()).catch((err) => console.error('[effets] onde', err));
+    return import('./onde.js?v=2').then((m) => m.initOnde()).catch((err) => console.error('[effets] onde', err));
   }
   return Promise.resolve();
 }

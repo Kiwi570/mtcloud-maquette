@@ -32,7 +32,9 @@ export function telephone(c, { id = 'tel' } = {}) {
     <div class="tel-ecran">
       <div class="tel-tete"><span class="tel-titre">${c.t('accueil.telephone.titre')}</span><img src="/assets/images/logo.svg" alt="" width="22" height="22"></div>
       <div class="tel-tris">${tris.map((t, i) => html`<button type="button" class="tel-tri" data-tri-choix="${t}" aria-pressed="${i === 0 ? 'true' : 'false'}" aria-controls="${id}-grille">${c.t('accueil.telephone.' + t)}</button>`)}</div>
+      <p class="tel-compte" data-tri-compte="${c.s('accueil.telephone.compte')}">${c.t('accueil.telephone.compte', { n: s.length })}</p>
       <ul class="tel-grille" id="${id}-grille">${s.map((x) => html`<li class="tel-photo" data-tags="${x.tags.join(' ')}"><img src="/assets/images/${x.nom}-480.webp" alt="${x.alt}" width="480" height="640" loading="lazy" decoding="async"><span>${x.legende}</span></li>`)}</ul>
+      <p class="tel-onglets" aria-hidden="true">${c.a('accueil.telephone.onglets').map((o, i) => html`<span class="${i ? '' : 'actif'}">${o}</span>`)}</p>
     </div>
   </div>
   <p class="tel-aide">${c.t('accueil.telephone.aide')}</p>
@@ -48,12 +50,12 @@ export function synchro(c) {
     <div class="ordi"><div class="ordi-ecran">${f.map((_, i) => html`<span class="synchro-icone synchro-icone--${i}"></span>`)}</div><div class="ordi-pied"></div></div>
     <p>${c.t('accueil.fichiers.ordinateur')}</p>
   </div>
-  <ol class="synchro-fichiers">${f.map((n, i) => html`<li class="synchro-fichier" style="--i:${i}"><span class="synchro-icone synchro-icone--${i}" aria-hidden="true"></span><span class="synchro-nom">${n}</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li>`)}</ol>
+  <ol class="synchro-fichiers">${f.map((n, i) => html`<li class="synchro-fichier" style="--i:${i}"><span class="synchro-icone synchro-icone--${i}" aria-hidden="true"></span><span class="synchro-nom">${n}</span><span class="synchro-barre" aria-hidden="true"><span class="synchro-plein"></span><span class="synchro-paquet synchro-icone synchro-icone--${i}"></span></span><span class="synchro-ok" aria-hidden="true"></span></li>`)}</ol>
   <div class="synchro-appareil synchro-appareil--tel" aria-hidden="true">
     <div class="mini-tel"><div class="mini-tel-ecran">${f.map((_, i) => html`<span class="synchro-icone synchro-icone--${i}"></span>`)}</div></div>
     <p>${c.t('accueil.fichiers.telephone')}</p>
   </div>
-  <p class="synchro-etat"><span class="led" aria-hidden="true"></span>${c.t('accueil.fichiers.synchro')} · ${c.t('commun.illustratif')}</p>
+  <p class="synchro-etat"><span class="led" aria-hidden="true"></span><span data-synchro-etat data-fini="${c.s('accueil.fichiers.synchro')}" data-en-cours="${c.s('accueil.fichiers.enCours')}">${c.t('accueil.fichiers.synchro')}</span> · ${c.t('commun.illustratif')}</p>
 </div>`;
 }
 
@@ -74,13 +76,14 @@ export function configurateur(c, { id = 'cfg', complet = false } = {}) {
     data-noms='${brut(JSON.stringify({ memoire: Object.fromEntries(d.memoire.map((o) => [o.id, `${o.nom} ${o.detail.replace(/^.*?(\d+\s?\S+).*$/, '$1')}`])), stockage: Object.fromEntries(d.stockage.map((o) => [o.id, o.taille])), acces: Object.fromEntries(d.acces.map((o) => [o.id, o.nom])) }).replace(/'/g, '&#39;'))}'
     data-texte-rentable="${c.s('config.rentable')}" data-texte-vide="${c.s('config.rentableVide')}" data-texte-recap="${c.s('config.recap')}">
   <div class="config-choix">
+    <p class="config-mini" aria-hidden="true" data-superpose><span>${c.t('config.totalCourt')}</span><strong data-config-mini>${prix(c, total)}</strong></p>
     ${complet ? groupe('memoire', 1, d.memoire, 'config.aide1') : ''}
     ${groupe('stockage', 2, d.stockage, 'config.aide2')}
     ${groupe('acces', 3, d.acces, 'config.aide3')}
   </div>
   <div class="config-recap" data-grille="retour">
-    <div class="config-jauge" aria-hidden="true" data-visuel>
-      <div class="config-jauge-boite"><span class="config-jauge-plein" data-config-jauge style="--jauge:${defauts.stockage.jauge}"></span><span class="led"></span></div>
+    <div class="config-jauge" aria-hidden="true" data-visuel data-config-jauge>
+      <div class="config-segments">${d.stockage.map((o, i) => html`<span class="config-segment${o.defaut ? ' plein' : ''}" data-segment="${o.id}" style="--i:${i}"><i></i><b>${o.taille}</b></span>`)}</div>
       <p>${c.t('config.jauge')}</p>
     </div>
     ${complet ? html`<ul class="config-lignes">
@@ -95,6 +98,7 @@ export function configurateur(c, { id = 'cfg', complet = false } = {}) {
     <div class="config-economie">
       <label for="${id}-mois">${c.t('config.economie')}</label>
       <span class="config-economie-champ"><input id="${id}-mois" type="number" inputmode="decimal" min="0" max="500" step="0.01" placeholder="0" data-config-mois><span>${c.t('config.parMois')}</span></span>
+      <span class="config-raccourcis"><span>${c.t('config.raccourcis')}</span>${[5, 10, 20].map((n) => html`<button type="button" data-mois="${n}" aria-controls="${id}-mois">${prix(c, n)}</button>`)}</span>
       <p class="config-rentable" data-config-rentable aria-live="polite">${c.t('config.rentableVide')}</p>
       <p class="config-note">${c.t('config.rentableNote')}</p>
     </div>

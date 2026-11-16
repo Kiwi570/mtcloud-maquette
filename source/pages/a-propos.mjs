@@ -22,7 +22,7 @@ export default (c) => html`
       ${surtitre(c, 'apropos.pourquoi.surtitre')}
       ${titre(c, 'apropos.pourquoi.titre')}
       <p data-anime>${c.t('apropos.pourquoi.texte')}</p>
-      <ul class="constats" data-anime="cascade">${c.a('apropos.pourquoi.constats').map((t) => html`<li>${t}</li>`)}</ul>
+      <ul class="constats" data-anime="cascade">${c.a('apropos.pourquoi.constats').map((t, i) => html`<li style="--i:${i}">${t}</li>`)}</ul>
     </div>
     ${c.media({ nom: 'grok/apropos-atelier', alt: c.s('apropos.pourquoi.alt'), cadrage: '50% 50%', classe: 'pourquoi-media', sizes: '(max-width: 760px) 100vw, 38vw', attrs: 'data-anime="rideau"' })}
   </div>

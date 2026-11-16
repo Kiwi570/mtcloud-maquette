@@ -286,13 +286,13 @@
       "langue": "fr",
       "fichier": "assets/partage/services-fr.jpg",
       "gabarit": "droite",
-      "image": "grok/services-ouverture-1280.webp",
-      "poids": 55285,
+      "image": "grok/services-bureau-1200.webp",
+      "poids": 63001,
       "sujet": {
         "x": 600,
         "y": 0,
         "l": 600,
-        "h": 595
+        "h": 602
       },
       "textes": [
         {
@@ -321,13 +321,13 @@
       "langue": "en",
       "fichier": "assets/partage/services-en.jpg",
       "gabarit": "droite",
-      "image": "grok/services-ouverture-1280.webp",
-      "poids": 52388,
+      "image": "grok/services-bureau-1200.webp",
+      "poids": 60247,
       "sujet": {
         "x": 600,
         "y": 0,
         "l": 600,
-        "h": 595
+        "h": 602
       },
       "textes": [
         {

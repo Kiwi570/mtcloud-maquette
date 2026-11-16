@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-v="1">
+<html lang="en" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -38,14 +38,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F4EEE3">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -143,7 +143,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
             <option value="nsp" selected>I don&#39;t know yet</option>
           </select></div>
       </div>
-      <div class="champ champ--config" data-champ-config><label for="f-config">Chosen configuration</label><input id="f-config" name="config" placeholder="No configuration yet: you can put one together on The box page."><p class="champ-aide"><a href="/en/boitier#configurateur" data-libelle="The box">No configuration yet: you can put one together on The box page.</a></p></div>
+      <div class="champ champ--config" data-champ-config><label for="f-config">Chosen configuration</label><input id="f-config" name="config" placeholder="No configuration yet: you can put one together on The box page."><p class="champ-aide"><a href="/en/boitier#configurateur" class="lien-fleche" data-libelle="The box">Put my configuration together</a></p></div>
       <div class="champ"><label for="f-message">Message</label><textarea id="f-message" name="message" rows="5" required></textarea></div>
       <p class="mention-donnees">Your data is only used to reply to your request. Privacy policy: to be completed. Secure sending, no spam, promised.</p>
       <button type="submit" class="bouton bouton--ambre">Send my request</button>
@@ -159,14 +159,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <div><dt>Workshop</dt><dd>290 boulevard Jean Saint Martin, 06210 Mandelieu-la-Napoule</dd></div>
         <div><dt>Area</dt><dd>Anywhere in France: pre-configured box, remote support</dd></div>
       </dl>
-      <figure class="cote cote--compacte" data-cote data-effet="cote" data-visuel>
-  <svg viewBox="0 0 1000 720" role="img" aria-label="Map of the coast from Bandol to Menton, with the workshop in Mandelieu-la-Napoule">
-    <path class="cote-terre" d="M32 589 C39.2 591.7 62.5 594.5 75 605 C87.5 615.5 98.2 647.8 107 652 C115.8 656.2 121.8 636.2 128 630 C134.2 623.8 135.0 616.3 144 615 C153.0 613.7 169.5 620.2 182 622 C194.5 623.8 209.3 621.7 219 626 C228.7 630.3 234.7 640.7 240 648 C245.3 655.3 246.5 671.2 251 670 C255.5 668.8 260.7 650.2 267 641 C273.3 631.8 278.3 620.0 289 615 C299.7 610.0 316.8 609.2 331 611 C345.2 612.8 366.0 629.3 374 626 C382.0 622.7 371.0 598.3 379 591 C387.0 583.7 407.7 586.0 422 582 C436.3 578.0 449.8 569.5 465 567 C480.2 564.5 499.7 571.3 513 567 C526.3 562.7 539.7 550.8 545 541 C550.3 531.2 548.5 516.2 545 508 C541.5 499.8 532.8 494.7 524 492 C515.2 489.3 493.8 495.3 492 492 C490.2 488.7 506.0 476.7 513 472 C520.0 467.3 526.8 471.3 534 464 C541.2 456.7 549.7 439.0 556 428 C562.3 417.0 565.8 405.5 572 398 C578.2 390.5 585.0 384.8 593 383 C601.0 381.2 611.0 388.2 620 387 C629.0 385.8 638.2 384.0 647 376 C655.8 368.0 666.8 349.3 673 339 C679.2 328.7 681.3 321.3 684 314 C686.7 306.7 682.8 299.2 689 295 C695.2 290.8 711.2 291.5 721 289 C730.8 286.5 740.0 279.5 748 280 C756.0 280.5 762.8 290.0 769 292 C775.2 294.0 782.3 295.8 785 292 C787.7 288.2 783.2 279.5 785 269 C786.8 258.5 789.7 239.3 796 229 C802.3 218.7 813.2 214.7 823 207 C832.8 199.3 846.2 187.8 855 183 C863.8 178.2 869.8 176.5 876 178 C882.2 179.5 886.7 193.8 892 192 C897.3 190.2 900.0 173.3 908 167 C916.0 160.7 930.2 159.5 940 154 C949.8 148.5 957.2 140.5 967 134 C976.8 127.5 993.7 118.2 999 115 L1000 115 L1000 0 L0 0 L0 589 Z"/>
-    <path class="cote-ligne" d="M32 589 C39.2 591.7 62.5 594.5 75 605 C87.5 615.5 98.2 647.8 107 652 C115.8 656.2 121.8 636.2 128 630 C134.2 623.8 135.0 616.3 144 615 C153.0 613.7 169.5 620.2 182 622 C194.5 623.8 209.3 621.7 219 626 C228.7 630.3 234.7 640.7 240 648 C245.3 655.3 246.5 671.2 251 670 C255.5 668.8 260.7 650.2 267 641 C273.3 631.8 278.3 620.0 289 615 C299.7 610.0 316.8 609.2 331 611 C345.2 612.8 366.0 629.3 374 626 C382.0 622.7 371.0 598.3 379 591 C387.0 583.7 407.7 586.0 422 582 C436.3 578.0 449.8 569.5 465 567 C480.2 564.5 499.7 571.3 513 567 C526.3 562.7 539.7 550.8 545 541 C550.3 531.2 548.5 516.2 545 508 C541.5 499.8 532.8 494.7 524 492 C515.2 489.3 493.8 495.3 492 492 C490.2 488.7 506.0 476.7 513 472 C520.0 467.3 526.8 471.3 534 464 C541.2 456.7 549.7 439.0 556 428 C562.3 417.0 565.8 405.5 572 398 C578.2 390.5 585.0 384.8 593 383 C601.0 381.2 611.0 388.2 620 387 C629.0 385.8 638.2 384.0 647 376 C655.8 368.0 666.8 349.3 673 339 C679.2 328.7 681.3 321.3 684 314 C686.7 306.7 682.8 299.2 689 295 C695.2 290.8 711.2 291.5 721 289 C730.8 286.5 740.0 279.5 748 280 C756.0 280.5 762.8 290.0 769 292 C775.2 294.0 782.3 295.8 785 292 C787.7 288.2 783.2 279.5 785 269 C786.8 258.5 789.7 239.3 796 229 C802.3 218.7 813.2 214.7 823 207 C832.8 199.3 846.2 187.8 855 183 C863.8 178.2 869.8 176.5 876 178 C882.2 179.5 886.7 193.8 892 192 C897.3 190.2 900.0 173.3 908 167 C916.0 160.7 930.2 159.5 940 154 C949.8 148.5 957.2 140.5 967 134 C976.8 127.5 993.7 118.2 999 115" pathLength="1"/>
-    <g class="cote-point" style="--i:0"><circle cx="48" cy="592" r="7" data-repere/></g><g class="cote-point" style="--i:1"><circle cx="144" cy="611" r="7" data-repere/></g><g class="cote-point" style="--i:2"><circle cx="251" cy="611" r="7" data-repere/></g><g class="cote-point" style="--i:3"><circle cx="524" cy="494" r="7" data-repere/></g><g class="cote-point cote-point--atelier" style="--i:4"><circle class="cote-halo" cx="684" cy="295" r="24"/><circle cx="684" cy="295" r="11" data-repere/></g><g class="cote-point" style="--i:5"><circle cx="783" cy="266" r="7" data-repere/></g><g class="cote-point" style="--i:6"><circle cx="855" cy="178" r="7" data-repere/></g><g class="cote-point" style="--i:7"><circle cx="983" cy="122" r="7" data-repere/></g>
-  </svg>
-  <span class="cote-nom cote-nom--haut cote-nom--debut" style="--x:4.80%;--y:82.22%;--i:0">Bandol</span><span class="cote-nom cote-nom--bas cote-nom--milieu" style="--x:14.40%;--y:84.86%;--i:1">Toulon</span><span class="cote-nom cote-nom--haut cote-nom--milieu cote-nom--secondaire" style="--x:25.10%;--y:84.86%;--i:2">Hyères</span><span class="cote-nom cote-nom--bas cote-nom--milieu" style="--x:52.40%;--y:68.61%;--i:3">Saint-Tropez</span><span class="cote-nom cote-nom--haut cote-nom--fin cote-nom--atelier" style="--x:68.40%;--y:40.97%;--i:4">Mandelieu · Workshop</span><span class="cote-nom cote-nom--bas cote-nom--debut cote-nom--secondaire" style="--x:78.30%;--y:36.94%;--i:5">Antibes</span><span class="cote-nom cote-nom--haut cote-nom--fin" style="--x:85.50%;--y:24.72%;--i:6">Nice</span><span class="cote-nom cote-nom--haut cote-nom--fin" style="--x:98.30%;--y:16.94%;--i:7">Menton</span>
-</figure>
+      <div class="apres">
+        <h3 class="apres-titre">What happens after your message?</h3>
+        <ol class="apres-liste" data-anime="cascade"><li><span class="etape-num">1</span><div><strong>I reply within 24 hours</strong><p>By phone or email, Monday to Friday.</p></div></li><li><span class="etape-num">2</span><div><strong>We pin down what you need</strong><p>Your devices, your photos, the space you need: I send you a personalised quote.</p></div></li><li><span class="etape-num">3</span><div><strong>I install it and show you</strong><p>In your home from Bandol to Menton, or a pre-configured box shipped anywhere in France.</p></div></li></ol>
+      </div>
     </aside>
   </div>
 </section>

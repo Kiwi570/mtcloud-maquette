@@ -1,6 +1,6 @@
 /* Contact : ouverture courte (terrasse), formulaire simulé prérempli par le configurateur, autres moyens, zone. */
 import { html } from '../../outils/gabarit.mjs';
-import { surtitre, cote } from '../gabarits/composants.mjs';
+import { surtitre } from '../gabarits/composants.mjs';
 
 export const page = { cle: 'contact', fichier: 'contact', imagePartage: 'grok/contact-ouverture-1280.webp' };
 
@@ -35,7 +35,7 @@ export default (c) => html`
             <option value="nsp" selected>${c.t('contact.form.formuleNsp')}</option>
           </select></div>
       </div>
-      <div class="champ champ--config" data-champ-config><label for="f-config">${c.t('contact.form.config')}</label><input id="f-config" name="config" placeholder="${c.s('contact.form.configVide')}"><p class="champ-aide">${c.lien('boitier', { ancre: 'configurateur', texte: c.t('contact.form.configVide') })}</p></div>
+      <div class="champ champ--config" data-champ-config><label for="f-config">${c.t('contact.form.config')}</label><input id="f-config" name="config" placeholder="${c.s('contact.form.configVide')}"><p class="champ-aide">${c.lien('boitier', { ancre: 'configurateur', classe: 'lien-fleche', texte: c.t('contact.form.configLien') })}</p></div>
       <div class="champ"><label for="f-message">${c.t('contact.form.message')}</label><textarea id="f-message" name="message" rows="5" required></textarea></div>
       <p class="mention-donnees">${c.t('contact.form.donnees')}</p>
       <button type="submit" class="bouton bouton--ambre">${c.t('contact.form.envoyer')}</button>
@@ -51,7 +51,10 @@ export default (c) => html`
         <div><dt>${c.t('contact.infos.adresse')}</dt><dd>${c.site.contact.adresse}</dd></div>
         <div><dt>${c.t('contact.infos.zone')}</dt><dd>${c.t('apropos.zone.france')}</dd></div>
       </dl>
-      ${cote(c, { compacte: true })}
+      <div class="apres">
+        <h3 class="apres-titre">${c.t('contact.apres.titre')}</h3>
+        <ol class="apres-liste" data-anime="cascade">${c.a('contact.apres.items').map((x, i) => html`<li><span class="etape-num">${i + 1}</span><div><strong>${x.t}</strong><p>${x.d}</p></div></li>`)}</ol>
+      </div>
     </aside>
   </div>
 </section>

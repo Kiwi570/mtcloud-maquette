@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -38,14 +38,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#F4EEE3">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -197,6 +197,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     data-noms='{"memoire":{"8":"Essentiel 8 Go","16":"Confort 16 Go"},"stockage":{"250":"250 Go","500":"500 Go","1000":"1 To","2000":"2 To"},"acces":{"local":"À la maison","partout":"Accès partout"}}'
     data-texte-rentable="Le boîtier est rentabilisé en {mois} mois." data-texte-vide="Tapez un montant pour voir en combien de mois le boîtier est rentabilisé." data-texte-recap="Ma configuration : {config}">
   <div class="config-choix">
+    <p class="config-mini" aria-hidden="true" data-superpose><span>Total</span><strong data-config-mini>275 €</strong></p>
     <fieldset class="config-groupe">
     <legend><span class="config-num">1</span>La mémoire</legend>
     <p class="config-aide">Essentiel ou Confort : je vous conseille selon vos usages.</p>
@@ -238,8 +239,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </fieldset>
   </div>
   <div class="config-recap" data-grille="retour">
-    <div class="config-jauge" aria-hidden="true" data-visuel>
-      <div class="config-jauge-boite"><span class="config-jauge-plein" data-config-jauge style="--jauge:0.125"></span><span class="led"></span></div>
+    <div class="config-jauge" aria-hidden="true" data-visuel data-config-jauge>
+      <div class="config-segments"><span class="config-segment plein" data-segment="250" style="--i:0"><i></i><b>250 Go</b></span><span class="config-segment" data-segment="500" style="--i:1"><i></i><b>500 Go</b></span><span class="config-segment" data-segment="1000" style="--i:2"><i></i><b>1 To</b></span><span class="config-segment" data-segment="2000" style="--i:3"><i></i><b>2 To</b></span></div>
       <p>Place pour vos souvenirs</p>
     </div>
     <ul class="config-lignes">
@@ -254,6 +255,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="config-economie">
       <label for="cfg-boitier-mois">Vous payez aujourd&#39;hui</label>
       <span class="config-economie-champ"><input id="cfg-boitier-mois" type="number" inputmode="decimal" min="0" max="500" step="0.01" placeholder="0" data-config-mois><span>€ par mois</span></span>
+      <span class="config-raccourcis"><span>Exemples :</span><button type="button" data-mois="5" aria-controls="cfg-boitier-mois">5 €</button><button type="button" data-mois="10" aria-controls="cfg-boitier-mois">10 €</button><button type="button" data-mois="20" aria-controls="cfg-boitier-mois">20 €</button></span>
       <p class="config-rentable" data-config-rentable aria-live="polite">Tapez un montant pour voir en combien de mois le boîtier est rentabilisé.</p>
       <p class="config-note">Calcul indicatif, hors électricité (6 W en continu).</p>
     </div>
@@ -267,7 +269,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="conteneur">
     <p class="surtitre"><span class="led" aria-hidden="true"></span>Ce qui est compris</p>
     <h2 class="titre " data-anime="lignes">Le prix comprend <em>tout le nécessaire.</em></h2>
-    <ol class="compris-liste" data-anime="cascade"><li><span class="compris-icone compris-icone--0" aria-hidden="true"></span><h3>Le boîtier aluminium</h3><p>Configuré pour vous, prêt à l&#39;emploi.</p></li><li><span class="compris-icone compris-icone--1" aria-hidden="true"></span><h3>L&#39;installation</h3><p>Chez vous de Bandol à Menton, ou envoi préconfiguré partout en France.</p></li><li><span class="compris-icone compris-icone--2" aria-hidden="true"></span><h3>La prise en main</h3><p>Je vous montre tout : téléphone, télé, ordinateur.</p></li><li><span class="compris-icone compris-icone--3" aria-hidden="true"></span><h3>Le suivi</h3><p>Mises à jour, dépannage et évolutions du matériel.</p></li></ol>
+    <ol class="compris-liste" data-anime="cascade"><li><span class="compris-icone" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12l11-5 11 5v9l-11 5-11-5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M5 12l11 5 11-5M16 17v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="22" cy="18" r="1.6" fill="#F59E0B"/></svg></span><h3>Le boîtier aluminium</h3><p>Configuré pour vous, prêt à l&#39;emploi.</p></li><li><span class="compris-icone" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 15L16 6l11 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 13v13h16V13" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="13" y="18" width="6" height="8" rx="1" fill="#F59E0B"/></svg></span><h3>L&#39;installation</h3><p>Chez vous de Bandol à Menton, ou envoi préconfiguré partout en France.</p></li><li><span class="compris-icone" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="7" width="24" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 26h8M16 22v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 11.5v6l5-3z" fill="#F59E0B"/></svg></span><h3>La prise en main</h3><p>Je vous montre tout : téléphone, télé, ordinateur.</p></li><li><span class="compris-icone" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M20.5 5.5a6 6 0 0 0-7.6 7.6L5.5 20.5a2.1 2.1 0 0 0 3 3l7.4-7.4a6 6 0 0 0 7.6-7.6l-3.6 3.6-3-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="7" cy="22" r="1.4" fill="#F59E0B"/></svg></span><h3>Le suivi</h3><p>Mises à jour, dépannage et évolutions du matériel.</p></li></ol>
   </div>
 </section>
 <section class="appel" id="appel">

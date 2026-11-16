@@ -114,7 +114,13 @@
       "lieux": "Lieux",
       "dates": "Dates",
       "aide": "Touchez un tri : la grille se range.",
-      "region": "Démonstration : vos photos triées par personnes, lieux ou dates"
+      "region": "Démonstration : vos photos triées par personnes, lieux ou dates",
+      "onglets": [
+        "Photos",
+        "Albums",
+        "Partage"
+      ],
+      "compte": "{n} photos"
     },
     "fichiers": {
       "surtitre": "Fichiers",
@@ -148,7 +154,8 @@
       ],
       "ordinateur": "Ordinateur",
       "telephone": "Téléphone",
-      "synchro": "Synchronisé"
+      "synchro": "Synchronisé",
+      "enCours": "Synchronisation en cours"
     },
     "promesses": {
       "ruban": "Vos photos · chez vous · sans abonnement ·",
@@ -273,7 +280,9 @@
     "rentableVide": "Tapez un montant pour voir en combien de mois le boîtier est rentabilisé.",
     "rentableNote": "Calcul indicatif, hors électricité (6 W en continu).",
     "devis": "Recevoir mon devis",
-    "recap": "Ma configuration : {config}"
+    "recap": "Ma configuration : {config}",
+    "raccourcis": "Exemples :",
+    "totalCourt": "Total"
   },
   "services": {
     "hero": {
@@ -288,7 +297,8 @@
         "Télé",
         "Navigateur",
         "En déplacement"
-      ]
+      ],
+      "scene": "Les mêmes souvenirs sur la télé, l'ordinateur et le téléphone, dessin"
     },
     "tele": {
       "surtitre": "Sur la télé",
@@ -554,7 +564,8 @@
       "message": "Message",
       "envoyer": "Envoyer ma demande",
       "donnees": "Vos données servent seulement à répondre à votre demande. Politique de confidentialité : à compléter. Envoi sécurisé, pas de spam, promis.",
-      "simule": "Maquette : ce formulaire est simulé, rien n'est envoyé."
+      "simule": "Maquette : ce formulaire est simulé, rien n'est envoyé.",
+      "configLien": "Composer ma configuration"
     },
     "infos": {
       "titre": "Autrement",
@@ -563,6 +574,23 @@
       "adresse": "Atelier",
       "horaires": "Horaires",
       "zone": "Zone"
+    },
+    "apres": {
+      "titre": "Et après votre message ?",
+      "items": [
+        {
+          "t": "Je vous réponds sous 24 h",
+          "d": "Par téléphone ou par e-mail, du lundi au vendredi."
+        },
+        {
+          "t": "On précise votre besoin",
+          "d": "Vos appareils, vos photos, la place qu'il vous faut : je vous envoie un devis personnalisé."
+        },
+        {
+          "t": "J'installe, je vous montre",
+          "d": "Chez vous de Bandol à Menton, ou boîtier préconfiguré envoyé partout en France."
+        }
+      ]
     }
   },
   "introuvable": {

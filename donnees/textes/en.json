@@ -114,7 +114,13 @@
       "lieux": "Places",
       "dates": "Dates",
       "aide": "Tap a filter: the grid sorts itself.",
-      "region": "Demo: your photos sorted by people, places or dates"
+      "region": "Demo: your photos sorted by people, places or dates",
+      "onglets": [
+        "Photos",
+        "Albums",
+        "Sharing"
+      ],
+      "compte": "{n} photos"
     },
     "fichiers": {
       "surtitre": "Files",
@@ -148,7 +154,8 @@
       ],
       "ordinateur": "Computer",
       "telephone": "Phone",
-      "synchro": "Synced"
+      "synchro": "Synced",
+      "enCours": "Syncing"
     },
     "promesses": {
       "ruban": "Your photos · at home · no subscription ·",
@@ -273,7 +280,9 @@
     "rentableVide": "Type in an amount to see how many months it takes for the box to pay for itself.",
     "rentableNote": "Rough estimate, electricity not included (6 W, running continuously).",
     "devis": "Get my quote",
-    "recap": "My configuration: {config}"
+    "recap": "My configuration: {config}",
+    "raccourcis": "Examples:",
+    "totalCourt": "Total"
   },
   "services": {
     "hero": {
@@ -288,7 +297,8 @@
         "TV",
         "Browser",
         "On the go"
-      ]
+      ],
+      "scene": "The same memories on the TV, the computer and the phone, drawing"
     },
     "tele": {
       "surtitre": "On the TV",
@@ -554,7 +564,8 @@
       "message": "Message",
       "envoyer": "Send my request",
       "donnees": "Your data is only used to reply to your request. Privacy policy: to be completed. Secure sending, no spam, promised.",
-      "simule": "Mock-up: this form is simulated, nothing is sent."
+      "simule": "Mock-up: this form is simulated, nothing is sent.",
+      "configLien": "Put my configuration together"
     },
     "infos": {
       "titre": "Other ways",
@@ -563,6 +574,23 @@
       "adresse": "Workshop",
       "horaires": "Hours",
       "zone": "Area"
+    },
+    "apres": {
+      "titre": "What happens after your message?",
+      "items": [
+        {
+          "t": "I reply within 24 hours",
+          "d": "By phone or email, Monday to Friday."
+        },
+        {
+          "t": "We pin down what you need",
+          "d": "Your devices, your photos, the space you need: I send you a personalised quote."
+        },
+        {
+          "t": "I install it and show you",
+          "d": "In your home from Bandol to Menton, or a pre-configured box shipped anywhere in France."
+        }
+      ]
     }
   },
   "introuvable": {
