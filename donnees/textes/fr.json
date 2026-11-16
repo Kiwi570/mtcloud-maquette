@@ -1,0 +1,574 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "English version",
+    "actionEntete": "Configurer mon cloud",
+    "actionCourte": "Configurer",
+    "appeler": "Appeler",
+    "sommaire": "Sommaire",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette de présentation : formulaires et configurateur simulés, rien n'est envoyé.",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Mon Terminal Cloud",
+    "signature": "Mon Terminal Cloud · installation artisanale de Bandol à Menton, envoi partout en France.",
+    "contactTitre": "Contact",
+    "horaires": "Du lundi au vendredi, de 9 h à 18 h",
+    "reponse": "Réponse sous 24 h",
+    "legal": "Entrepreneur individuel · SIREN 850 275 496 · TVA non applicable, art. 293 B du CGI",
+    "mentions": "Mentions légales et politique de confidentialité : à compléter",
+    "illustratif": "Illustration",
+    "propulse": "Propulsé par",
+    "voirPlus": "En savoir plus"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "MTCloud : vos photos et vos fichiers, enfin chez vous",
+      "description": "Un petit boîtier installé chez vous remplace Google Photos et Google Drive. Sans abonnement, de Bandol à Menton et partout en France.",
+      "nav": "Accueil",
+      "partageAlt": "MTCloud : vos photos et vos fichiers, enfin chez vous",
+      "accroche": "Vos photos et vos fichiers, enfin chez vous"
+    },
+    "services": {
+      "titre": "Services : vos photos et vos fichiers chez vous, MTCloud",
+      "description": "Photos comme Google Photos, fichiers comme Google Drive, sur votre téléphone, votre télé et le web. Chez vous et sans abonnement.",
+      "nav": "Services",
+      "partageAlt": "Les services MTCloud : photos, fichiers, sur tous vos écrans",
+      "accroche": "Tout ce que vous faites en ligne, chez vous"
+    },
+    "boitier": {
+      "titre": "Le boîtier et le configurateur : MTCloud",
+      "description": "Un boîtier en aluminium, silencieux, 6 W. Configurez mémoire, stockage et accès : à partir de 275 €, une fois, sans abonnement.",
+      "nav": "Le boîtier",
+      "partageAlt": "Le boîtier MTCloud, à partir de 275 € une fois",
+      "accroche": "275 €, une fois. Pas par mois."
+    },
+    "a-propos": {
+      "titre": "À propos : un artisan à Mandelieu-la-Napoule, MTCloud",
+      "description": "Plus de 15 ans d'expérience en informatique. J'installe chez vous, je vous montre et je reste joignable, de Bandol à Menton.",
+      "nav": "À propos",
+      "partageAlt": "MTCloud, un artisan de la Côte d'Azur",
+      "accroche": "Un humain, du début à la fin"
+    },
+    "contact": {
+      "titre": "Contact : parlons de votre futur cloud, MTCloud",
+      "description": "Demandez votre devis personnalisé. Réponse sous 24 h, du lundi au vendredi de 9 h à 18 h.",
+      "nav": "Contact",
+      "partageAlt": "Contacter MTCloud",
+      "accroche": "Parlons de votre futur cloud"
+    },
+    "404": {
+      "titre": "Page introuvable : MTCloud",
+      "description": "Cette page n'existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Page introuvable"
+    }
+  },
+  "boitierObjet": {
+    "alt": "Le boîtier MTCloud, dessin",
+    "sauvegarde": "Sauvegarde terminée"
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Artisan à Mandelieu · de Bandol à Menton",
+      "titre": "Vos photos et vos fichiers, <em>enfin chez vous.</em>",
+      "texte": "Fini les abonnements qui augmentent. J'installe chez vous un petit boîtier discret qui remplace Google Photos et Google Drive, sur votre téléphone, votre télé et le web.",
+      "action": "Configurer mon cloud",
+      "secondaire": "Voir ce qui change",
+      "info": "Achat unique, dès 275 €, sans abonnement",
+      "alt": "Porte-fenêtre ouverte sur un balcon face à la mer, olivier en pot et tomettes"
+    },
+    "question": {
+      "surtitre": "Le constat",
+      "titre": "Et si vos souvenirs n'étaient plus dans le cloud <em>de quelqu'un d'autre ?</em>",
+      "texte": "Aujourd'hui, vos photos et vos documents dorment sur des serveurs lointains, contre un abonnement chaque mois. MTCloud, c'est un petit boîtier chez vous : pas d'abonnement, et vos données ne quittent pas la maison.",
+      "tags": [
+        "Appli mobile",
+        "Sur votre télé",
+        "Depuis un navigateur",
+        "Aussi en déplacement"
+      ],
+      "alt": "Album photo ouvert et boîte de tirages sur une table, bouquet de mimosa"
+    },
+    "photos": {
+      "surtitre": "Photos",
+      "titre": "Vos photos, comme Google Photos. <em>Mais chez vous.</em>",
+      "points": [
+        "Sauvegarde automatique depuis iPhone et Android",
+        "Recherche par visage, lieu ou date",
+        "Albums partagés avec la famille",
+        "Visionneuse sur la télé et application mobile"
+      ],
+      "fin": "Adieu Google Photos et son abonnement qui augmente.",
+      "outil": "Immich"
+    },
+    "telephone": {
+      "titre": "Photos",
+      "tout": "Tout",
+      "personnes": "Personnes",
+      "lieux": "Lieux",
+      "dates": "Dates",
+      "aide": "Touchez un tri : la grille se range.",
+      "region": "Démonstration : vos photos triées par personnes, lieux ou dates"
+    },
+    "fichiers": {
+      "surtitre": "Fichiers",
+      "titre": "Vos fichiers, comme Google Drive. <em>Sans le remplir.</em>",
+      "texte": "Vos documents passent de l'ordinateur au téléphone tout seuls, et restent chez vous.",
+      "points": [
+        {
+          "t": "Synchronisation",
+          "d": "Ordinateur et téléphone, automatiquement."
+        },
+        {
+          "t": "Partage par lien",
+          "d": "Un lien sécurisé pour envoyer un dossier."
+        },
+        {
+          "t": "Contacts et agendas",
+          "d": "Synchronisés sur tous vos appareils."
+        },
+        {
+          "t": "Documents en ligne",
+          "d": "Modifiez-les depuis un navigateur."
+        }
+      ],
+      "fin": "Adieu Google Drive et son espace qui se remplit.",
+      "outil": "OpenCloud",
+      "demo": [
+        "Factures 2026",
+        "Contrat maison.pdf",
+        "Recettes de mamie.docx",
+        "Vacances.zip"
+      ],
+      "ordinateur": "Ordinateur",
+      "telephone": "Téléphone",
+      "synchro": "Synchronisé"
+    },
+    "promesses": {
+      "ruban": "Vos photos · chez vous · sans abonnement ·",
+      "titre": "Trois promesses, tenues.",
+      "items": [
+        {
+          "chiffre": "Chez vous",
+          "t": "Vos données restent à la maison",
+          "d": "Personne ne consulte, n'analyse ni ne revend vos photos."
+        },
+        {
+          "chiffre": "0 €",
+          "t": "Par mois, pour toujours",
+          "d": "Un seul achat, pas de hausse annuelle."
+        },
+        {
+          "chiffre": "1 humain",
+          "t": "Installé et expliqué",
+          "d": "Je viens chez vous, j'installe tout et je vous montre."
+        }
+      ]
+    },
+    "boitier": {
+      "surtitre": "Le matériel",
+      "titre": "Un petit boîtier discret, <em>un vrai coffre-fort pour vos souvenirs.</em>",
+      "texte": "Compact et silencieux, de la taille d'un petit routeur, il se pose à côté de votre box internet et se fait oublier.",
+      "specs": [
+        {
+          "v": "6",
+          "u": "W",
+          "t": "en continu, basse consommation"
+        },
+        {
+          "v": "16",
+          "u": "Go",
+          "t": "de mémoire au plus"
+        },
+        {
+          "v": "1",
+          "u": "Gbit/s",
+          "t": "Ethernet, et le WiFi"
+        },
+        {
+          "v": "",
+          "u": "Alu",
+          "t": "boîtier aluminium, silencieux"
+        }
+      ],
+      "lien": "Découvrir le boîtier"
+    },
+    "config": {
+      "surtitre": "Votre cloud",
+      "titre": "Combien ça coûte ? <em>Une fois, c'est tout.</em>",
+      "texte": "Choisissez la place qu'il vous faut : le total se calcule tout de suite.",
+      "detail": "Configurer en détail"
+    },
+    "artisan": {
+      "surtitre": "Qui installe ?",
+      "titre": "Un humain, <em>du début à la fin.</em>",
+      "texte": "Michael Tourneur, artisan indépendant à Mandelieu-la-Napoule, plus de 15 ans d'expérience en informatique. Je me déplace, j'installe, je vous montre, et je reste joignable.",
+      "options": [
+        {
+          "t": "À domicile",
+          "z": "De Bandol à Menton",
+          "d": "Je viens chez vous, j'installe le boîtier et je vous forme."
+        },
+        {
+          "t": "Partout en France",
+          "z": "Envoi du boîtier",
+          "d": "Il arrive préconfiguré, je vous accompagne à distance."
+        }
+      ],
+      "lien": "Mon parcours",
+      "alt": "Escalier de pierre fleuri qui mène à la porte d'une maison"
+    },
+    "etapes": {
+      "surtitre": "Comment ça se passe",
+      "titre": "Quatre étapes, <em>et vous n'avez rien à faire.</em>",
+      "items": [
+        {
+          "t": "On en parle",
+          "d": "Par téléphone, WhatsApp ou le formulaire : vos photos, vos appareils, la place qu'il vous faut."
+        },
+        {
+          "t": "Je prépare le boîtier",
+          "d": "Je le configure pour vous : mémoire, stockage, accès à la maison ou partout."
+        },
+        {
+          "t": "J'installe et je vous montre",
+          "d": "À côté de votre box : téléphone, télé, ordinateur, tout est réglé et expliqué."
+        },
+        {
+          "t": "Je reste joignable",
+          "d": "Mises à jour, dépannage, évolution du matériel : vous gardez un interlocuteur."
+        }
+      ]
+    }
+  },
+  "fin": {
+    "titre": "Parlons de votre <em>futur cloud.</em>",
+    "texte": "Envoyez votre configuration ou posez votre question : réponse sous 24 h, du lundi au vendredi de 9 h à 18 h.",
+    "devis": "Recevoir mon devis",
+    "alt": "Village perché à la nuit tombante, fenêtres allumées"
+  },
+  "config": {
+    "region": "Configurateur, prix en direct",
+    "illustratif": "Prix du site actuel, le devis final confirme le total.",
+    "etape1": "La mémoire",
+    "etape2": "Le stockage",
+    "etape3": "L'accès",
+    "aide1": "Essentiel ou Confort : je vous conseille selon vos usages.",
+    "aide2": "Prenez de la place pour les années à venir : vos photos s'accumulent.",
+    "aide3": "À la maison, ou partout dans le monde.",
+    "base": "Installation et boîtier aluminium",
+    "total": "Total",
+    "unique": "une fois, pas par mois",
+    "jauge": "Place pour vos souvenirs",
+    "economie": "Vous payez aujourd'hui",
+    "parMois": "€ par mois",
+    "economieAide": "Tapez le montant de votre abonnement actuel.",
+    "rentable": "Le boîtier est rentabilisé en {mois} mois.",
+    "rentableVide": "Tapez un montant pour voir en combien de mois le boîtier est rentabilisé.",
+    "rentableNote": "Calcul indicatif, hors électricité (6 W en continu).",
+    "devis": "Recevoir mon devis",
+    "recap": "Ma configuration : {config}"
+  },
+  "services": {
+    "hero": {
+      "surtitre": "Services",
+      "titre": "Tout ce que vous faites avec Google, <em>chez vous.</em>",
+      "texte": "Vos photos et vos fichiers, sur votre téléphone, votre télé et le web, sans abonnement.",
+      "action": "Configurer mon cloud",
+      "info": "Photos et fichiers dans le même boîtier",
+      "alt": "Salon ouvert sur la mer, canapé clair et coussins bleus",
+      "appareils": [
+        "Téléphone",
+        "Télé",
+        "Navigateur",
+        "En déplacement"
+      ]
+    },
+    "tele": {
+      "surtitre": "Sur la télé",
+      "titre": "Vos albums sur grand écran, <em>sans câble ni clé USB.</em>",
+      "texte": "La visionneuse affiche vos souvenirs sur la télé du salon, et les albums se partagent avec la famille.",
+      "points": [
+        "Albums partagés avec la famille",
+        "Recherche par visage, lieu ou date",
+        "Sauvegarde automatique depuis iPhone et Android"
+      ],
+      "outil": "Immich"
+    },
+    "fichiers": {
+      "surtitre": "Fichiers",
+      "titre": "Un lien, <em>et le dossier est partagé.</em>",
+      "texte": "Envoyez un dossier à votre comptable ou les photos du mariage à vos cousins : un lien sécurisé, et c'est tout. Les fichiers, eux, restent chez vous.",
+      "points": [
+        "Synchronisation ordinateur et téléphone",
+        "Partage par lien sécurisé",
+        "Contacts et agendas synchronisés",
+        "Édition de documents en ligne"
+      ],
+      "outil": "OpenCloud",
+      "lien": "Créer un lien",
+      "lienCree": "Lien créé, prêt à envoyer",
+      "lienExemple": "https://votre-cloud…/s/ete-2026",
+      "dossier": "Photos du mariage",
+      "alt": "Ordinateur portable sur une table en bois, face aux oliviers"
+    },
+    "ecrans": {
+      "surtitre": "Sur tous vos écrans",
+      "titre": "Chez vous, <em>et pourtant partout.</em>",
+      "items": [
+        {
+          "t": "Téléphone",
+          "d": "L'application sauvegarde vos photos toute seule."
+        },
+        {
+          "t": "Télé",
+          "d": "Vos albums sur grand écran, sans câble."
+        },
+        {
+          "t": "Navigateur",
+          "d": "Depuis n'importe quel ordinateur."
+        },
+        {
+          "t": "En déplacement",
+          "d": "Avec l'option Accès partout, +50 €."
+        }
+      ]
+    },
+    "compare": {
+      "surtitre": "Ce qui change",
+      "titre": "Abonnement en ligne <em>ou boîtier chez vous ?</em>",
+      "colonnes": [
+        "",
+        "Abonnement en ligne",
+        "MTCloud"
+      ],
+      "lignes": [
+        [
+          "Ce que vous payez",
+          "Chaque mois",
+          "Une fois"
+        ],
+        [
+          "Hausses de prix",
+          "Chaque année",
+          "Aucune"
+        ],
+        [
+          "Où sont vos photos",
+          "Sur les serveurs d'une grande entreprise",
+          "Chez vous"
+        ],
+        [
+          "Qui les regarde",
+          "Parfois analysées pour la publicité",
+          "Personne d'autre que vous"
+        ],
+        [
+          "Si l'abonnement s'arrête",
+          "Photos perdues, compte fermé sans préavis",
+          "Rien ne change"
+        ]
+      ],
+      "note": "Les constats qui ont fait naître MTCloud, d'après l'expérience de l'artisan."
+    },
+    "faq": {
+      "surtitre": "Questions",
+      "titre": "Vos questions, <em>mes réponses.</em>"
+    }
+  },
+  "boitierPage": {
+    "hero": {
+      "surtitre": "Le boîtier",
+      "prix": "275 €",
+      "titre": "Une fois. <em>Pas par mois.</em>",
+      "texte": "Installation, boîtier aluminium, 8 Go de mémoire et 250 Go de stockage : c'est la configuration de départ. Ajoutez de la place ou l'accès partout si vous en avez besoin.",
+      "action": "Configurer mon cloud",
+      "info": "Devis personnalisé, pas d'achat en ligne"
+    },
+    "detail": {
+      "surtitre": "En détail",
+      "titre": "Petit, silencieux, <em>en aluminium.</em>",
+      "texte": "Faites défiler : le boîtier tourne, ses caractéristiques s'affichent.",
+      "specs": [
+        {
+          "t": "Processeur",
+          "d": "Basse consommation, silencieux"
+        },
+        {
+          "t": "Mémoire",
+          "d": "Jusqu'à 16 Go"
+        },
+        {
+          "t": "Réseau",
+          "d": "Gigabit Ethernet et WiFi"
+        },
+        {
+          "t": "Boîtier",
+          "d": "Aluminium, la taille d'un petit routeur"
+        },
+        {
+          "t": "Consommation",
+          "d": "6 W, en continu"
+        }
+      ]
+    },
+    "pose": {
+      "surtitre": "Où il se pose",
+      "titre": "À côté de votre box, <em>il se fait oublier.</em>",
+      "texte": "Silencieux et discret, de la taille d'un petit routeur : on l'oublie, et vos souvenirs sont à l'abri.",
+      "alt": "Commode en chêne devant une porte-fenêtre ouverte sur la mer, vase et cadres photo"
+    },
+    "configurateur": {
+      "surtitre": "Configurateur",
+      "titre": "Configurez votre cloud, <em>le total suit.</em>",
+      "texte": "Rien ne s'achète en ligne : envoyez votre configuration, vous recevez un devis personnalisé."
+    },
+    "compris": {
+      "surtitre": "Ce qui est compris",
+      "titre": "Le prix comprend <em>tout le nécessaire.</em>",
+      "items": [
+        {
+          "t": "Le boîtier aluminium",
+          "d": "Configuré pour vous, prêt à l'emploi."
+        },
+        {
+          "t": "L'installation",
+          "d": "Chez vous de Bandol à Menton, ou envoi préconfiguré partout en France."
+        },
+        {
+          "t": "La prise en main",
+          "d": "Je vous montre tout : téléphone, télé, ordinateur."
+        },
+        {
+          "t": "Le suivi",
+          "d": "Mises à jour, dépannage et évolutions du matériel."
+        }
+      ]
+    }
+  },
+  "apropos": {
+    "hero": {
+      "surtitre": "À propos",
+      "titre": "Qui est <em>MTCloud ?</em>",
+      "texte": "Le service d'un artisan indépendant, basé à Mandelieu-la-Napoule, qui installe chez vous une alternative locale aux services de stockage en ligne.",
+      "action": "Me contacter",
+      "info": "Depuis 2009 dans l'informatique",
+      "alt": "Pin parasol au-dessus d'une côte méditerranéenne et de ses criques",
+      "chiffres": [
+        {
+          "v": "15",
+          "u": "ans et plus",
+          "t": "d'expérience en informatique"
+        },
+        {
+          "v": "100",
+          "u": "%",
+          "t": "dédié à vos données"
+        }
+      ]
+    },
+    "pourquoi": {
+      "surtitre": "Pourquoi MTCloud",
+      "titre": "Pourquoi j'ai créé <em>MTCloud.</em>",
+      "texte": "En plus de 15 ans d'informatique, j'ai vu trop souvent les mêmes histoires :",
+      "constats": [
+        "des photos perdues parce qu'un abonnement n'a pas été renouvelé",
+        "des comptes fermés sans préavis",
+        "des prix qui augmentent chaque année",
+        "des souvenirs de famille analysés pour la publicité"
+      ],
+      "citation": "La technologie doit servir les gens, <em>pas l'inverse.</em>",
+      "alt": "Établi en bois au soleil, outils rangés"
+    },
+    "partout": {
+      "surtitre": "Chez vous, et pourtant partout",
+      "titre": "Garder ses données chez soi, <em>ce n'est pas se couper du monde.</em>",
+      "items": [
+        {
+          "t": "Sur votre téléphone",
+          "d": "Les photos se sauvegardent toutes seules."
+        },
+        {
+          "t": "Sur votre télé",
+          "d": "Sans câble ni clé USB."
+        },
+        {
+          "t": "Depuis un navigateur",
+          "d": "À la maison ou en déplacement."
+        }
+      ]
+    },
+    "engagements": {
+      "surtitre": "Mes engagements",
+      "titre": "Ce que vous pouvez attendre de moi, <em>avant, pendant et après.</em>",
+      "items": [
+        {
+          "t": "Vos données restent chez vous",
+          "d": "Uniquement à votre domicile, sans passer par les serveurs d'une grande entreprise."
+        },
+        {
+          "t": "Un humain qui répond",
+          "d": "Joignable par téléphone ou WhatsApp. Je me déplace, j'installe et je vous forme."
+        },
+        {
+          "t": "Un suivi dans la durée",
+          "d": "Mises à jour, dépannage, évolutions du matériel."
+        }
+      ],
+      "alt": "Escalier de pierre fleuri qui mène à la porte d'une maison"
+    },
+    "zone": {
+      "surtitre": "Où j'interviens",
+      "titre": "De Bandol à Menton, <em>et partout en France.</em>",
+      "texte": "À domicile sur toute la côte, du Var aux Alpes-Maritimes. Ailleurs en France, le boîtier arrive préconfiguré et je vous accompagne à distance.",
+      "atelier": "Atelier",
+      "carte": "Carte de la côte de Bandol à Menton, avec l'atelier à Mandelieu-la-Napoule",
+      "france": "Partout en France : boîtier préconfiguré, accompagnement à distance"
+    }
+  },
+  "contact": {
+    "hero": {
+      "surtitre": "Contact",
+      "titre": "Parlons de votre <em>futur cloud.</em>",
+      "texte": "Une question, une configuration à chiffrer ? Écrivez-moi ou appelez : je réponds sous 24 h.",
+      "info": "Du lundi au vendredi, 9 h à 18 h",
+      "alt": "Café, carnet et stylo sur une table au soleil, la mer floue au fond"
+    },
+    "form": {
+      "titre": "Votre demande",
+      "nom": "Nom",
+      "email": "E-mail",
+      "tel": "Téléphone (facultatif)",
+      "formule": "Formule",
+      "formuleDomicile": "Installation à domicile (de Bandol à Menton)",
+      "formuleEnvoi": "Envoi du boîtier (partout en France)",
+      "formuleNsp": "Je ne sais pas encore",
+      "config": "Configuration choisie",
+      "configVide": "Aucune configuration : vous pouvez la composer sur la page Le boîtier.",
+      "message": "Message",
+      "envoyer": "Envoyer ma demande",
+      "donnees": "Vos données servent seulement à répondre à votre demande. Politique de confidentialité : à compléter. Envoi sécurisé, pas de spam, promis.",
+      "simule": "Maquette : ce formulaire est simulé, rien n'est envoyé."
+    },
+    "infos": {
+      "titre": "Autrement",
+      "tel": "Téléphone",
+      "email": "E-mail",
+      "adresse": "Atelier",
+      "horaires": "Horaires",
+      "zone": "Zone"
+    }
+  },
+  "introuvable": {
+    "titre": "Cette page s'est égarée. <em>Pas vos photos.</em>",
+    "texte": "Elle n'existe pas ou plus. Vos souvenirs, eux, restent bien rangés à la maison.",
+    "retour": "Revenir à l'accueil",
+    "alt": "Mur clair avec deux cadres photo et la trace d'un cadre manquant"
+  }
+}

@@ -1,0 +1,16 @@
+{
+ "id": "20261116-175613-complet-cible-partiel",
+ "date": "2026-11-16T18:03:04.385Z",
+ "niveau": "complet",
+ "pages": "/,/404,/a-propos,/boitier,/en,/en/a-propos,/en/boitier",
+ "etapes": [
+  "fichiers",
+  "mesures"
+ ],
+ "version": "1",
+ "echecs": 1,
+ "aRegarder": 33,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

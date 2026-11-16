@@ -1,0 +1,1511 @@
+{
+ "logo": {
+  "nom": "logo",
+  "source": "recu/logo.svg",
+  "role": "logo",
+  "alt": "MTCloud",
+  "grok": false,
+  "mention": null,
+  "beaute": null,
+  "empreinte": "4e4f543b5f8240fe",
+  "largeurs": [],
+  "fichiers": [
+   "logo.svg"
+  ],
+  "ratio": null,
+  "cadrage": null,
+  "faible": false,
+  "media": "c.media({ nom: 'logo', alt: \"MTCloud\", sizes: '240px' })"
+ },
+ "grok/accueil-ouverture": {
+  "nom": "grok/accueil-ouverture",
+  "source": "recu/grok/accueil-ouverture.jpg",
+  "role": "ouverture",
+  "alt": "Porte-fenêtre ouverte sur un balcon face à la mer, olivier en pot et tomettes",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "787d56f9d6dbc469",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": {
+   "ratio": "9:16",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "57% 54%"
+  },
+  "cadrage": "59% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0.15,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.05,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1600,
+   "height": 900,
+   "source": [
+    1600,
+    900
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "grok/accueil-ouverture-640.webp",
+   "grok/accueil-ouverture-1280.webp",
+   "grok/accueil-ouverture-1600.webp",
+   "grok/accueil-ouverture-mobile-640.webp",
+   "grok/accueil-ouverture-mobile-1080.webp"
+  ],
+  "poids": {
+   "grok/accueil-ouverture-640.webp": 38600,
+   "grok/accueil-ouverture-1280.webp": 128762,
+   "grok/accueil-ouverture-1600.webp": 183996,
+   "grok/accueil-ouverture-mobile-640.webp": 84158,
+   "grok/accueil-ouverture-mobile-1080.webp": 153148
+  },
+  "media": "c.media({ nom: 'grok/accueil-ouverture', alt: \"Porte-fenêtre ouverte sur un balcon face à la mer, olivier en pot et tomettes\", cadrage: '59% 50%', cadrageMobile: '57% 54%', sizes: '100vw', priorite: true })"
+ },
+ "grok/accueil-boite-souvenirs": {
+  "nom": "grok/accueil-boite-souvenirs",
+  "source": "recu/grok/accueil-boite-souvenirs.jpg",
+  "role": "section-fond",
+  "alt": "Album photo ouvert et boîte de tirages sur une table, bouquet de mimosa",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "70ae58a569227135",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1200
+  ],
+  "mobile": null,
+  "cadrage": "48% 48%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 95.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1200,
+   "height": 800,
+   "source": [
+    1200,
+    800
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "grok/accueil-boite-souvenirs-640.webp",
+   "grok/accueil-boite-souvenirs-960.webp",
+   "grok/accueil-boite-souvenirs-1200.webp"
+  ],
+  "poids": {
+   "grok/accueil-boite-souvenirs-640.webp": 27800,
+   "grok/accueil-boite-souvenirs-960.webp": 42766,
+   "grok/accueil-boite-souvenirs-1200.webp": 55078
+  },
+  "media": "c.media({ nom: 'grok/accueil-boite-souvenirs', alt: \"Album photo ouvert et boîte de tirages sur une table, bouquet de mimosa\", cadrage: '48% 48%', sizes: '100vw' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/souvenir-plage": {
+  "nom": "grok/souvenir-plage",
+  "source": "recu/grok/souvenir-plage.jpg",
+  "role": "galerie",
+  "alt": "Plage de sable, serviette rayée et chapeau de paille",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "38859a1fd7b24992",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "65% 50%",
+  "sujet": {
+   "x": 4.2,
+   "y": 15.6,
+   "l": 95.8,
+   "h": 84.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.25,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.09,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "clair"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/souvenir-plage-480.webp",
+   "grok/souvenir-plage-640.webp",
+   "grok/souvenir-plage-960.webp"
+  ],
+  "poids": {
+   "grok/souvenir-plage-480.webp": 35686,
+   "grok/souvenir-plage-640.webp": 50224,
+   "grok/souvenir-plage-960.webp": 78580
+  },
+  "media": "c.media({ nom: 'grok/souvenir-plage', alt: \"Plage de sable, serviette rayée et chapeau de paille\", cadrage: '65% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/souvenir-anniversaire": {
+  "nom": "grok/souvenir-anniversaire",
+  "source": "recu/grok/souvenir-anniversaire.jpg",
+  "role": "galerie",
+  "alt": "Gâteau d'anniversaire aux fruits rouges et bougies allumées",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "833ca9425552121d",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "58% 61%",
+  "sujet": {
+   "x": 0,
+   "y": 6.3,
+   "l": 100,
+   "h": 90.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.29,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.12,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/souvenir-anniversaire-480.webp",
+   "grok/souvenir-anniversaire-640.webp",
+   "grok/souvenir-anniversaire-960.webp"
+  ],
+  "poids": {
+   "grok/souvenir-anniversaire-480.webp": 24952,
+   "grok/souvenir-anniversaire-640.webp": 35130,
+   "grok/souvenir-anniversaire-960.webp": 54508
+  },
+  "media": "c.media({ nom: 'grok/souvenir-anniversaire', alt: \"Gâteau d'anniversaire aux fruits rouges et bougies allumées\", cadrage: '58% 61%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/souvenir-mains": {
+  "nom": "grok/souvenir-mains",
+  "source": "recu/grok/souvenir-mains.jpg",
+  "role": "galerie",
+  "alt": "Mains d'une personne âgée tenues par une main plus jeune",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "ef3ee1624630b27d",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "47% 61%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.3,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.21,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.11,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.08,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/souvenir-mains-480.webp",
+   "grok/souvenir-mains-640.webp",
+   "grok/souvenir-mains-960.webp"
+  ],
+  "poids": {
+   "grok/souvenir-mains-480.webp": 17502,
+   "grok/souvenir-mains-640.webp": 24400,
+   "grok/souvenir-mains-960.webp": 40108
+  },
+  "media": "c.media({ nom: 'grok/souvenir-mains', alt: \"Mains d'une personne âgée tenues par une main plus jeune\", cadrage: '47% 61%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/souvenir-chien": {
+  "nom": "grok/souvenir-chien",
+  "source": "recu/grok/souvenir-chien.jpg",
+  "role": "galerie",
+  "alt": "Chien couché sur des tomettes",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "b20e383fd40047ee",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "54% 48%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 90.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.25,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.16,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0.16,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0.12,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/souvenir-chien-480.webp",
+   "grok/souvenir-chien-640.webp",
+   "grok/souvenir-chien-960.webp"
+  ],
+  "poids": {
+   "grok/souvenir-chien-480.webp": 20488,
+   "grok/souvenir-chien-640.webp": 29598,
+   "grok/souvenir-chien-960.webp": 47822
+  },
+  "media": "c.media({ nom: 'grok/souvenir-chien', alt: \"Chien couché sur des tomettes\", cadrage: '54% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/souvenir-voilier": {
+  "nom": "grok/souvenir-voilier",
+  "source": "recu/grok/souvenir-voilier.jpg",
+  "role": "galerie",
+  "alt": "Voilier blanc devant une côte boisée",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "3bdb6ff6150555e7",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "53% 74%",
+  "sujet": {
+   "x": 0,
+   "y": 15.6,
+   "l": 100,
+   "h": 84.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.66,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.1,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0.07,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/souvenir-voilier-480.webp",
+   "grok/souvenir-voilier-640.webp",
+   "grok/souvenir-voilier-960.webp"
+  ],
+  "poids": {
+   "grok/souvenir-voilier-480.webp": 22018,
+   "grok/souvenir-voilier-640.webp": 31372,
+   "grok/souvenir-voilier-960.webp": 50050
+  },
+  "media": "c.media({ nom: 'grok/souvenir-voilier', alt: \"Voilier blanc devant une côte boisée\", cadrage: '53% 74%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/souvenir-village": {
+  "nom": "grok/souvenir-village",
+  "source": "recu/grok/souvenir-village.jpg",
+  "role": "galerie",
+  "alt": "Village perché aux toits de tuiles",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "8dd5787840c6454f",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "49% 53%",
+  "sujet": {
+   "x": 0,
+   "y": 3.1,
+   "l": 100,
+   "h": 96.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.25,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/souvenir-village-480.webp",
+   "grok/souvenir-village-640.webp",
+   "grok/souvenir-village-960.webp"
+  ],
+  "poids": {
+   "grok/souvenir-village-480.webp": 38250,
+   "grok/souvenir-village-640.webp": 52350,
+   "grok/souvenir-village-960.webp": 80216
+  },
+  "media": "c.media({ nom: 'grok/souvenir-village', alt: \"Village perché aux toits de tuiles\", cadrage: '49% 53%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/souvenir-velo": {
+  "nom": "grok/souvenir-velo",
+  "source": "recu/grok/souvenir-velo.jpg",
+  "role": "galerie",
+  "alt": "Vélo à panier contre un mur de pierre",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "e3699124134c0cfe",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "55% 43%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/souvenir-velo-480.webp",
+   "grok/souvenir-velo-640.webp",
+   "grok/souvenir-velo-960.webp"
+  ],
+  "poids": {
+   "grok/souvenir-velo-480.webp": 43214,
+   "grok/souvenir-velo-640.webp": 59594,
+   "grok/souvenir-velo-960.webp": 92616
+  },
+  "media": "c.media({ nom: 'grok/souvenir-velo', alt: \"Vélo à panier contre un mur de pierre\", cadrage: '55% 43%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/souvenir-repas": {
+  "nom": "grok/souvenir-repas",
+  "source": "recu/grok/souvenir-repas.jpg",
+  "role": "galerie",
+  "alt": "Table dressée sur une terrasse face à la mer",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "3acc410811ff1df8",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "49% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/souvenir-repas-480.webp",
+   "grok/souvenir-repas-640.webp",
+   "grok/souvenir-repas-960.webp"
+  ],
+  "poids": {
+   "grok/souvenir-repas-480.webp": 34424,
+   "grok/souvenir-repas-640.webp": 46556,
+   "grok/souvenir-repas-960.webp": 72712
+  },
+  "media": "c.media({ nom: 'grok/souvenir-repas', alt: \"Table dressée sur une terrasse face à la mer\", cadrage: '49% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/souvenir-neige": {
+  "nom": "grok/souvenir-neige",
+  "source": "recu/grok/souvenir-neige.jpg",
+  "role": "galerie",
+  "alt": "Montagnes enneigées et sapins",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "3cfbf3a786500873",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "50% 67%",
+  "sujet": {
+   "x": 0,
+   "y": 31.3,
+   "l": 100,
+   "h": 68.7
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.75,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/souvenir-neige-480.webp",
+   "grok/souvenir-neige-640.webp",
+   "grok/souvenir-neige-960.webp"
+  ],
+  "poids": {
+   "grok/souvenir-neige-480.webp": 34672,
+   "grok/souvenir-neige-640.webp": 48512,
+   "grok/souvenir-neige-960.webp": 76234
+  },
+  "media": "c.media({ nom: 'grok/souvenir-neige', alt: \"Montagnes enneigées et sapins\", cadrage: '50% 67%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/services-ouverture": {
+  "nom": "grok/services-ouverture",
+  "source": "recu/grok/services-ouverture.jpg",
+  "role": "ouverture",
+  "alt": "Salon ouvert sur la mer, canapé clair et coussins bleus",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "06714009510ecc76",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": {
+   "ratio": "4:5",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "50% 46%"
+  },
+  "cadrage": "42% 46%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 96.9,
+   "h": 94.4
+  },
+  "zones_calmes": [
+   {
+    "cote": "droite",
+    "score": 0.2,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0.06,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "bas",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1600,
+   "height": 900,
+   "source": [
+    1600,
+    900
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "grok/services-ouverture-640.webp",
+   "grok/services-ouverture-1280.webp",
+   "grok/services-ouverture-1600.webp",
+   "grok/services-ouverture-mobile-640.webp",
+   "grok/services-ouverture-mobile-1080.webp"
+  ],
+  "poids": {
+   "grok/services-ouverture-640.webp": 16616,
+   "grok/services-ouverture-1280.webp": 36268,
+   "grok/services-ouverture-1600.webp": 48166,
+   "grok/services-ouverture-mobile-640.webp": 18994,
+   "grok/services-ouverture-mobile-1080.webp": 36520
+  },
+  "media": "c.media({ nom: 'grok/services-ouverture', alt: \"Salon ouvert sur la mer, canapé clair et coussins bleus\", cadrage: '42% 46%', cadrageMobile: '50% 46%', sizes: '100vw', priorite: true })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/services-bureau": {
+  "nom": "grok/services-bureau",
+  "source": "recu/grok/services-bureau.jpg",
+  "role": "section-fond",
+  "alt": "Ordinateur portable sur une table en bois face aux oliviers",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "09f710969230095e",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1200
+  ],
+  "mobile": null,
+  "cadrage": "49% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 95.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1200,
+   "height": 800,
+   "source": [
+    1200,
+    800
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "grok/services-bureau-640.webp",
+   "grok/services-bureau-960.webp",
+   "grok/services-bureau-1200.webp"
+  ],
+  "poids": {
+   "grok/services-bureau-640.webp": 30304,
+   "grok/services-bureau-960.webp": 47210,
+   "grok/services-bureau-1200.webp": 59642
+  },
+  "media": "c.media({ nom: 'grok/services-bureau', alt: \"Ordinateur portable sur une table en bois face aux oliviers\", cadrage: '49% 50%', sizes: '100vw' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/boitier-etagere": {
+  "nom": "grok/boitier-etagere",
+  "source": "recu/grok/boitier-etagere.jpg",
+  "role": "section-fond",
+  "alt": "Commode en chêne devant une porte-fenêtre ouverte sur la mer",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "a08cfc8d6d6d7e57",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1200
+  ],
+  "mobile": null,
+  "cadrage": "47% 41%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 95.5
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1200,
+   "height": 800,
+   "source": [
+    1200,
+    800
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "grok/boitier-etagere-640.webp",
+   "grok/boitier-etagere-960.webp",
+   "grok/boitier-etagere-1200.webp"
+  ],
+  "poids": {
+   "grok/boitier-etagere-640.webp": 42330,
+   "grok/boitier-etagere-960.webp": 68286,
+   "grok/boitier-etagere-1200.webp": 88134
+  },
+  "media": "c.media({ nom: 'grok/boitier-etagere', alt: \"Commode en chêne devant une porte-fenêtre ouverte sur la mer\", cadrage: '47% 41%', sizes: '100vw' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/apropos-ouverture": {
+  "nom": "grok/apropos-ouverture",
+  "source": "recu/grok/apropos-ouverture.jpg",
+  "role": "ouverture",
+  "alt": "Pin parasol au-dessus d'une côte méditerranéenne",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "940f9ecbc9a2bb70",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": {
+   "ratio": "4:5",
+   "largeurs": [
+    640,
+    1080
+   ],
+   "cadrage": "50% 44%"
+  },
+  "cadrage": "44% 44%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1600,
+   "height": 900,
+   "source": [
+    1600,
+    900
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "grok/apropos-ouverture-640.webp",
+   "grok/apropos-ouverture-1280.webp",
+   "grok/apropos-ouverture-1600.webp",
+   "grok/apropos-ouverture-mobile-640.webp",
+   "grok/apropos-ouverture-mobile-1080.webp"
+  ],
+  "poids": {
+   "grok/apropos-ouverture-640.webp": 37104,
+   "grok/apropos-ouverture-1280.webp": 78374,
+   "grok/apropos-ouverture-1600.webp": 101478,
+   "grok/apropos-ouverture-mobile-640.webp": 46238,
+   "grok/apropos-ouverture-mobile-1080.webp": 85886
+  },
+  "media": "c.media({ nom: 'grok/apropos-ouverture', alt: \"Pin parasol au-dessus d'une côte méditerranéenne\", cadrage: '44% 44%', cadrageMobile: '50% 44%', sizes: '100vw', priorite: true })"
+ },
+ "grok/apropos-atelier": {
+  "nom": "grok/apropos-atelier",
+  "source": "recu/grok/apropos-atelier.jpg",
+  "role": "galerie",
+  "alt": "Établi en bois au soleil, outils posés",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 3,
+  "empreinte": "79b7b3cf59b78fad",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "53% 43%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 90.6
+  },
+  "zones_calmes": [
+   {
+    "cote": "bas",
+    "score": 0.05,
+    "ton": "moyen"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": true,
+  "raisons_faible": [
+   "900 px de large",
+   "floue"
+  ],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/apropos-atelier-480.webp",
+   "grok/apropos-atelier-640.webp",
+   "grok/apropos-atelier-960.webp"
+  ],
+  "poids": {
+   "grok/apropos-atelier-480.webp": 23640,
+   "grok/apropos-atelier-640.webp": 33098,
+   "grok/apropos-atelier-960.webp": 52726
+  },
+  "media": "c.media({ nom: 'grok/apropos-atelier', alt: \"Établi en bois au soleil, outils posés\", cadrage: '53% 43%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+ },
+ "grok/apropos-visite": {
+  "nom": "grok/apropos-visite",
+  "source": "recu/grok/apropos-visite.jpg",
+  "role": "galerie",
+  "alt": "Escalier de pierre fleuri menant à une maison",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "12e73402eb0340fe",
+  "ratio": "3:4",
+  "largeurs": [
+   480,
+   640,
+   960
+  ],
+  "mobile": null,
+  "cadrage": "42% 48%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 900,
+   "height": 1200,
+   "source": [
+    900,
+    1200
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [
+   "agrandie 1,07 fois (source de 900 px après recadrage)"
+  ],
+  "fichiers": [
+   "grok/apropos-visite-480.webp",
+   "grok/apropos-visite-640.webp",
+   "grok/apropos-visite-960.webp"
+  ],
+  "poids": {
+   "grok/apropos-visite-480.webp": 35216,
+   "grok/apropos-visite-640.webp": 48108,
+   "grok/apropos-visite-960.webp": 76506
+  },
+  "media": "c.media({ nom: 'grok/apropos-visite', alt: \"Escalier de pierre fleuri menant à une maison\", cadrage: '42% 48%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/contact-ouverture": {
+  "nom": "grok/contact-ouverture",
+  "source": "recu/grok/contact-ouverture.jpg",
+  "role": "ouverture",
+  "alt": "Café, carnet et stylo sur une table au soleil",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "a690082fdff454df",
+  "ratio": "16:9",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "56% 50%",
+  "sujet": {
+   "x": 0,
+   "y": 0,
+   "l": 100,
+   "h": 100
+  },
+  "zones_calmes": [
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "droite",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "haut",
+    "score": 0,
+    "ton": "moyen"
+   },
+   {
+    "cote": "bas",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1600,
+   "height": 900,
+   "source": [
+    1600,
+    900
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "grok/contact-ouverture-640.webp",
+   "grok/contact-ouverture-1280.webp",
+   "grok/contact-ouverture-1600.webp"
+  ],
+  "poids": {
+   "grok/contact-ouverture-640.webp": 19236,
+   "grok/contact-ouverture-1280.webp": 41794,
+   "grok/contact-ouverture-1600.webp": 54862
+  },
+  "media": "c.media({ nom: 'grok/contact-ouverture', alt: \"Café, carnet et stylo sur une table au soleil\", cadrage: '56% 50%', sizes: '100vw', priorite: true })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/appel-village": {
+  "nom": "grok/appel-village",
+  "source": "recu/grok/appel-village.jpg",
+  "role": "section-fond",
+  "alt": "Village perché à la nuit tombante, fenêtres allumées",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 5,
+  "empreinte": "a141be0df5055d6f",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   960,
+   1200
+  ],
+  "mobile": null,
+  "cadrage": "58% 60%",
+  "sujet": {
+   "x": 12.5,
+   "y": 13.6,
+   "l": 87.5,
+   "h": 81.8
+  },
+  "zones_calmes": [
+   {
+    "cote": "haut",
+    "score": 0.58,
+    "ton": "sombre"
+   },
+   {
+    "cote": "gauche",
+    "score": 0.47,
+    "ton": "sombre"
+   },
+   {
+    "cote": "droite",
+    "score": 0.28,
+    "ton": "sombre"
+   },
+   {
+    "cote": "bas",
+    "score": 0.28,
+    "ton": "sombre"
+   }
+  ],
+  "zone_texte": "gauche",
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1200,
+   "height": 800,
+   "source": [
+    1200,
+    800
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "grok/appel-village-640.webp",
+   "grok/appel-village-960.webp",
+   "grok/appel-village-1200.webp"
+  ],
+  "poids": {
+   "grok/appel-village-640.webp": 20780,
+   "grok/appel-village-960.webp": 32748,
+   "grok/appel-village-1200.webp": 43546
+  },
+  "media": "c.media({ nom: 'grok/appel-village', alt: \"Village perché à la nuit tombante, fenêtres allumées\", cadrage: '58% 60%', sizes: '100vw' })",
+  "verifie_a_l_oeil": "flou de profondeur voulu, net sur le sujet (regard du 16 novembre 2026)"
+ },
+ "grok/page-404": {
+  "nom": "grok/page-404",
+  "source": "recu/grok/page-404.jpg",
+  "role": "404",
+  "alt": "Mur clair avec deux cadres et la trace d'un cadre manquant",
+  "grok": true,
+  "mention": "Illustration générée",
+  "beaute": 4,
+  "empreinte": "a81725a71003655f",
+  "ratio": "16:9",
+  "largeurs": [
+   800,
+   1600
+  ],
+  "mobile": null,
+  "cadrage": "29% 64%",
+  "sujet": {
+   "x": 0,
+   "y": 11.1,
+   "l": 87.5,
+   "h": 88.9
+  },
+  "zones_calmes": [
+   {
+    "cote": "droite",
+    "score": 0.46,
+    "ton": "clair"
+   },
+   {
+    "cote": "haut",
+    "score": 0.39,
+    "ton": "clair"
+   },
+   {
+    "cote": "bas",
+    "score": 0.1,
+    "ton": "clair"
+   },
+   {
+    "cote": "gauche",
+    "score": 0,
+    "ton": "moyen"
+   }
+  ],
+  "zone_texte": null,
+  "recadrage": {
+   "left": 0,
+   "top": 0,
+   "width": 1600,
+   "height": 900,
+   "source": [
+    1600,
+    900
+   ]
+  },
+  "faible": false,
+  "raisons_faible": [],
+  "avertissements": [],
+  "fichiers": [
+   "grok/page-404-800.webp",
+   "grok/page-404-1600.webp"
+  ],
+  "poids": {
+   "grok/page-404-800.webp": 30530,
+   "grok/page-404-1600.webp": 82646
+  },
+  "media": "c.media({ nom: 'grok/page-404', alt: \"Mur clair avec deux cadres et la trace d'un cadre manquant\", cadrage: '29% 64%', sizes: '100vw', ratio: '16 / 9' })"
+ }
+}

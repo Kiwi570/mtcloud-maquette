@@ -1,0 +1,85 @@
+{
+  "site": "https://mtcloud.tourneur.work/",
+  "date": "2026-11-16T15:51:47.901Z",
+  "pages": [
+    "https://mtcloud.tourneur.work/",
+    "https://mtcloud.tourneur.work/en",
+    "https://mtcloud.tourneur.work/en/a-propos",
+    "https://mtcloud.tourneur.work/a-propos",
+    "https://mtcloud.tourneur.work/mentions-legales",
+    "https://mtcloud.tourneur.work/politique-confidentialite",
+    "https://mtcloud.tourneur.work/politique-cookies",
+    "https://mtcloud.tourneur.work/conditions-utilisation",
+    "https://mtcloud.tourneur.work/en/mentions-legales",
+    "https://mtcloud.tourneur.work/en/politique-confidentialite",
+    "https://mtcloud.tourneur.work/en/politique-cookies",
+    "https://mtcloud.tourneur.work/en/conditions-utilisation"
+  ],
+  "images": [
+    {
+      "fichier": "logo.svg",
+      "nom": "logo",
+      "origine": "https://mtcloud.tourneur.work/logo.svg",
+      "page": "https://mtcloud.tourneur.work/",
+      "pages": 12,
+      "emplacement": "img (nav)",
+      "contexte": {
+        "alt": "MTCloud Logo",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Vos photos et vos fichiers, enfin chez vous.",
+        "fichier_origine": "logo"
+      },
+      "largeur": 100,
+      "hauteur": 100,
+      "poids": 671,
+      "format": "svg",
+      "transparence": true,
+      "drapeau": "logo",
+      "marque": "sous-marque"
+    }
+  ],
+  "ecartees": [
+    {
+      "url": "https://b.tile.openstreetmap.org/5/15/10.png",
+      "raison": "256 px de large"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/5/15/11.png",
+      "raison": "256 px de large"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/5/15/9.png",
+      "raison": "256 px de large"
+    },
+    {
+      "url": "https://c.tile.openstreetmap.org/5/16/10.png",
+      "raison": "256 px de large"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/5/16/11.png",
+      "raison": "256 px de large"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/5/16/9.png",
+      "raison": "256 px de large"
+    },
+    {
+      "url": "https://a.tile.openstreetmap.org/5/15/12.png",
+      "raison": "256 px de large"
+    },
+    {
+      "url": "https://b.tile.openstreetmap.org/5/16/12.png",
+      "raison": "256 px de large"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a5b7a7e4dc13d3b0/1794844273639/Csmnv2nqee9sXoBbwZXrvOuUh8n6h3qYFTKL4FcBWE9YuOxs1aVJUdbG0jVRHTU4RnmEAfz7jlEnUPxe3JphCcw8NZJSXaVEbkTdjaRBztW3EAkWjXdNT7f7QTDuMsA8iaFXke9ON2i2eSje5hHS8F-JYdZl0RgfWHmLS1KOVZk8StWpamVsA9AhcnmbIvSDGyD-D3xhMfYAkQ3U-P5eEU10KHlHOaujdxwpycFK97BFvn1M7fkIPkTOxCwPE8CYVM3-JMMcda3ShuBkiKxq_sf9G-33CKumK0svpQrzx__IRkb0kBCBEpGku2eF-2o-ocJvjxOKzY4f2-_eUaxAeNxpavdXcMnlGochRz5LTDnt04KPvcyZbuKiSIFJdJ3-oVQnoz3iSizDT2V9lPvtEwQtF0R-FERAPnLlHJuyVNqybC0eaQM_aNryudtBhvUdzfp8W1BLmpeTzI8FlKvx5kTfrDbjCFfjW9fkJ5PkvIjZArimKVC4FqQUpr4FRdc2oqukY0ab2ImiTWq9uf0h2LKAAO9o5Otn5JyPJg_wzCvcYX-4b6gtmGfeQbHa10xeDc-CW2MQQXVZ-0o0ALLcm1nI",
+      "raison": "60 px de large"
+    },
+    {
+      "url": "https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/ci/a5b7a8067ec4d3b0/1794844278966/CjO9uJdwFgqJ371eljGrc85EkxN4GBt24-UykobUbrpss_bs-FDNAo1_TW4QayLGZNkM5FKwWRfwmul5YvLYmrZsJwdUuT1VLY1QKnYiGVurGVSwVlVKw0YB0ALdleCvfSGEfLcDiGa20fjZTBZOjBV19WcLK5vx9TEIhiHG6r_L88RsZHzIT2WOChGHTz3_ToLScai2uSXEvJatTpKfVA272ZGjDA47BpgR0Xa5Cf_iOTE2Va5IfyvPorsRPOXDv6aJ6PYii0o2EYrx09Ziexp9rV8uKXMfoK610psgrL6n8bzG7V63b_XUyIK_iYtuZ37_1876FAdvEVbFzIqxPKX-YaiTK2cWkC1-E_GlBaU4sw5nDo237yHkBTPoqYnMyNi4M_ChrQUw5vuyXcKgPdaa5RsdtDnSGuNVRE2j2B6Y5-o08i5d1rv-G4OhRasOqOnk43VeOwWd44F-HDTyARyfGtj-giA67xhWn6Og4M_cHHjlZjggDz9djPh66qHlNOY4XB9BM9Bb3OOKCgvK3YBe1Bxz50Xoh8Dp9yzQCZ9kQ43QQ5XULoSP9Wtc3YO9b2C1lkkox96V76cBUi_sbBfBqjOOEA",
+      "raison": "8 px de large"
+    }
+  ]
+}

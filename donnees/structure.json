@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MTCloud",
+  "alternateName": "Mon Terminal Cloud",
+  "url": "https://mtcloud-maquette.vercel.app/",
+  "telephone": "+33770015781",
+  "email": "contact@mtcloud.tourneur.work",
+  "founder": { "@type": "Person", "name": "Michael Tourneur" },
+  "address": { "@type": "PostalAddress", "streetAddress": "290 boulevard Jean Saint Martin", "postalCode": "06210", "addressLocality": "Mandelieu-la-Napoule", "addressCountry": "FR" },
+  "areaServed": [ "Var", "Alpes-Maritimes", "France" ],
+  "openingHoursSpecification": [ { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "18:00" } ],
+  "description": { "fr": "Installation à domicile d'un boîtier qui garde vos photos et vos fichiers chez vous, sans abonnement, de Bandol à Menton et partout en France.", "en": "In-home installation of a small box that keeps your photos and files at home, with no subscription, from Bandol to Menton and across France." }
+}

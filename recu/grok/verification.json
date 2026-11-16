@@ -1,0 +1,624 @@
+{
+  "date": "2026-11-16T16:59:07.868Z",
+  "plan": "/home/claude/mtcloud-maquette/plan-images.json",
+  "attendus": 24,
+  "recus": 24,
+  "planches": [
+    "planche.jpg",
+    "planche-2.jpg"
+  ],
+  "inconnus": [],
+  "manquants": [],
+  "a_regenerer": [
+    {
+      "fichier": "accueil-ouverture.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "A bright, airy living room in a Mediterranean family home on the French Riviera, a tall open French window with sheer white linen curtains moving slightly, the deep blue sea and a clear pale sky beyond the balcony, terracotta tile floor, lime-washed walls, a low light-oak sideboard along the lower right with a ceramic vase and a small stack of framed family photos seen from the back, nobody in the room, the upper third of the frame is open sky through the window, calm and uncluttered. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "accueil-ouverture-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A bright, airy living room in a Mediterranean family home on the French Riviera, a tall open French window with sheer white linen curtains moving slightly, the deep blue sea and a clear pale sky beyond the balcony, terracotta tile floor, lime-washed walls, a low light-oak sideboard along the lower right with a ceramic vase and a small stack of framed family photos seen from the back, nobody in the room, the upper third of the frame is open sky through the window, calm and uncluttered. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "souvenir-plage.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Holiday snapshot: a pebble beach on the Mediterranean in summer, a striped towel, a straw hat and a pair of sandals in the foreground, turquoise water, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "souvenir-anniversaire.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Family snapshot from above: a homemade birthday cake with lit candles on a garden table with a linen tablecloth, paper cups and scattered confetti, only the edge of a sleeve visible, warm late-afternoon light. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "souvenir-mains.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Close-up of an elderly woman's hands holding an old faded print of a seaside village, sitting on a sofa with a knitted cardigan, soft window light, tender, the face is outside the frame. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame. Seen strictly from behind, face never visible, head turned away, or cropped at the shoulders. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "souvenir-chien.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A happy golden dog lying on a sunny terracotta terrace next to a pot of geraniums, the sea far away in the background, family snapshot, natural colours. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "souvenir-voilier.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Holiday snapshot taken from a small boat: a white sail and a wooden deck in the foreground, red rocky coastline with umbrella pines in the distance, bright blue water, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "souvenir-village.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Holiday snapshot of a narrow cobbled street in a Provençal hilltop village, ochre houses with pale blue shutters, bougainvillea, a cat on a doorstep, soft morning light, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "souvenir-velo.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Family snapshot: a parent and a child seen strictly from behind, cycling side by side on a seaside promenade lined with palm trees at sunset, both small in the frame, no face visible. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Only a child's hands drawing at a table, no face, no body. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "souvenir-repas.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Family lunch seen from above on a shaded terrace: a long table with bowls of salad, bread, a carafe of water and glasses, several pairs of hands passing dishes, no faces, dappled light under a vine. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "souvenir-neige.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Winter holiday snapshot: a snowy mountain chalet balcony with two mugs of hot chocolate on the wooden railing, snow-covered fir trees and peaks behind, crisp blue sky, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "services-ouverture.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "A cosy Mediterranean living room at dusk, a linen sofa seen from behind with a soft throw, a large flat television on a light-oak console glowing with a soft warm abstract gradient and no picture content, the last blue light of evening through a tall window, a table lamp on, nobody in the room. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, the lower third stays dark and simple for text overlay. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "services-ouverture-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A cosy Mediterranean living room at dusk, a linen sofa seen from behind with a soft throw, a large flat television on a light-oak console glowing with a soft warm abstract gradient and no picture content, the last blue light of evening through a tall window, a table lamp on, nobody in the room. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "apropos-ouverture.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "The Mediterranean coastline of the French Riviera at golden hour seen from a hillside path: red porphyry rocks plunging into deep blue water, umbrella pines in the foreground, small coves and a distant bay, warm light, no people, no boats in the foreground. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "apropos-ouverture-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "The Mediterranean coastline of the French Riviera at golden hour seen from a hillside path: red porphyry rocks plunging into deep blue water, umbrella pines in the foreground, small coves and a distant bay, warm light, no people, no boats in the foreground. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "apropos-atelier.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A calm, tidy light-oak workbench seen from a slight high angle: a precision screwdriver set in an open case, a neatly coiled blue network cable, a closed notebook with a pencil, a mug of coffee, warm morning light, plain and unbranded, no device, no screen. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Pages completely blank, blank book spines, abstract unreadable marks, plain unmarked surfaces, dials with tick marks only and no numbers. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "apropos-visite.jpg",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "Bright entryway of a Mediterranean home: a sturdy canvas tool bag placed on terracotta tiles next to a wooden bench, the front door half open onto a sunny garden with olive trees, welcoming and calm, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "contact-ouverture.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "A small round mosaic table on a sunny terrace overlooking the sea, a cup of espresso, a notebook closed, a phone lying face down, a pot of lavender, soft morning light, nobody, calm. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Screen turned away from the camera, or showing only a soft abstract glow with no interface; plain unbranded devices. Pages completely blank, blank book spines, abstract unreadable marks, plain unmarked surfaces, dials with tick marks only and no numbers. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "contact-ouverture-mobile.jpg",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "consigne_corrigee": "A small round mosaic table on a sunny terrace overlooking the sea, a cup of espresso, a notebook closed, a phone lying face down, a pot of lavender, soft morning light, nobody, calm. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Screen turned away from the camera, or showing only a soft abstract glow with no interface; plain unbranded devices. Pages completely blank, blank book spines, abstract unreadable marks, plain unmarked surfaces, dials with tick marks only and no numbers. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "fichier": "page-404.jpg",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "consigne_corrigee": "A lime-washed wall with several framed family photos seen from the side so their content is not visible, and one empty nail where a frame is missing, a faint lighter rectangle on the wall, soft warm light, slightly humorous, nobody. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    }
+  ],
+  "images": [
+    {
+      "nom": "grok/accueil-ouverture",
+      "attendu": "accueil-ouverture.jpg",
+      "fichier": "accueil-ouverture.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 900,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A bright, airy living room in a Mediterranean family home on the French Riviera, a tall open French window with sheer white linen curtains moving slightly, the deep blue sea and a clear pale sky beyond the balcony, terracotta tile floor, lime-washed walls, a low light-oak sideboard along the lower right with a ceramic vase and a small stack of framed family photos seen from the back, nobody in the room, the upper third of the frame is open sky through the window, calm and uncluttered. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/accueil-ouverture",
+      "mobile": true,
+      "attendu": "accueil-ouverture-mobile.jpg",
+      "fichier": "accueil-ouverture-mobile.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1600,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A bright, airy living room in a Mediterranean family home on the French Riviera, a tall open French window with sheer white linen curtains moving slightly, the deep blue sea and a clear pale sky beyond the balcony, terracotta tile floor, lime-washed walls, a low light-oak sideboard along the lower right with a ceramic vase and a small stack of framed family photos seen from the back, nobody in the room, the upper third of the frame is open sky through the window, calm and uncluttered. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/accueil-boite-souvenirs",
+      "attendu": "accueil-boite-souvenirs.jpg",
+      "fichier": "accueil-boite-souvenirs.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1200,
+      "hauteur": 800,
+      "boites": []
+    },
+    {
+      "nom": "grok/souvenir-plage",
+      "attendu": "souvenir-plage.jpg",
+      "fichier": "souvenir-plage.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Holiday snapshot: a pebble beach on the Mediterranean in summer, a striped towel, a straw hat and a pair of sandals in the foreground, turquoise water, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/souvenir-anniversaire",
+      "attendu": "souvenir-anniversaire.jpg",
+      "fichier": "souvenir-anniversaire.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Family snapshot from above: a homemade birthday cake with lit candles on a garden table with a linen tablecloth, paper cups and scattered confetti, only the edge of a sleeve visible, warm late-afternoon light. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/souvenir-mains",
+      "attendu": "souvenir-mains.jpg",
+      "fichier": "souvenir-mains.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Close-up of an elderly woman's hands holding an old faded print of a seaside village, sitting on a sofa with a knitted cardigan, soft window light, tender, the face is outside the frame. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame. Seen strictly from behind, face never visible, head turned away, or cropped at the shoulders. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/souvenir-chien",
+      "attendu": "souvenir-chien.jpg",
+      "fichier": "souvenir-chien.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A happy golden dog lying on a sunny terracotta terrace next to a pot of geraniums, the sea far away in the background, family snapshot, natural colours. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/souvenir-voilier",
+      "attendu": "souvenir-voilier.jpg",
+      "fichier": "souvenir-voilier.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Holiday snapshot taken from a small boat: a white sail and a wooden deck in the foreground, red rocky coastline with umbrella pines in the distance, bright blue water, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/souvenir-village",
+      "attendu": "souvenir-village.jpg",
+      "fichier": "souvenir-village.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Holiday snapshot of a narrow cobbled street in a Provençal hilltop village, ochre houses with pale blue shutters, bougainvillea, a cat on a doorstep, soft morning light, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/souvenir-velo",
+      "attendu": "souvenir-velo.jpg",
+      "fichier": "souvenir-velo.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Family snapshot: a parent and a child seen strictly from behind, cycling side by side on a seaside promenade lined with palm trees at sunset, both small in the frame, no face visible. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Only a child's hands drawing at a table, no face, no body. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/souvenir-repas",
+      "attendu": "souvenir-repas.jpg",
+      "fichier": "souvenir-repas.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Family lunch seen from above on a shaded terrace: a long table with bowls of salad, bread, a carafe of water and glasses, several pairs of hands passing dishes, no faces, dappled light under a vine. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/souvenir-neige",
+      "attendu": "souvenir-neige.jpg",
+      "fichier": "souvenir-neige.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Winter holiday snapshot: a snowy mountain chalet balcony with two mugs of hot chocolate on the wooden railing, snow-covered fir trees and peaks behind, crisp blue sky, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/services-ouverture",
+      "attendu": "services-ouverture.jpg",
+      "fichier": "services-ouverture.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 900,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A cosy Mediterranean living room at dusk, a linen sofa seen from behind with a soft throw, a large flat television on a light-oak console glowing with a soft warm abstract gradient and no picture content, the last blue light of evening through a tall window, a table lamp on, nobody in the room. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, the lower third stays dark and simple for text overlay. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/services-ouverture",
+      "mobile": true,
+      "attendu": "services-ouverture-mobile.jpg",
+      "fichier": "services-ouverture-mobile.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1600,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A cosy Mediterranean living room at dusk, a linen sofa seen from behind with a soft throw, a large flat television on a light-oak console glowing with a soft warm abstract gradient and no picture content, the last blue light of evening through a tall window, a table lamp on, nobody in the room. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/services-bureau",
+      "attendu": "services-bureau.jpg",
+      "fichier": "services-bureau.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1200,
+      "hauteur": 800,
+      "boites": []
+    },
+    {
+      "nom": "grok/boitier-etagere",
+      "attendu": "boitier-etagere.jpg",
+      "fichier": "boitier-etagere.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1200,
+      "hauteur": 800,
+      "boites": []
+    },
+    {
+      "nom": "grok/apropos-ouverture",
+      "attendu": "apropos-ouverture.jpg",
+      "fichier": "apropos-ouverture.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 900,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "The Mediterranean coastline of the French Riviera at golden hour seen from a hillside path: red porphyry rocks plunging into deep blue water, umbrella pines in the foreground, small coves and a distant bay, warm light, no people, no boats in the foreground. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/apropos-ouverture",
+      "mobile": true,
+      "attendu": "apropos-ouverture-mobile.jpg",
+      "fichier": "apropos-ouverture-mobile.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1600,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "The Mediterranean coastline of the French Riviera at golden hour seen from a hillside path: red porphyry rocks plunging into deep blue water, umbrella pines in the foreground, small coves and a distant bay, warm light, no people, no boats in the foreground. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/apropos-atelier",
+      "attendu": "apropos-atelier.jpg",
+      "fichier": "apropos-atelier.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A calm, tidy light-oak workbench seen from a slight high angle: a precision screwdriver set in an open case, a neatly coiled blue network cable, a closed notebook with a pencil, a mug of coffee, warm morning light, plain and unbranded, no device, no screen. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Pages completely blank, blank book spines, abstract unreadable marks, plain unmarked surfaces, dials with tick marks only and no numbers. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/apropos-visite",
+      "attendu": "apropos-visite.jpg",
+      "fichier": "apropos-visite.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 0.75 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1200,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "Bright entryway of a Mediterranean home: a sturdy canvas tool bag placed on terracotta tiles next to a wooden bench, the front door half open onto a sunny garden with olive trees, welcoming and calm, no people. Vertical composition, aspect ratio 3:4, main subject well inside the central area with generous margins on every side, so the image can be cropped. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/contact-ouverture",
+      "attendu": "contact-ouverture.jpg",
+      "fichier": "contact-ouverture.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 900,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A small round mosaic table on a sunny terrace overlooking the sea, a cup of espresso, a notebook closed, a phone lying face down, a pot of lavender, soft morning light, nobody, calm. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Screen turned away from the camera, or showing only a soft abstract glow with no interface; plain unbranded devices. Pages completely blank, blank book spines, abstract unreadable marks, plain unmarked surfaces, dials with tick marks only and no numbers. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/contact-ouverture",
+      "mobile": true,
+      "attendu": "contact-ouverture-mobile.jpg",
+      "fichier": "contact-ouverture-mobile.jpg",
+      "priorite": "Indispensable",
+      "problemes": [
+        "ratio 0.56 au lieu de 784×1168"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 900,
+      "hauteur": 1600,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A small round mosaic table on a sunny terrace overlooking the sea, a cup of espresso, a notebook closed, a phone lying face down, a pot of lavender, soft morning light, nobody, calm. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. Screen turned away from the camera, or showing only a soft abstract glow with no interface; plain unbranded devices. Pages completely blank, blank book spines, abstract unreadable marks, plain unmarked surfaces, dials with tick marks only and no numbers. A family home on the French Riviera landscape only, described by its real features: no tea plantation, no rice terraces, no high mountains, no tropical vegetation, no power lines, no pylons, no modern buildings. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in portrait format, 784×1168 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    },
+    {
+      "nom": "grok/appel-village",
+      "attendu": "appel-village.jpg",
+      "fichier": "appel-village.jpg",
+      "priorite": "Indispensable",
+      "problemes": [],
+      "indications": [],
+      "largeur": 1200,
+      "hauteur": 800,
+      "boites": []
+    },
+    {
+      "nom": "grok/page-404",
+      "attendu": "page-404.jpg",
+      "fichier": "page-404.jpg",
+      "priorite": "Conseillée",
+      "problemes": [
+        "ratio 1.78 au lieu de 1168×784"
+      ],
+      "indications": [
+        "mains : 0, doigts reconnus - (indicatif, à regarder)"
+      ],
+      "largeur": 1600,
+      "hauteur": 900,
+      "boites": [],
+      "mains": {
+        "annoncees": true,
+        "vues": 0,
+        "doigts": []
+      },
+      "consigne_corrigee": "A lime-washed wall with several framed family photos seen from the side so their content is not visible, and one empty nail where a frame is missing, a faint lighter rectangle on the wall, soft warm light, slightly humorous, nobody. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Warm documentary editorial photography, 35mm lens, warm, bright and reassuring Mediterranean home mood, palette of warm sand, off-white linen, pale sky blue, honey amber accents and a touch of deep navy, soft golden morning sunlight from a side window, tactile lime-washed walls, terracotta tiles, light oak wood and natural linen, set in a family home on the French Riviera on a mild late autumn day, shallow depth of field, soft film grain, calm and reassuring, generous negative space. No brand logo on devices, no apple logo, no readable screen, no interface, no code on screen, no hologram, no futuristic overlay, no visible face. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark. Generate in landscape format, 1168×784 pixels. only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame"
+    }
+  ]
+}

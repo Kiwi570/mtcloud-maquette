@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le boîtier et le configurateur : MTCloud</title>
+<meta name="description" content="Un boîtier en aluminium, silencieux, 6 W. Configurez mémoire, stockage et accès : à partir de 275 €, une fois, sans abonnement.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://mtcloud-maquette.vercel.app/boitier">
+<link rel="alternate" hreflang="fr" href="https://mtcloud-maquette.vercel.app/boitier">
+<link rel="alternate" hreflang="en" href="https://mtcloud-maquette.vercel.app/en/boitier">
+<link rel="alternate" hreflang="x-default" href="https://mtcloud-maquette.vercel.app/boitier">
+<style>:root{--fond:#F4EEE3;--texte:#0F172A;--voile-fond:#0F172A;--ouverture-fond:#0F172A;--menu-fond:#0F172A}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F4EEE3">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MTCloud">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Le boîtier et le configurateur : MTCloud">
+<meta property="og:description" content="Un boîtier en aluminium, silencieux, 6 W. Configurez mémoire, stockage et accès : à partir de 275 €, une fois, sans abonnement.">
+<meta property="og:url" content="https://mtcloud-maquette.vercel.app/boitier">
+<meta property="og:image" content="https://mtcloud-maquette.vercel.app/assets/partage/boitier-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Le boîtier MTCloud, à partir de 275 € une fois">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"MTCloud","alternateName":"Mon Terminal Cloud","url":"https://mtcloud-maquette.vercel.app/","telephone":"+33770015781","email":"contact@mtcloud.tourneur.work","founder":{"@type":"Person","name":"Michael Tourneur"},"address":{"@type":"PostalAddress","streetAddress":"290 boulevard Jean Saint Martin","postalCode":"06210","addressLocality":"Mandelieu-la-Napoule","addressCountry":"FR"},"areaServed":["Var","Alpes-Maritimes","France"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],"description":"Installation à domicile d'un boîtier qui garde vos photos et vos fichiers chez vous, sans abonnement, de Bandol à Menton et partout en France."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Le boîtier</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="64" height="64" data-ouverture-objet>
+  <p class="ouverture-nom">MTCloud</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Mon Terminal Cloud</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span>MTCloud</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/boitier" data-libelle="Le boîtier" aria-current="page">Le boîtier</a></li><li><a href="/a-propos" data-libelle="À propos">À propos</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/en/boitier" hreflang="en" lang="en" data-langue="en" aria-label="English version">en</a>
+      <a class="bouton" href="/boitier#configurateur" data-libelle="Le boîtier">Configurer mon cloud</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/services" class="menu-lien" data-libelle="Services">Services</a></li><li style="--i:2"><a href="/boitier" class="menu-lien" data-libelle="Le boîtier" aria-current="page">Le boîtier</a></li><li style="--i:3"><a href="/a-propos" class="menu-lien" data-libelle="À propos">À propos</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33770015781">Appeler 07 70 01 57 81</a></p>
+  <p><a class="entete-langue" href="/en/boitier" hreflang="en" lang="en" data-langue="en">English version</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-prix" id="debut">
+  <div class="conteneur ouv-prix-grille">
+    <div class="ouv-prix-texte">
+      <p class="surtitre" data-anime="gsap"><span class="led" aria-hidden="true"></span>Le boîtier</p>
+      <p class="ouv-prix-chiffre" data-anime="gsap" data-prix>275 €</p>
+      <h1 class="ouv-titre" data-anime="gsap">Une fois. <em>Pas par mois.</em></h1>
+      <p class="ouv-intro" data-anime="gsap">Installation, boîtier aluminium, 8 Go de mémoire et 250 Go de stockage : c&#39;est la configuration de départ. Ajoutez de la place ou l&#39;accès partout si vous en avez besoin.</p>
+      <p class="ouv-actions" data-anime="gsap"><a href="/boitier#configurateur" class="bouton" data-libelle="Le boîtier" data-action-principale data-survol="magnetique">Configurer mon cloud</a><span class="hero-info" data-info-cle><span class="led" aria-hidden="true"></span>Devis personnalisé, pas d&#39;achat en ligne</span></p>
+    </div>
+    <div class="ouv-prix-visuel" data-effet="socle-boitier">
+      <div class="socle-cercle" aria-hidden="true"></div>
+      <div class="boitier boitier--ouverture" role="img" aria-label="Le boîtier MTCloud, dessin" data-visuel data-iris-centre>
+  <div class="boitier-ombre" aria-hidden="true"></div>
+  <div class="boitier-corps" aria-hidden="true">
+    <span class="face face--avant"><span class="boitier-fente"></span><span class="boitier-led"></span></span>
+    <span class="face face--dessus"><span class="boitier-logo"></span></span>
+    <span class="face face--droite"></span>
+    <span class="face face--gauche"></span>
+    <span class="face face--arriere" data-face="dos"></span>
+    <span class="face face--dessous" data-face="dos"></span>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="detail bande bande--lin" id="detail">
+  <div class="conteneur detail-grille">
+    <div class="detail-scene" data-detail>
+      <div class="boitier boitier--detail" role="img" aria-label="Le boîtier MTCloud, dessin" data-visuel data-effet="boitier">
+  <div class="boitier-ombre" aria-hidden="true"></div>
+  <div class="boitier-corps" aria-hidden="true">
+    <span class="face face--avant"><span class="boitier-fente"></span><span class="boitier-led"></span></span>
+    <span class="face face--dessus"><span class="boitier-logo"></span></span>
+    <span class="face face--droite"></span>
+    <span class="face face--gauche"></span>
+    <span class="face face--arriere" data-face="dos"></span>
+    <span class="face face--dessous" data-face="dos"></span>
+  </div>
+</div>
+      <p class="materiel-legende">Illustration</p>
+    </div>
+    <div>
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>En détail</p>
+      <h2 class="titre " data-anime="lignes">Petit, silencieux, <em>en aluminium.</em></h2>
+      <p data-anime>Faites défiler : le boîtier tourne, ses caractéristiques s&#39;affichent.</p>
+      <dl class="fiche" data-anime="cascade"><div><dt>Processeur</dt><dd>Basse consommation, silencieux</dd></div><div><dt>Mémoire</dt><dd>Jusqu&#39;à 16 Go</dd></div><div><dt>Réseau</dt><dd>Gigabit Ethernet et WiFi</dd></div><div><dt>Boîtier</dt><dd>Aluminium, la taille d&#39;un petit routeur</dd></div><div><dt>Consommation</dt><dd>6 W, en continu</dd></div></dl>
+    </div>
+  </div>
+</section>
+<section class="pose bande" id="pose">
+  <div class="pose-cadre conteneur">
+    <div class="pose-image" data-grok>
+      <figure class="media pose-media" data-grok style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/grok/boitier-etagere-1200.webp" srcset="/assets/images/grok/boitier-etagere-640.webp 640w, /assets/images/grok/boitier-etagere-960.webp 960w, /assets/images/grok/boitier-etagere-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 90vw" alt="Commode en chêne devant une porte-fenêtre ouverte sur la mer, vase et cadres photo" width="1200" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div class="boitier boitier--pose" role="img" aria-label="Le boîtier MTCloud, dessin" data-visuel data-superpose>
+  <div class="boitier-ombre" aria-hidden="true"></div>
+  <div class="boitier-corps" aria-hidden="true">
+    <span class="face face--avant"><span class="boitier-fente"></span><span class="boitier-led"></span></span>
+    <span class="face face--dessus"><span class="boitier-logo"></span></span>
+    <span class="face face--droite"></span>
+    <span class="face face--gauche"></span>
+    <span class="face face--arriere" data-face="dos"></span>
+    <span class="face face--dessous" data-face="dos"></span>
+  </div>
+</div>
+    </div>
+    <div class="pose-texte">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Où il se pose</p>
+      <h2 class="titre " data-anime="lignes">À côté de votre box, <em>il se fait oublier.</em></h2>
+      <p data-anime>Silencieux et discret, de la taille d&#39;un petit routeur : on l&#39;oublie, et vos souvenirs sont à l&#39;abri.</p>
+    </div>
+  </div>
+</section>
+<section class="configuration bande bande--lin" id="configurateur">
+  <div class="conteneur">
+    <div class="tarif-tete">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Configurateur</p>
+      <h2 class="titre " data-anime="lignes">Configurez votre cloud, <em>le total suit.</em></h2>
+      <p data-anime>Rien ne s&#39;achète en ligne : envoyez votre configuration, vous recevez un devis personnalisé.</p>
+    </div>
+    <div class="config config--complet" data-config data-base="150" data-langue="fr" data-memoire-defaut="85" data-effet="configurateur" role="group" aria-label="Configurateur, prix en direct"
+    data-noms='{"memoire":{"8":"Essentiel 8 Go","16":"Confort 16 Go"},"stockage":{"250":"250 Go","500":"500 Go","1000":"1 To","2000":"2 To"},"acces":{"local":"À la maison","partout":"Accès partout"}}'
+    data-texte-rentable="Le boîtier est rentabilisé en {mois} mois." data-texte-vide="Tapez un montant pour voir en combien de mois le boîtier est rentabilisé." data-texte-recap="Ma configuration : {config}">
+  <div class="config-choix">
+    <fieldset class="config-groupe">
+    <legend><span class="config-num">1</span>La mémoire</legend>
+    <p class="config-aide">Essentiel ou Confort : je vous conseille selon vos usages.</p>
+    <div class="config-options config-options--memoire"><label class="config-option">
+      <input type="radio" name="cfg-boitier-memoire" value="8" data-prix="85" checked>
+      <span class="config-option-corps"><span class="config-option-nom">Essentiel</span><span class="config-option-detail">8 Go de mémoire</span><span class="config-option-prix" data-prix>+85 €</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-boitier-memoire" value="16" data-prix="115">
+      <span class="config-option-corps"><span class="config-option-nom">Confort</span><span class="config-option-detail">16 Go de mémoire</span><span class="config-option-prix" data-prix>+115 €</span></span>
+    </label></div>
+  </fieldset>
+    <fieldset class="config-groupe">
+    <legend><span class="config-num">2</span>Le stockage</legend>
+    <p class="config-aide">Prenez de la place pour les années à venir : vos photos s&#39;accumulent.</p>
+    <div class="config-options config-options--stockage"><label class="config-option">
+      <input type="radio" name="cfg-boitier-stockage" value="250" data-prix="40" data-jauge="0.125" checked>
+      <span class="config-option-corps"><span class="config-option-nom">250 Go</span><span class="config-option-detail">Confort</span><span class="config-option-prix" data-prix>+40 €</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-boitier-stockage" value="500" data-prix="65" data-jauge="0.25">
+      <span class="config-option-corps"><span class="config-option-nom">500 Go</span><span class="config-option-detail">Sérénité</span><span class="config-option-prix" data-prix>+65 €</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-boitier-stockage" value="1000" data-prix="110" data-jauge="0.5">
+      <span class="config-option-corps"><span class="config-option-nom">1 To</span><span class="config-option-detail">Expert</span><span class="config-option-prix" data-prix>+110 €</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-boitier-stockage" value="2000" data-prix="180" data-jauge="1">
+      <span class="config-option-corps"><span class="config-option-nom">2 To</span><span class="config-option-detail">Ultime</span><span class="config-option-prix" data-prix>+180 €</span></span>
+    </label></div>
+  </fieldset>
+    <fieldset class="config-groupe">
+    <legend><span class="config-num">3</span>L&#39;accès</legend>
+    <p class="config-aide">À la maison, ou partout dans le monde.</p>
+    <div class="config-options config-options--acces"><label class="config-option">
+      <input type="radio" name="cfg-boitier-acces" value="local" data-prix="0" checked>
+      <span class="config-option-corps"><span class="config-option-nom">À la maison</span><span class="config-option-detail">Accès depuis votre réseau</span><span class="config-option-prix" data-prix>+0 €</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-boitier-acces" value="partout" data-prix="50">
+      <span class="config-option-corps"><span class="config-option-nom">Accès partout</span><span class="config-option-detail">En déplacement, par une adresse personnelle sécurisée (HTTPS)</span><span class="config-option-prix" data-prix>+50 €</span></span>
+    </label></div>
+  </fieldset>
+  </div>
+  <div class="config-recap" data-grille="retour">
+    <div class="config-jauge" aria-hidden="true" data-visuel>
+      <div class="config-jauge-boite"><span class="config-jauge-plein" data-config-jauge style="--jauge:0.125"></span><span class="led"></span></div>
+      <p>Place pour vos souvenirs</p>
+    </div>
+    <ul class="config-lignes">
+      <li><span>Installation et boîtier aluminium</span><span>150 €</span></li>
+      <li><span>La mémoire</span><span data-config-ligne="memoire">+85 €</span></li>
+      <li><span>Le stockage</span><span data-config-ligne="stockage">+40 €</span></li>
+      <li><span>L&#39;accès</span><span data-config-ligne="acces">+0 €</span></li>
+    </ul>
+    <p class="config-total-libelle">Total</p>
+    <p class="config-total" data-prix aria-live="polite"><span data-config-total>275</span> €</p>
+    <p class="config-unique">une fois, pas par mois</p>
+    <div class="config-economie">
+      <label for="cfg-boitier-mois">Vous payez aujourd&#39;hui</label>
+      <span class="config-economie-champ"><input id="cfg-boitier-mois" type="number" inputmode="decimal" min="0" max="500" step="0.01" placeholder="0" data-config-mois><span>€ par mois</span></span>
+      <p class="config-rentable" data-config-rentable aria-live="polite">Tapez un montant pour voir en combien de mois le boîtier est rentabilisé.</p>
+      <p class="config-note">Calcul indicatif, hors électricité (6 W en continu).</p>
+    </div>
+    <a class="bouton bouton--ambre" href="/contact#demande" data-config-devis data-libelle="Contact" data-survol="magnetique">Recevoir mon devis</a>
+    <p class="config-note">Prix du site actuel, le devis final confirme le total.</p>
+  </div>
+</div>
+  </div>
+</section>
+<section class="compris bande" id="compris">
+  <div class="conteneur">
+    <p class="surtitre"><span class="led" aria-hidden="true"></span>Ce qui est compris</p>
+    <h2 class="titre " data-anime="lignes">Le prix comprend <em>tout le nécessaire.</em></h2>
+    <ol class="compris-liste" data-anime="cascade"><li><span class="compris-icone compris-icone--0" aria-hidden="true"></span><h3>Le boîtier aluminium</h3><p>Configuré pour vous, prêt à l&#39;emploi.</p></li><li><span class="compris-icone compris-icone--1" aria-hidden="true"></span><h3>L&#39;installation</h3><p>Chez vous de Bandol à Menton, ou envoi préconfiguré partout en France.</p></li><li><span class="compris-icone compris-icone--2" aria-hidden="true"></span><h3>La prise en main</h3><p>Je vous montre tout : téléphone, télé, ordinateur.</p></li><li><span class="compris-icone compris-icone--3" aria-hidden="true"></span><h3>Le suivi</h3><p>Mises à jour, dépannage et évolutions du matériel.</p></li></ol>
+  </div>
+</section>
+<section class="appel" id="appel">
+  <div class="appel-grille conteneur">
+    <div class="appel-texte">
+      <h2 class="titre" data-anime="lignes">Parlons de votre <em>futur cloud.</em></h2>
+      <p data-anime>Envoyez votre configuration ou posez votre question : réponse sous 24 h, du lundi au vendredi de 9 h à 18 h.</p>
+      <p class="appel-actions" data-anime>
+        <a href="/contact#demande" class="bouton bouton--ambre" data-libelle="Contact" data-survol="magnetique">Recevoir mon devis</a>
+        <a class="bouton bouton--contour-clair" href="tel:+33770015781" data-survol="magnetique">Appeler 07 70 01 57 81</a>
+      </p>
+    </div>
+    <figure class="media appel-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/appel-village-1200.webp" srcset="/assets/images/grok/appel-village-640.webp 640w, /assets/images/grok/appel-village-960.webp 960w, /assets/images/grok/appel-village-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Village perché à la nuit tombante, fenêtres allumées" width="1200" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.svg" alt="" width="48" height="48">
+      <p><strong>MTCloud</strong><br>Mon Terminal Cloud · installation artisanale de Bandol à Menton, envoi partout en France.</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/boitier" data-libelle="Le boîtier" aria-current="page">Le boîtier</a></li><li><a href="/a-propos" data-libelle="À propos">À propos</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Contact</p>
+      <p>290 boulevard Jean Saint Martin, 06210 Mandelieu-la-Napoule<br><a href="tel:+33770015781">07 70 01 57 81</a><br><span class="email">contact@mtcloud.tourneur.work</span></p>
+      <p>Du lundi au vendredi, de 9 h à 18 h<br>Réponse sous 24 h</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Entrepreneur individuel · SIREN 850 275 496 · TVA non applicable, art. 293 B du CGI</p>
+    <p>Mentions légales et politique de confidentialité : à compléter</p>
+    <p>Maquette de présentation : formulaires et configurateur simulés, rien n&#39;est envoyé.</p>
+    <p>© 2026 MTCloud · <a href="#haut" data-sans-transition>Retour en haut</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33770015781">Appeler</a>
+  <a class="bouton" href="/boitier#configurateur" data-libelle="Le boîtier">Configurer</a>
+</div>
+</body>
+</html>

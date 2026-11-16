@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact: let&#39;s talk about your future cloud, MTCloud</title>
+<meta name="description" content="Ask for your personalised quote. Reply within 24 hours, Monday to Friday, 9am to 6pm.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://mtcloud-maquette.vercel.app/en/contact">
+<link rel="alternate" hreflang="fr" href="https://mtcloud-maquette.vercel.app/contact">
+<link rel="alternate" hreflang="en" href="https://mtcloud-maquette.vercel.app/en/contact">
+<link rel="alternate" hreflang="x-default" href="https://mtcloud-maquette.vercel.app/contact">
+<style>:root{--fond:#F4EEE3;--texte:#0F172A;--voile-fond:#0F172A;--ouverture-fond:#0F172A;--menu-fond:#0F172A}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F4EEE3">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MTCloud">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Contact: let&#39;s talk about your future cloud, MTCloud">
+<meta property="og:description" content="Ask for your personalised quote. Reply within 24 hours, Monday to Friday, 9am to 6pm.">
+<meta property="og:url" content="https://mtcloud-maquette.vercel.app/en/contact">
+<meta property="og:image" content="https://mtcloud-maquette.vercel.app/assets/partage/contact-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Contact MTCloud">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"MTCloud","alternateName":"Mon Terminal Cloud","url":"https://mtcloud-maquette.vercel.app/","telephone":"+33770015781","email":"contact@mtcloud.tourneur.work","founder":{"@type":"Person","name":"Michael Tourneur"},"address":{"@type":"PostalAddress","streetAddress":"290 boulevard Jean Saint Martin","postalCode":"06210","addressLocality":"Mandelieu-la-Napoule","addressCountry":"FR"},"areaServed":["Var","Alpes-Maritimes","France"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],"description":"In-home installation of a small box that keeps your photos and files at home, with no subscription, from Bandol to Menton and across France."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Contact</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="64" height="64" data-ouverture-objet>
+  <p class="ouverture-nom">MTCloud</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Mon Terminal Cloud</p>
+</div>
+<a class="evitement" href="#contenu">Skip to content</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/en" data-libelle="Home">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span>MTCloud</span>
+    </a>
+    <nav data-nav aria-label="Main navigation">
+      <ul><li><a href="/en/services" data-libelle="Services">Services</a></li><li><a href="/en/boitier" data-libelle="The box">The box</a></li><li><a href="/en/a-propos" data-libelle="About">About</a></li><li><a href="/en/contact" data-libelle="Contact" aria-current="page">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/contact" hreflang="fr" lang="fr" data-langue="fr" aria-label="Version française">fr</a>
+      <a class="bouton" href="/en/boitier#configurateur" data-libelle="The box">Configure my cloud</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Close"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Close</a></p>
+  <ul><li style="--i:0"><a href="/en" class="menu-lien" data-libelle="Home">Home</a></li><li style="--i:1"><a href="/en/services" class="menu-lien" data-libelle="Services">Services</a></li><li style="--i:2"><a href="/en/boitier" class="menu-lien" data-libelle="The box">The box</a></li><li style="--i:3"><a href="/en/a-propos" class="menu-lien" data-libelle="About">About</a></li><li style="--i:4"><a href="/en/contact" class="menu-lien" data-libelle="Contact" aria-current="page">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33770015781">Call 07 70 01 57 81</a></p>
+  <p><a class="entete-langue" href="/contact" hreflang="fr" lang="fr" data-langue="fr">Version française</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-courte" id="debut">
+  <div class="conteneur ouv-courte-grille">
+    <div>
+      <p class="surtitre" data-anime="gsap"><span class="led" aria-hidden="true"></span>Contact</p>
+      <h1 class="ouv-titre" data-anime="gsap">Let's talk about your <em>future cloud.</em></h1>
+      <p class="ouv-intro" data-anime="gsap">A question, a configuration to price? Write to me or call: I reply within 24 hours.</p>
+      <p class="ouv-actions" data-anime="gsap"><a class="bouton" href="#demande" data-action-principale data-sans-transition>Your request</a><a class="bouton bouton--contour bouton--ordinateur" href="tel:+33770015781">Call 07 70 01 57 81</a></p>
+      <p class="hero-info" data-info-cle data-anime="gsap"><span class="led" aria-hidden="true"></span>Monday to Friday, 9am to 6pm · Reply within 24 hours</p>
+    </div>
+    <figure class="media ouv-courte-media" data-grok data-fx="parallaxe" data-fx-force="6" data-iris-centre style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/grok/contact-ouverture-1280.webp" srcset="/assets/images/grok/contact-ouverture-640.webp 640w, /assets/images/grok/contact-ouverture-1280.webp 1280w, /assets/images/grok/contact-ouverture-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 44vw" alt="Coffee, notebook and pen on a sunny table, the sea blurred behind" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  </div>
+</section>
+<section class="demande bande bande--lin" id="demande">
+  <div class="conteneur demande-grille">
+    <form data-formulaire class="formulaire" action="#" novalidate>
+      <h2 class="titre" data-anime="lignes">Your request</h2>
+      <div class="champs-deux">
+        <div class="champ"><label for="f-nom">Name</label><input id="f-nom" name="nom" autocomplete="name" required></div>
+        <div class="champ"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="champs-deux">
+        <div class="champ"><label for="f-tel">Phone (optional)</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+        <div class="champ"><label for="f-formule">Option</label>
+          <select id="f-formule" name="formule">
+            <option value="domicile">In-home installation (Bandol to Menton)</option>
+            <option value="envoi">Box shipped (anywhere in France)</option>
+            <option value="nsp" selected>I don&#39;t know yet</option>
+          </select></div>
+      </div>
+      <div class="champ champ--config" data-champ-config><label for="f-config">Chosen configuration</label><input id="f-config" name="config" placeholder="No configuration yet: you can put one together on The box page."><p class="champ-aide"><a href="/en/boitier#configurateur" data-libelle="The box">No configuration yet: you can put one together on The box page.</a></p></div>
+      <div class="champ"><label for="f-message">Message</label><textarea id="f-message" name="message" rows="5" required></textarea></div>
+      <p class="mention-donnees">Your data is only used to reply to your request. Privacy policy: to be completed. Secure sending, no spam, promised.</p>
+      <button type="submit" class="bouton bouton--ambre">Send my request</button>
+      <p class="config-note">Mock-up: this form is simulated, nothing is sent.</p>
+      <p data-message-envoi role="status" tabindex="-1" hidden></p>
+    </form>
+    <aside class="infos">
+      <h2 class="infos-titre">Other ways</h2>
+      <dl class="infos-liste" data-anime="cascade">
+        <div><dt>Phone</dt><dd><a href="tel:+33770015781">07 70 01 57 81</a></dd></div>
+        <div><dt>Email</dt><dd class="email">contact@mtcloud.tourneur.work</dd></div>
+        <div><dt>Hours</dt><dd>Monday to Friday, 9am to 6pm<br>Reply within 24 hours</dd></div>
+        <div><dt>Workshop</dt><dd>290 boulevard Jean Saint Martin, 06210 Mandelieu-la-Napoule</dd></div>
+        <div><dt>Area</dt><dd>Anywhere in France: pre-configured box, remote support</dd></div>
+      </dl>
+      <figure class="cote cote--compacte" data-cote data-effet="cote" data-visuel>
+  <svg viewBox="0 0 1000 720" role="img" aria-label="Map of the coast from Bandol to Menton, with the workshop in Mandelieu-la-Napoule">
+    <path class="cote-terre" d="M32 589 C39.2 591.7 62.5 594.5 75 605 C87.5 615.5 98.2 647.8 107 652 C115.8 656.2 121.8 636.2 128 630 C134.2 623.8 135.0 616.3 144 615 C153.0 613.7 169.5 620.2 182 622 C194.5 623.8 209.3 621.7 219 626 C228.7 630.3 234.7 640.7 240 648 C245.3 655.3 246.5 671.2 251 670 C255.5 668.8 260.7 650.2 267 641 C273.3 631.8 278.3 620.0 289 615 C299.7 610.0 316.8 609.2 331 611 C345.2 612.8 366.0 629.3 374 626 C382.0 622.7 371.0 598.3 379 591 C387.0 583.7 407.7 586.0 422 582 C436.3 578.0 449.8 569.5 465 567 C480.2 564.5 499.7 571.3 513 567 C526.3 562.7 539.7 550.8 545 541 C550.3 531.2 548.5 516.2 545 508 C541.5 499.8 532.8 494.7 524 492 C515.2 489.3 493.8 495.3 492 492 C490.2 488.7 506.0 476.7 513 472 C520.0 467.3 526.8 471.3 534 464 C541.2 456.7 549.7 439.0 556 428 C562.3 417.0 565.8 405.5 572 398 C578.2 390.5 585.0 384.8 593 383 C601.0 381.2 611.0 388.2 620 387 C629.0 385.8 638.2 384.0 647 376 C655.8 368.0 666.8 349.3 673 339 C679.2 328.7 681.3 321.3 684 314 C686.7 306.7 682.8 299.2 689 295 C695.2 290.8 711.2 291.5 721 289 C730.8 286.5 740.0 279.5 748 280 C756.0 280.5 762.8 290.0 769 292 C775.2 294.0 782.3 295.8 785 292 C787.7 288.2 783.2 279.5 785 269 C786.8 258.5 789.7 239.3 796 229 C802.3 218.7 813.2 214.7 823 207 C832.8 199.3 846.2 187.8 855 183 C863.8 178.2 869.8 176.5 876 178 C882.2 179.5 886.7 193.8 892 192 C897.3 190.2 900.0 173.3 908 167 C916.0 160.7 930.2 159.5 940 154 C949.8 148.5 957.2 140.5 967 134 C976.8 127.5 993.7 118.2 999 115 L1000 115 L1000 0 L0 0 L0 589 Z"/>
+    <path class="cote-ligne" d="M32 589 C39.2 591.7 62.5 594.5 75 605 C87.5 615.5 98.2 647.8 107 652 C115.8 656.2 121.8 636.2 128 630 C134.2 623.8 135.0 616.3 144 615 C153.0 613.7 169.5 620.2 182 622 C194.5 623.8 209.3 621.7 219 626 C228.7 630.3 234.7 640.7 240 648 C245.3 655.3 246.5 671.2 251 670 C255.5 668.8 260.7 650.2 267 641 C273.3 631.8 278.3 620.0 289 615 C299.7 610.0 316.8 609.2 331 611 C345.2 612.8 366.0 629.3 374 626 C382.0 622.7 371.0 598.3 379 591 C387.0 583.7 407.7 586.0 422 582 C436.3 578.0 449.8 569.5 465 567 C480.2 564.5 499.7 571.3 513 567 C526.3 562.7 539.7 550.8 545 541 C550.3 531.2 548.5 516.2 545 508 C541.5 499.8 532.8 494.7 524 492 C515.2 489.3 493.8 495.3 492 492 C490.2 488.7 506.0 476.7 513 472 C520.0 467.3 526.8 471.3 534 464 C541.2 456.7 549.7 439.0 556 428 C562.3 417.0 565.8 405.5 572 398 C578.2 390.5 585.0 384.8 593 383 C601.0 381.2 611.0 388.2 620 387 C629.0 385.8 638.2 384.0 647 376 C655.8 368.0 666.8 349.3 673 339 C679.2 328.7 681.3 321.3 684 314 C686.7 306.7 682.8 299.2 689 295 C695.2 290.8 711.2 291.5 721 289 C730.8 286.5 740.0 279.5 748 280 C756.0 280.5 762.8 290.0 769 292 C775.2 294.0 782.3 295.8 785 292 C787.7 288.2 783.2 279.5 785 269 C786.8 258.5 789.7 239.3 796 229 C802.3 218.7 813.2 214.7 823 207 C832.8 199.3 846.2 187.8 855 183 C863.8 178.2 869.8 176.5 876 178 C882.2 179.5 886.7 193.8 892 192 C897.3 190.2 900.0 173.3 908 167 C916.0 160.7 930.2 159.5 940 154 C949.8 148.5 957.2 140.5 967 134 C976.8 127.5 993.7 118.2 999 115" pathLength="1"/>
+    <g class="cote-point" style="--i:0"><circle cx="48" cy="592" r="7" data-repere/></g><g class="cote-point" style="--i:1"><circle cx="144" cy="611" r="7" data-repere/></g><g class="cote-point" style="--i:2"><circle cx="251" cy="611" r="7" data-repere/></g><g class="cote-point" style="--i:3"><circle cx="524" cy="494" r="7" data-repere/></g><g class="cote-point cote-point--atelier" style="--i:4"><circle class="cote-halo" cx="684" cy="295" r="24"/><circle cx="684" cy="295" r="11" data-repere/></g><g class="cote-point" style="--i:5"><circle cx="783" cy="266" r="7" data-repere/></g><g class="cote-point" style="--i:6"><circle cx="855" cy="178" r="7" data-repere/></g><g class="cote-point" style="--i:7"><circle cx="983" cy="122" r="7" data-repere/></g>
+  </svg>
+  <span class="cote-nom cote-nom--haut cote-nom--debut" style="--x:4.80%;--y:82.22%;--i:0">Bandol</span><span class="cote-nom cote-nom--bas cote-nom--milieu" style="--x:14.40%;--y:84.86%;--i:1">Toulon</span><span class="cote-nom cote-nom--haut cote-nom--milieu cote-nom--secondaire" style="--x:25.10%;--y:84.86%;--i:2">Hyères</span><span class="cote-nom cote-nom--bas cote-nom--milieu" style="--x:52.40%;--y:68.61%;--i:3">Saint-Tropez</span><span class="cote-nom cote-nom--haut cote-nom--fin cote-nom--atelier" style="--x:68.40%;--y:40.97%;--i:4">Mandelieu · Workshop</span><span class="cote-nom cote-nom--bas cote-nom--debut cote-nom--secondaire" style="--x:78.30%;--y:36.94%;--i:5">Antibes</span><span class="cote-nom cote-nom--haut cote-nom--fin" style="--x:85.50%;--y:24.72%;--i:6">Nice</span><span class="cote-nom cote-nom--haut cote-nom--fin" style="--x:98.30%;--y:16.94%;--i:7">Menton</span>
+</figure>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.svg" alt="" width="48" height="48">
+      <p><strong>MTCloud</strong><br>Mon Terminal Cloud · hand-installed from Bandol to Menton, shipped anywhere in France.</p>
+    </div>
+    <nav aria-label="Site map">
+      <p class="pied-titre">Site map</p>
+      <ul><li><a href="/en" data-libelle="Home">Home</a></li><li><a href="/en/services" data-libelle="Services">Services</a></li><li><a href="/en/boitier" data-libelle="The box">The box</a></li><li><a href="/en/a-propos" data-libelle="About">About</a></li><li><a href="/en/contact" data-libelle="Contact" aria-current="page">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Contact</p>
+      <p>290 boulevard Jean Saint Martin, 06210 Mandelieu-la-Napoule<br><a href="tel:+33770015781">07 70 01 57 81</a><br><span class="email">contact@mtcloud.tourneur.work</span></p>
+      <p>Monday to Friday, 9am to 6pm<br>Reply within 24 hours</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Sole trader · SIREN 850 275 496 · VAT not applicable, art. 293 B of the French Tax Code</p>
+    <p>Legal notice and privacy policy: to be completed</p>
+    <p>Presentation mock-up: forms and configurator are simulated, nothing is sent.</p>
+    <p>© 2026 MTCloud · <a href="#haut" data-sans-transition>Back to top</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33770015781">Call</a>
+  <a class="bouton" href="/en/boitier#configurateur" data-libelle="The box">Configure</a>
+</div>
+</body>
+</html>

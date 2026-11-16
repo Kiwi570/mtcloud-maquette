@@ -1,0 +1,6 @@
+{
+  "siteActuel": "mtcloud.tourneur.work",
+  "pagesTypes": ["/", "/services", "/boitier", "/a-propos", "/contact"],
+  "effets": ["souvenirs", "tri-photos", "synchro", "boitier", "socle-boitier", "configurateur", "cote", "tele"],
+  "grille": { "dispenses": {} }
+}

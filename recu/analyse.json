@@ -1,0 +1,37 @@
+{
+  "dossier": "/Users/paul/Downloads/mtcloud-recu",
+  "date": "2026-11-16T15:51:48.034Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "logo.svg",
+      "nom": "logo",
+      "drapeau": "logo",
+      "largeur": 100,
+      "hauteur": 100,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "svg",
+      "poids": 671,
+      "transparence": true,
+      "sujet": null,
+      "cadrage": [
+        50,
+        50
+      ],
+      "cadrage_css": "50% 50%",
+      "zones_calmes": [],
+      "qualite": null,
+      "lisible": null,
+      "drapeaux": [
+        "svg"
+      ]
+    }
+  ]
+}

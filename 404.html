@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page introuvable : MTCloud</title>
+<meta name="description" content="Cette page n&#39;existe pas ou plus.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://mtcloud-maquette.vercel.app/404">
+<style>:root{--fond:#F4EEE3;--texte:#0F172A;--voile-fond:#0F172A;--ouverture-fond:#0F172A;--menu-fond:#0F172A}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F4EEE3">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MTCloud">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Page introuvable : MTCloud">
+<meta property="og:description" content="Cette page n&#39;existe pas ou plus.">
+<meta property="og:url" content="https://mtcloud-maquette.vercel.app/404">
+<meta property="og:image" content="https://mtcloud-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MTCloud : vos photos et vos fichiers, enfin chez vous">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"MTCloud","alternateName":"Mon Terminal Cloud","url":"https://mtcloud-maquette.vercel.app/","telephone":"+33770015781","email":"contact@mtcloud.tourneur.work","founder":{"@type":"Person","name":"Michael Tourneur"},"address":{"@type":"PostalAddress","streetAddress":"290 boulevard Jean Saint Martin","postalCode":"06210","addressLocality":"Mandelieu-la-Napoule","addressCountry":"FR"},"areaServed":["Var","Alpes-Maritimes","France"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],"description":"Installation à domicile d'un boîtier qui garde vos photos et vos fichiers chez vous, sans abonnement, de Bandol à Menton et partout en France."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Page introuvable</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="64" height="64" data-ouverture-objet>
+  <p class="ouverture-nom">MTCloud</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Mon Terminal Cloud</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span>MTCloud</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/boitier" data-libelle="Le boîtier">Le boîtier</a></li><li><a href="/a-propos" data-libelle="À propos">À propos</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/boitier#configurateur" data-libelle="Le boîtier">Configurer mon cloud</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/services" class="menu-lien" data-libelle="Services">Services</a></li><li style="--i:2"><a href="/boitier" class="menu-lien" data-libelle="Le boîtier">Le boîtier</a></li><li style="--i:3"><a href="/a-propos" class="menu-lien" data-libelle="À propos">À propos</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33770015781">Appeler 07 70 01 57 81</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="ouv-courte introuvable" id="debut">
+  <div class="conteneur ouv-courte-grille">
+    <div>
+      <p class="introuvable-code" data-anime="gsap">404</p>
+      <h1 class="ouv-titre" data-anime="gsap">Cette page s'est égarée. <em>Pas vos photos.</em></h1>
+      <p class="ouv-intro" data-anime="gsap">Elle n&#39;existe pas ou plus. Vos souvenirs, eux, restent bien rangés à la maison.</p>
+      <p class="ouv-actions" data-anime="gsap"><a href="/" class="bouton" data-libelle="Accueil" data-action-principale>Revenir à l&#39;accueil</a><span class="hero-info" data-info-cle><span class="led" aria-hidden="true"></span>Réponse sous 24 h</span></p>
+    </div>
+    <figure class="media ouv-courte-media" data-grok data-fx="parallaxe" data-fx-force="6" data-iris-centre style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/page-404-1600.webp" srcset="/assets/images/grok/page-404-800.webp 800w, /assets/images/grok/page-404-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 44vw" alt="Mur clair avec deux cadres photo et la trace d&#39;un cadre manquant" width="1600" height="900" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.svg" alt="" width="48" height="48">
+      <p><strong>MTCloud</strong><br>Mon Terminal Cloud · installation artisanale de Bandol à Menton, envoi partout en France.</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/boitier" data-libelle="Le boîtier">Le boîtier</a></li><li><a href="/a-propos" data-libelle="À propos">À propos</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Contact</p>
+      <p>290 boulevard Jean Saint Martin, 06210 Mandelieu-la-Napoule<br><a href="tel:+33770015781">07 70 01 57 81</a><br><span class="email">contact@mtcloud.tourneur.work</span></p>
+      <p>Du lundi au vendredi, de 9 h à 18 h<br>Réponse sous 24 h</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Entrepreneur individuel · SIREN 850 275 496 · TVA non applicable, art. 293 B du CGI</p>
+    <p>Mentions légales et politique de confidentialité : à compléter</p>
+    <p>Maquette de présentation : formulaires et configurateur simulés, rien n&#39;est envoyé.</p>
+    <p>© 2026 MTCloud · <a href="#haut" data-sans-transition>Retour en haut</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33770015781">Appeler</a>
+  <a class="bouton" href="/boitier#configurateur" data-libelle="Le boîtier">Configurer</a>
+</div>
+</body>
+</html>

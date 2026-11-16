@@ -1,0 +1,15 @@
+{
+  "nom": "MTCloud",
+  "adresse": "https://mtcloud-maquette.vercel.app",
+  "siteActuel": "mtcloud.tourneur.work",
+  "version": 1,
+  "langues": ["fr", "en"],
+  "navigation": ["accueil", "services", "boitier", "a-propos", "contact"],
+  "actionEntete": { "page": "boitier", "ancre": "configurateur" },
+  "couleurs": { "fond": "#F4EEE3", "texte": "#0F172A", "voile": "#0F172A", "ouverture": "#0F172A", "menu": "#0F172A", "theme": "#F4EEE3" },
+  "formeVoile": "iris",
+  "contact": { "telephone": "07 70 01 57 81", "telephoneLien": "+33770015781", "email": "contact@mtcloud.tourneur.work", "adresse": "290 boulevard Jean Saint Martin, 06210 Mandelieu-la-Napoule" },
+  "polices": ["/assets/polices/fraunces.woff2", "/assets/polices/figtree.woff2"],
+  "imagePartage": "grok/accueil-ouverture-1280.webp",
+  "curseur": false
+}

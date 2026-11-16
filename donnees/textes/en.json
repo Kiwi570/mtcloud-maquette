@@ -1,0 +1,574 @@
+{
+  "commun": {
+    "navigation": "Main navigation",
+    "menu": "Menu",
+    "fermer": "Close",
+    "langueAutre": "Version française",
+    "actionEntete": "Configure my cloud",
+    "actionCourte": "Configure",
+    "appeler": "Call",
+    "sommaire": "Site map",
+    "retourHaut": "Back to top",
+    "maquette": "Presentation mock-up: forms and configurator are simulated, nothing is sent.",
+    "evitement": "Skip to content",
+    "mentionIa": "AI-generated illustration",
+    "pause": "Pause",
+    "lecture": "Play",
+    "introLigne": "Mon Terminal Cloud",
+    "signature": "Mon Terminal Cloud · hand-installed from Bandol to Menton, shipped anywhere in France.",
+    "contactTitre": "Contact",
+    "horaires": "Monday to Friday, 9am to 6pm",
+    "reponse": "Reply within 24 hours",
+    "legal": "Sole trader · SIREN 850 275 496 · VAT not applicable, art. 293 B of the French Tax Code",
+    "mentions": "Legal notice and privacy policy: to be completed",
+    "illustratif": "Illustration",
+    "propulse": "Powered by",
+    "voirPlus": "Learn more"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "MTCloud: your photos and files, finally at home",
+      "description": "A small box installed in your home replaces Google Photos and Google Drive. No subscription, from Bandol to Menton and across France.",
+      "nav": "Home",
+      "partageAlt": "MTCloud: your photos and files, finally at home",
+      "accroche": "Your photos and files, finally at home"
+    },
+    "services": {
+      "titre": "Services: your photos and files at home, MTCloud",
+      "description": "Photos like Google Photos, files like Google Drive, on your phone, your TV and the web. At home, with no subscription.",
+      "nav": "Services",
+      "partageAlt": "MTCloud services: photos, files, on every screen",
+      "accroche": "Everything you do online, at home"
+    },
+    "boitier": {
+      "titre": "The box and the configurator: MTCloud",
+      "description": "A silent aluminium box using 6 W. Choose memory, storage and access: from €275, once, with no subscription.",
+      "nav": "The box",
+      "partageAlt": "The MTCloud box, from €275 once",
+      "accroche": "€275, once. Not per month."
+    },
+    "a-propos": {
+      "titre": "About: a craftsman in Mandelieu-la-Napoule, MTCloud",
+      "description": "Over 15 years of IT experience. I install it in your home, show you how it works and stay reachable, from Bandol to Menton.",
+      "nav": "About",
+      "partageAlt": "MTCloud, a craftsman on the French Riviera",
+      "accroche": "A real person, from start to finish"
+    },
+    "contact": {
+      "titre": "Contact: let's talk about your future cloud, MTCloud",
+      "description": "Ask for your personalised quote. Reply within 24 hours, Monday to Friday, 9am to 6pm.",
+      "nav": "Contact",
+      "partageAlt": "Contact MTCloud",
+      "accroche": "Let's talk about your future cloud"
+    },
+    "404": {
+      "titre": "Page not found: MTCloud",
+      "description": "This page does not exist any more.",
+      "nav": "Page not found",
+      "partageAlt": "Page not found",
+      "accroche": "Page not found"
+    }
+  },
+  "boitierObjet": {
+    "alt": "The MTCloud box, drawing",
+    "sauvegarde": "Backup complete"
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Craftsman in Mandelieu · Bandol to Menton",
+      "titre": "Your photos and files, <em>finally at home.</em>",
+      "texte": "No more rising subscriptions. I install a small, discreet box in your home that replaces Google Photos and Google Drive, on your phone, your TV and the web.",
+      "action": "Configure my cloud",
+      "secondaire": "See what changes",
+      "info": "One-off purchase, from €275, no subscription",
+      "alt": "French window open onto a sea-view balcony, potted olive tree and terracotta tiles"
+    },
+    "question": {
+      "surtitre": "The problem",
+      "titre": "What if your memories were no longer in <em>someone else's cloud?</em>",
+      "texte": "Today your photos and documents sit on faraway servers, for a fee every month. MTCloud is a small box in your home: no subscription, and your data never leaves the house.",
+      "tags": [
+        "Mobile app",
+        "On your TV",
+        "From any browser",
+        "Also on the go"
+      ],
+      "alt": "Open photo album and a box of prints on a table, mimosa bouquet"
+    },
+    "photos": {
+      "surtitre": "Photos",
+      "titre": "Your photos, like Google Photos. <em>But at home.</em>",
+      "points": [
+        "Automatic backup from iPhone and Android",
+        "Search by face, place or date",
+        "Albums shared with the family",
+        "TV viewer and mobile app"
+      ],
+      "fin": "Goodbye Google Photos and its rising subscription.",
+      "outil": "Immich"
+    },
+    "telephone": {
+      "titre": "Photos",
+      "tout": "All",
+      "personnes": "People",
+      "lieux": "Places",
+      "dates": "Dates",
+      "aide": "Tap a filter: the grid sorts itself.",
+      "region": "Demo: your photos sorted by people, places or dates"
+    },
+    "fichiers": {
+      "surtitre": "Files",
+      "titre": "Your files, like Google Drive. <em>Without filling it up.</em>",
+      "texte": "Your documents travel from computer to phone on their own, and stay in your home.",
+      "points": [
+        {
+          "t": "Sync",
+          "d": "Computer and phone, automatically."
+        },
+        {
+          "t": "Link sharing",
+          "d": "A secure link to send a folder."
+        },
+        {
+          "t": "Contacts and calendars",
+          "d": "Synced on all your devices."
+        },
+        {
+          "t": "Online documents",
+          "d": "Edit them from a browser."
+        }
+      ],
+      "fin": "Goodbye Google Drive and its storage that keeps filling up.",
+      "outil": "OpenCloud",
+      "demo": [
+        "Invoices 2026",
+        "House contract.pdf",
+        "Grandma's recipes.docx",
+        "Holidays.zip"
+      ],
+      "ordinateur": "Computer",
+      "telephone": "Phone",
+      "synchro": "Synced"
+    },
+    "promesses": {
+      "ruban": "Your photos · at home · no subscription ·",
+      "titre": "Three promises, kept.",
+      "items": [
+        {
+          "chiffre": "At home",
+          "t": "Your data stays in the house",
+          "d": "Nobody views, analyses or resells your photos."
+        },
+        {
+          "chiffre": "€0",
+          "t": "Per month, for good",
+          "d": "One purchase, no yearly price rises."
+        },
+        {
+          "chiffre": "1 person",
+          "t": "Installed and explained",
+          "d": "I come to your home, set everything up and show you how."
+        }
+      ]
+    },
+    "boitier": {
+      "surtitre": "The hardware",
+      "titre": "A small, discreet box, <em>a real safe for your memories.</em>",
+      "texte": "Compact and silent, the size of a small router, it sits next to your internet box and you forget it is there.",
+      "specs": [
+        {
+          "v": "6",
+          "u": "W",
+          "t": "running continuously, low power"
+        },
+        {
+          "v": "16",
+          "u": "GB",
+          "t": "of memory at most"
+        },
+        {
+          "v": "1",
+          "u": "Gbit/s",
+          "t": "Ethernet, plus WiFi"
+        },
+        {
+          "v": "",
+          "u": "Alu",
+          "t": "aluminium case, silent"
+        }
+      ],
+      "lien": "Discover the box"
+    },
+    "config": {
+      "surtitre": "Your cloud",
+      "titre": "How much is it? <em>Once, that's all.</em>",
+      "texte": "Choose the space you need: the total updates straight away.",
+      "detail": "Configure in detail"
+    },
+    "artisan": {
+      "surtitre": "Who installs it?",
+      "titre": "A real person, <em>from start to finish.</em>",
+      "texte": "Michael Tourneur, independent craftsman in Mandelieu-la-Napoule, with over 15 years of IT experience. I come to you, install everything, show you how it works and stay reachable.",
+      "options": [
+        {
+          "t": "In your home",
+          "z": "From Bandol to Menton",
+          "d": "I come to your home, install the box and train you."
+        },
+        {
+          "t": "Anywhere in France",
+          "z": "The box is shipped",
+          "d": "It arrives pre-configured and I support you remotely."
+        }
+      ],
+      "lien": "My background",
+      "alt": "Flower-lined stone steps leading to a front door"
+    },
+    "etapes": {
+      "surtitre": "How it works",
+      "titre": "Four steps, <em>and nothing for you to do.</em>",
+      "items": [
+        {
+          "t": "We talk",
+          "d": "By phone, WhatsApp or the form: your photos, your devices, the space you need."
+        },
+        {
+          "t": "I prepare the box",
+          "d": "I configure it for you: memory, storage, access at home or everywhere."
+        },
+        {
+          "t": "I install it and show you",
+          "d": "Next to your internet box: phone, TV, computer, all set up and explained."
+        },
+        {
+          "t": "I stay reachable",
+          "d": "Updates, troubleshooting, hardware upgrades: you keep one contact."
+        }
+      ]
+    }
+  },
+  "fin": {
+    "titre": "Let's talk about your <em>future cloud.</em>",
+    "texte": "Send your configuration or ask your question: reply within 24 hours, Monday to Friday, 9am to 6pm.",
+    "devis": "Get my quote",
+    "alt": "Hillside village at nightfall, lit windows"
+  },
+  "config": {
+    "region": "Configurator, live price",
+    "illustratif": "Prices from the current website; the final quote confirms the total.",
+    "etape1": "Memory",
+    "etape2": "Storage",
+    "etape3": "Access",
+    "aide1": "Essential or Comfort: I'll advise you based on how you use it.",
+    "aide2": "Leave room for the years ahead: photos keep piling up.",
+    "aide3": "At home, or anywhere in the world.",
+    "base": "Installation and aluminium case",
+    "total": "Total",
+    "unique": "once, not per month",
+    "jauge": "Room for your memories",
+    "economie": "You pay today",
+    "parMois": "€ per month",
+    "economieAide": "Type in what your current subscription costs.",
+    "rentable": "The box pays for itself in {mois} months.",
+    "rentableVide": "Type in an amount to see how many months it takes for the box to pay for itself.",
+    "rentableNote": "Rough estimate, electricity not included (6 W, running continuously).",
+    "devis": "Get my quote",
+    "recap": "My configuration: {config}"
+  },
+  "services": {
+    "hero": {
+      "surtitre": "Services",
+      "titre": "Everything you do with Google, <em>at home.</em>",
+      "texte": "Your photos and files, on your phone, your TV and the web, with no subscription.",
+      "action": "Configure my cloud",
+      "info": "Photos and files in the same box",
+      "alt": "Living room opening onto the sea, light sofa and blue cushions",
+      "appareils": [
+        "Phone",
+        "TV",
+        "Browser",
+        "On the go"
+      ]
+    },
+    "tele": {
+      "surtitre": "On the TV",
+      "titre": "Your albums on the big screen, <em>no cables, no USB stick.</em>",
+      "texte": "The viewer shows your memories on the living-room TV, and albums can be shared with the family.",
+      "points": [
+        "Albums shared with the family",
+        "Search by face, place or date",
+        "Automatic backup from iPhone and Android"
+      ],
+      "outil": "Immich"
+    },
+    "fichiers": {
+      "surtitre": "Files",
+      "titre": "One link, <em>and the folder is shared.</em>",
+      "texte": "Send a folder to your accountant or the wedding photos to your cousins: one secure link, and that's it. The files themselves stay in your home.",
+      "points": [
+        "Computer and phone sync",
+        "Secure link sharing",
+        "Synced contacts and calendars",
+        "Online document editing"
+      ],
+      "outil": "OpenCloud",
+      "lien": "Create a link",
+      "lienCree": "Link created, ready to send",
+      "lienExemple": "https://your-cloud…/s/summer-2026",
+      "dossier": "Wedding photos",
+      "alt": "Laptop on a wooden table facing olive trees"
+    },
+    "ecrans": {
+      "surtitre": "On every screen",
+      "titre": "At home, <em>yet everywhere.</em>",
+      "items": [
+        {
+          "t": "Phone",
+          "d": "The app backs up your photos on its own."
+        },
+        {
+          "t": "TV",
+          "d": "Your albums on the big screen, no cables."
+        },
+        {
+          "t": "Browser",
+          "d": "From any computer."
+        },
+        {
+          "t": "On the go",
+          "d": "With the Everywhere access option, +€50."
+        }
+      ]
+    },
+    "compare": {
+      "surtitre": "What changes",
+      "titre": "Online subscription <em>or a box at home?</em>",
+      "colonnes": [
+        "",
+        "Online subscription",
+        "MTCloud"
+      ],
+      "lignes": [
+        [
+          "What you pay",
+          "Every month",
+          "Once"
+        ],
+        [
+          "Price rises",
+          "Every year",
+          "None"
+        ],
+        [
+          "Where your photos are",
+          "On a large company's servers",
+          "In your home"
+        ],
+        [
+          "Who looks at them",
+          "Sometimes analysed for advertising",
+          "Nobody but you"
+        ],
+        [
+          "If the subscription stops",
+          "Photos lost, account closed without notice",
+          "Nothing changes"
+        ]
+      ],
+      "note": "The problems that gave rise to MTCloud, from the craftsman's own experience."
+    },
+    "faq": {
+      "surtitre": "Questions",
+      "titre": "Your questions, <em>my answers.</em>"
+    }
+  },
+  "boitierPage": {
+    "hero": {
+      "surtitre": "The box",
+      "prix": "€275",
+      "titre": "Once. <em>Not per month.</em>",
+      "texte": "Installation, aluminium case, 8 GB of memory and 250 GB of storage: that's the starting configuration. Add more space or everywhere access if you need it.",
+      "action": "Configure my cloud",
+      "info": "Personalised quote, no online purchase"
+    },
+    "detail": {
+      "surtitre": "In detail",
+      "titre": "Small, silent, <em>made of aluminium.</em>",
+      "texte": "Scroll down: the box turns and its specifications appear.",
+      "specs": [
+        {
+          "t": "Processor",
+          "d": "Low power, silent"
+        },
+        {
+          "t": "Memory",
+          "d": "Up to 16 GB"
+        },
+        {
+          "t": "Network",
+          "d": "Gigabit Ethernet and WiFi"
+        },
+        {
+          "t": "Case",
+          "d": "Aluminium, the size of a small router"
+        },
+        {
+          "t": "Power",
+          "d": "6 W, running continuously"
+        }
+      ]
+    },
+    "pose": {
+      "surtitre": "Where it goes",
+      "titre": "Next to your internet box, <em>you forget it is there.</em>",
+      "texte": "Silent and discreet, the size of a small router: you forget it, and your memories are safe.",
+      "alt": "Oak sideboard in front of a French window open onto the sea, vase and photo frames"
+    },
+    "configurateur": {
+      "surtitre": "Configurator",
+      "titre": "Configure your cloud, <em>the total follows.</em>",
+      "texte": "Nothing is sold online: send your configuration and you will receive a personalised quote."
+    },
+    "compris": {
+      "surtitre": "What's included",
+      "titre": "The price includes <em>everything you need.</em>",
+      "items": [
+        {
+          "t": "The aluminium box",
+          "d": "Configured for you, ready to use."
+        },
+        {
+          "t": "Installation",
+          "d": "In your home from Bandol to Menton, or shipped pre-configured anywhere in France."
+        },
+        {
+          "t": "Getting started",
+          "d": "I show you everything: phone, TV, computer."
+        },
+        {
+          "t": "Follow-up",
+          "d": "Updates, troubleshooting and hardware upgrades."
+        }
+      ]
+    }
+  },
+  "apropos": {
+    "hero": {
+      "surtitre": "About",
+      "titre": "Who is <em>MTCloud?</em>",
+      "texte": "The service of an independent craftsman based in Mandelieu-la-Napoule, who installs a local alternative to online storage services in your home.",
+      "action": "Contact me",
+      "info": "Working in IT since 2009",
+      "alt": "Umbrella pine above a Mediterranean coastline and its coves",
+      "chiffres": [
+        {
+          "v": "15",
+          "u": "years and more",
+          "t": "of IT experience"
+        },
+        {
+          "v": "100",
+          "u": "%",
+          "t": "dedicated to your data"
+        }
+      ]
+    },
+    "pourquoi": {
+      "surtitre": "Why MTCloud",
+      "titre": "Why I created <em>MTCloud.</em>",
+      "texte": "In over 15 years of IT, I kept seeing the same stories:",
+      "constats": [
+        "photos lost because a subscription was not renewed",
+        "accounts closed without notice",
+        "prices going up every year",
+        "family memories analysed for advertising"
+      ],
+      "citation": "Technology should serve people, <em>not the other way round.</em>",
+      "alt": "Sunlit wooden workbench with tools laid out"
+    },
+    "partout": {
+      "surtitre": "At home, yet everywhere",
+      "titre": "Keeping your data at home <em>doesn't cut you off from the world.</em>",
+      "items": [
+        {
+          "t": "On your phone",
+          "d": "Photos back up on their own."
+        },
+        {
+          "t": "On your TV",
+          "d": "No cables, no USB stick."
+        },
+        {
+          "t": "From a browser",
+          "d": "At home or on the go."
+        }
+      ]
+    },
+    "engagements": {
+      "surtitre": "My commitments",
+      "titre": "What you can expect from me, <em>before, during and after.</em>",
+      "items": [
+        {
+          "t": "Your data stays in your home",
+          "d": "Only in your home, never on a large company's servers."
+        },
+        {
+          "t": "A real person who answers",
+          "d": "Reachable by phone or WhatsApp. I travel to you, install and train you."
+        },
+        {
+          "t": "Long-term support",
+          "d": "Updates, troubleshooting, hardware upgrades."
+        }
+      ],
+      "alt": "Flower-lined stone steps leading to a front door"
+    },
+    "zone": {
+      "surtitre": "Where I work",
+      "titre": "From Bandol to Menton, <em>and anywhere in France.</em>",
+      "texte": "In your home along the whole coast, from the Var to the Alpes-Maritimes. Elsewhere in France, the box arrives pre-configured and I support you remotely.",
+      "atelier": "Workshop",
+      "carte": "Map of the coast from Bandol to Menton, with the workshop in Mandelieu-la-Napoule",
+      "france": "Anywhere in France: pre-configured box, remote support"
+    }
+  },
+  "contact": {
+    "hero": {
+      "surtitre": "Contact",
+      "titre": "Let's talk about your <em>future cloud.</em>",
+      "texte": "A question, a configuration to price? Write to me or call: I reply within 24 hours.",
+      "info": "Monday to Friday, 9am to 6pm",
+      "alt": "Coffee, notebook and pen on a sunny table, the sea blurred behind"
+    },
+    "form": {
+      "titre": "Your request",
+      "nom": "Name",
+      "email": "Email",
+      "tel": "Phone (optional)",
+      "formule": "Option",
+      "formuleDomicile": "In-home installation (Bandol to Menton)",
+      "formuleEnvoi": "Box shipped (anywhere in France)",
+      "formuleNsp": "I don't know yet",
+      "config": "Chosen configuration",
+      "configVide": "No configuration yet: you can put one together on The box page.",
+      "message": "Message",
+      "envoyer": "Send my request",
+      "donnees": "Your data is only used to reply to your request. Privacy policy: to be completed. Secure sending, no spam, promised.",
+      "simule": "Mock-up: this form is simulated, nothing is sent."
+    },
+    "infos": {
+      "titre": "Other ways",
+      "tel": "Phone",
+      "email": "Email",
+      "adresse": "Workshop",
+      "horaires": "Hours",
+      "zone": "Area"
+    }
+  },
+  "introuvable": {
+    "titre": "This page has gone astray. <em>Not your photos.</em>",
+    "texte": "It doesn't exist any more. Your memories, however, are safely tucked away at home.",
+    "retour": "Back to the home page",
+    "alt": "Light wall with two photo frames and the mark of a missing one"
+  }
+}

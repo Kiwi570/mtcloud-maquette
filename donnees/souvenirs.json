@@ -1,0 +1,133 @@
+[
+ {
+  "nom": "grok/souvenir-plage",
+  "tags": [
+   "lieux",
+   "dates"
+  ],
+  "alt": {
+   "fr": "Plage de sable, serviette rayée et chapeau de paille",
+   "en": "Sandy beach, striped towel and straw hat"
+  },
+  "legende": {
+   "fr": "Plage · juillet",
+   "en": "Beach · July"
+  }
+ },
+ {
+  "nom": "grok/souvenir-mains",
+  "tags": [
+   "personnes"
+  ],
+  "alt": {
+   "fr": "Mains d'une personne âgée tenues par une main plus jeune",
+   "en": "An elderly person's hands held by a younger hand"
+  },
+  "legende": {
+   "fr": "Mamie",
+   "en": "Grandma"
+  }
+ },
+ {
+  "nom": "grok/souvenir-anniversaire",
+  "tags": [
+   "dates",
+   "personnes"
+  ],
+  "alt": {
+   "fr": "Gâteau d'anniversaire aux fruits rouges et bougies allumées",
+   "en": "Berry birthday cake with lit candles"
+  },
+  "legende": {
+   "fr": "Anniversaire · mai",
+   "en": "Birthday · May"
+  }
+ },
+ {
+  "nom": "grok/souvenir-voilier",
+  "tags": [
+   "lieux"
+  ],
+  "alt": {
+   "fr": "Voilier blanc devant une côte boisée",
+   "en": "White sailing boat off a wooded coast"
+  },
+  "legende": {
+   "fr": "En mer",
+   "en": "At sea"
+  }
+ },
+ {
+  "nom": "grok/souvenir-chien",
+  "tags": [
+   "personnes"
+  ],
+  "alt": {
+   "fr": "Chien couché sur des tomettes",
+   "en": "Dog lying on terracotta tiles"
+  },
+  "legende": {
+   "fr": "Le chien",
+   "en": "The dog"
+  }
+ },
+ {
+  "nom": "grok/souvenir-village",
+  "tags": [
+   "lieux"
+  ],
+  "alt": {
+   "fr": "Village perché aux toits de tuiles et son clocher",
+   "en": "Hilltop village with tiled roofs and a bell tower"
+  },
+  "legende": {
+   "fr": "Village",
+   "en": "Village"
+  }
+ },
+ {
+  "nom": "grok/souvenir-velo",
+  "tags": [
+   "lieux",
+   "dates"
+  ],
+  "alt": {
+   "fr": "Vélo à panier contre un mur de pierre, sous un olivier",
+   "en": "Bicycle with a basket against a stone wall, under an olive tree"
+  },
+  "legende": {
+   "fr": "Balade · avril",
+   "en": "Ride · April"
+  }
+ },
+ {
+  "nom": "grok/souvenir-repas",
+  "tags": [
+   "dates",
+   "personnes"
+  ],
+  "alt": {
+   "fr": "Table dressée sur une terrasse face à la mer",
+   "en": "Table laid on a sea-view terrace"
+  },
+  "legende": {
+   "fr": "Dimanche · août",
+   "en": "Sunday · August"
+  }
+ },
+ {
+  "nom": "grok/souvenir-neige",
+  "tags": [
+   "lieux",
+   "dates"
+  ],
+  "alt": {
+   "fr": "Montagnes enneigées et sapins sous un ciel bleu",
+   "en": "Snowy mountains and fir trees under a blue sky"
+  },
+  "legende": {
+   "fr": "Montagne · février",
+   "en": "Mountains · February"
+  }
+ }
+]

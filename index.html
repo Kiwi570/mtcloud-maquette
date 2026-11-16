@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MTCloud : vos photos et vos fichiers, enfin chez vous</title>
+<meta name="description" content="Un petit boîtier installé chez vous remplace Google Photos et Google Drive. Sans abonnement, de Bandol à Menton et partout en France.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://mtcloud-maquette.vercel.app/">
+<link rel="alternate" hreflang="fr" href="https://mtcloud-maquette.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://mtcloud-maquette.vercel.app/en">
+<link rel="alternate" hreflang="x-default" href="https://mtcloud-maquette.vercel.app/">
+<style>:root{--fond:#F4EEE3;--texte:#0F172A;--voile-fond:#0F172A;--ouverture-fond:#0F172A;--menu-fond:#0F172A}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F4EEE3">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MTCloud">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="MTCloud : vos photos et vos fichiers, enfin chez vous">
+<meta property="og:description" content="Un petit boîtier installé chez vous remplace Google Photos et Google Drive. Sans abonnement, de Bandol à Menton et partout en France.">
+<meta property="og:url" content="https://mtcloud-maquette.vercel.app/">
+<meta property="og:image" content="https://mtcloud-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MTCloud : vos photos et vos fichiers, enfin chez vous">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"MTCloud","alternateName":"Mon Terminal Cloud","url":"https://mtcloud-maquette.vercel.app/","telephone":"+33770015781","email":"contact@mtcloud.tourneur.work","founder":{"@type":"Person","name":"Michael Tourneur"},"address":{"@type":"PostalAddress","streetAddress":"290 boulevard Jean Saint Martin","postalCode":"06210","addressLocality":"Mandelieu-la-Napoule","addressCountry":"FR"},"areaServed":["Var","Alpes-Maritimes","France"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],"description":"Installation à domicile d'un boîtier qui garde vos photos et vos fichiers chez vous, sans abonnement, de Bandol à Menton et partout en France."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="64" height="64" data-ouverture-objet>
+  <p class="ouverture-nom">MTCloud</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Mon Terminal Cloud</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span>MTCloud</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/boitier" data-libelle="Le boîtier">Le boîtier</a></li><li><a href="/a-propos" data-libelle="À propos">À propos</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/en" hreflang="en" lang="en" data-langue="en" aria-label="English version">en</a>
+      <a class="bouton" href="/boitier#configurateur" data-libelle="Le boîtier">Configurer mon cloud</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/services" class="menu-lien" data-libelle="Services">Services</a></li><li style="--i:2"><a href="/boitier" class="menu-lien" data-libelle="Le boîtier">Le boîtier</a></li><li style="--i:3"><a href="/a-propos" class="menu-lien" data-libelle="À propos">À propos</a></li><li style="--i:4"><a href="/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33770015781">Appeler 07 70 01 57 81</a></p>
+  <p><a class="entete-langue" href="/en" hreflang="en" lang="en" data-langue="en">English version</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero" id="debut">
+  <div class="hero-texte">
+    <p class="surtitre" data-anime="gsap"><span class="led" aria-hidden="true"></span>Artisan à Mandelieu · de Bandol à Menton</p>
+    <h1 class="hero-titre" data-anime="gsap">Vos photos et vos fichiers, <em>enfin chez vous.</em></h1>
+    <p class="hero-intro" data-anime="gsap">Fini les abonnements qui augmentent. J&#39;installe chez vous un petit boîtier discret qui remplace Google Photos et Google Drive, sur votre téléphone, votre télé et le web.</p>
+    <p class="hero-actions" data-anime="gsap">
+      <a href="/boitier#configurateur" class="bouton" data-libelle="Le boîtier" data-action-principale data-survol="magnetique">Configurer mon cloud</a>
+      <a class="lien-fleche" href="#constat" data-sans-transition>Voir ce qui change</a>
+    </p>
+    <p class="hero-info" data-info-cle data-anime="gsap"><span class="led" aria-hidden="true"></span>Achat unique, dès 275 €, sans abonnement</p>
+  </div>
+  <div class="hero-visuel" data-grok data-effet="souvenirs">
+    <figure class="media hero-photo" data-grok style="--cadrage:60% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-ouverture-mobile-640.webp 640w, /assets/images/grok/accueil-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 52vw">
+    <img src="/assets/images/grok/accueil-ouverture-1280.webp" srcset="/assets/images/grok/accueil-ouverture-640.webp 640w, /assets/images/grok/accueil-ouverture-1280.webp 1280w, /assets/images/grok/accueil-ouverture-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 52vw" alt="Porte-fenêtre ouverte sur un balcon face à la mer, olivier en pot et tomettes" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="hero-souvenirs" aria-hidden="true"><img class="tuile" style="--i:0" src="/assets/images/grok/souvenir-plage-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:1" src="/assets/images/grok/souvenir-mains-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:2" src="/assets/images/grok/souvenir-anniversaire-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:3" src="/assets/images/grok/souvenir-voilier-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:4" src="/assets/images/grok/souvenir-chien-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:5" src="/assets/images/grok/souvenir-village-480.webp" alt="" width="480" height="640" decoding="async"></div>
+    <div class="boitier boitier--hero" role="img" aria-label="Le boîtier MTCloud, dessin" data-visuel data-iris-centre>
+  <div class="boitier-ombre" aria-hidden="true"></div>
+  <div class="boitier-corps" aria-hidden="true">
+    <span class="face face--avant"><span class="boitier-fente"></span><span class="boitier-led"></span></span>
+    <span class="face face--dessus"><span class="boitier-logo"></span></span>
+    <span class="face face--droite"></span>
+    <span class="face face--gauche"></span>
+    <span class="face face--arriere" data-face="dos"></span>
+    <span class="face face--dessous" data-face="dos"></span>
+  </div>
+</div>
+    <p class="hero-toast" aria-hidden="true"><span class="hero-toast-coche"></span>Sauvegarde terminée</p>
+  </div>
+</section>
+<section class="constat bande bande--lin" id="constat">
+  <div class="conteneur constat-grille">
+    <div class="constat-texte">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Le constat</p>
+      <h2 class="titre titre--grand" data-anime="lignes">Et si vos souvenirs n'étaient plus dans le cloud <em>de quelqu'un d'autre ?</em></h2>
+      <p data-anime>Aujourd&#39;hui, vos photos et vos documents dorment sur des serveurs lointains, contre un abonnement chaque mois. MTCloud, c&#39;est un petit boîtier chez vous : pas d&#39;abonnement, et vos données ne quittent pas la maison.</p>
+      <ul class="pastilles" data-anime="cascade"><li>Appli mobile</li><li>Sur votre télé</li><li>Depuis un navigateur</li><li>Aussi en déplacement</li></ul>
+    </div>
+    <figure class="media constat-media" data-grok data-fx="zoom" style="--cadrage:62% 55%">
+  <picture>
+    <img src="/assets/images/grok/accueil-boite-souvenirs-1200.webp" srcset="/assets/images/grok/accueil-boite-souvenirs-640.webp 640w, /assets/images/grok/accueil-boite-souvenirs-960.webp 960w, /assets/images/grok/accueil-boite-souvenirs-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 46vw" alt="Album photo ouvert et boîte de tirages sur une table, bouquet de mimosa" width="1200" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+<section class="photos bande" id="photos">
+  <div class="conteneur photos-grille">
+    <div class="tel-bloc" data-grok>
+  <div class="tel" data-tri data-effet="tri-photos" data-grille="manipuler" role="group" aria-label="Démonstration : vos photos triées par personnes, lieux ou dates">
+    <div class="tel-ecran">
+      <div class="tel-tete"><span class="tel-titre">Photos</span><img src="/assets/images/logo.svg" alt="" width="22" height="22"></div>
+      <div class="tel-tris"><button type="button" class="tel-tri" data-tri-choix="tout" aria-pressed="true" aria-controls="tel-accueil-grille">Tout</button><button type="button" class="tel-tri" data-tri-choix="personnes" aria-pressed="false" aria-controls="tel-accueil-grille">Personnes</button><button type="button" class="tel-tri" data-tri-choix="lieux" aria-pressed="false" aria-controls="tel-accueil-grille">Lieux</button><button type="button" class="tel-tri" data-tri-choix="dates" aria-pressed="false" aria-controls="tel-accueil-grille">Dates</button></div>
+      <ul class="tel-grille" id="tel-accueil-grille"><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-plage-480.webp" alt="Plage de sable, serviette rayée et chapeau de paille" width="480" height="640" loading="lazy" decoding="async"><span>Plage · juillet</span></li><li class="tel-photo" data-tags="personnes"><img src="/assets/images/grok/souvenir-mains-480.webp" alt="Mains d&#39;une personne âgée tenues par une main plus jeune" width="480" height="640" loading="lazy" decoding="async"><span>Mamie</span></li><li class="tel-photo" data-tags="dates personnes"><img src="/assets/images/grok/souvenir-anniversaire-480.webp" alt="Gâteau d&#39;anniversaire aux fruits rouges et bougies allumées" width="480" height="640" loading="lazy" decoding="async"><span>Anniversaire · mai</span></li><li class="tel-photo" data-tags="lieux"><img src="/assets/images/grok/souvenir-voilier-480.webp" alt="Voilier blanc devant une côte boisée" width="480" height="640" loading="lazy" decoding="async"><span>En mer</span></li><li class="tel-photo" data-tags="personnes"><img src="/assets/images/grok/souvenir-chien-480.webp" alt="Chien couché sur des tomettes" width="480" height="640" loading="lazy" decoding="async"><span>Le chien</span></li><li class="tel-photo" data-tags="lieux"><img src="/assets/images/grok/souvenir-village-480.webp" alt="Village perché aux toits de tuiles et son clocher" width="480" height="640" loading="lazy" decoding="async"><span>Village</span></li><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-velo-480.webp" alt="Vélo à panier contre un mur de pierre, sous un olivier" width="480" height="640" loading="lazy" decoding="async"><span>Balade · avril</span></li><li class="tel-photo" data-tags="dates personnes"><img src="/assets/images/grok/souvenir-repas-480.webp" alt="Table dressée sur une terrasse face à la mer" width="480" height="640" loading="lazy" decoding="async"><span>Dimanche · août</span></li><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-neige-480.webp" alt="Montagnes enneigées et sapins sous un ciel bleu" width="480" height="640" loading="lazy" decoding="async"><span>Montagne · février</span></li></ul>
+    </div>
+  </div>
+  <p class="tel-aide">Touchez un tri : la grille se range.</p>
+  <p class="mention-ia">Illustration générée</p>
+</div>
+    <div class="photos-texte">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Photos</p>
+      <h2 class="titre " data-anime="lignes">Vos photos, comme Google Photos. <em>Mais chez vous.</em></h2>
+      <ul class="coches" data-anime="cascade"><li>Sauvegarde automatique depuis iPhone et Android</li><li>Recherche par visage, lieu ou date</li><li>Albums partagés avec la famille</li><li>Visionneuse sur la télé et application mobile</li></ul>
+      <p class="adieu" data-anime>Adieu Google Photos et son abonnement qui augmente.</p>
+      <p class="propulse">Propulsé par <strong>Immich</strong></p>
+    </div>
+  </div>
+</section>
+<section class="fichiers bande bande--lin" id="fichiers">
+  <div class="conteneur">
+    <div class="fichiers-tete">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Fichiers</p>
+      <h2 class="titre " data-anime="lignes">Vos fichiers, comme Google Drive. <em>Sans le remplir.</em></h2>
+      <p data-anime>Vos documents passent de l&#39;ordinateur au téléphone tout seuls, et restent chez vous.</p>
+    </div>
+    <div class="synchro" data-synchro data-effet="synchro" data-visuel>
+  <div class="synchro-appareil synchro-appareil--ordi" aria-hidden="true">
+    <div class="ordi"><div class="ordi-ecran"><span class="synchro-icone synchro-icone--0"></span><span class="synchro-icone synchro-icone--1"></span><span class="synchro-icone synchro-icone--2"></span><span class="synchro-icone synchro-icone--3"></span></div><div class="ordi-pied"></div></div>
+    <p>Ordinateur</p>
+  </div>
+  <ol class="synchro-fichiers"><li class="synchro-fichier" style="--i:0"><span class="synchro-icone synchro-icone--0" aria-hidden="true"></span><span class="synchro-nom">Factures 2026</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:1"><span class="synchro-icone synchro-icone--1" aria-hidden="true"></span><span class="synchro-nom">Contrat maison.pdf</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:2"><span class="synchro-icone synchro-icone--2" aria-hidden="true"></span><span class="synchro-nom">Recettes de mamie.docx</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:3"><span class="synchro-icone synchro-icone--3" aria-hidden="true"></span><span class="synchro-nom">Vacances.zip</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li></ol>
+  <div class="synchro-appareil synchro-appareil--tel" aria-hidden="true">
+    <div class="mini-tel"><div class="mini-tel-ecran"><span class="synchro-icone synchro-icone--0"></span><span class="synchro-icone synchro-icone--1"></span><span class="synchro-icone synchro-icone--2"></span><span class="synchro-icone synchro-icone--3"></span></div></div>
+    <p>Téléphone</p>
+  </div>
+  <p class="synchro-etat"><span class="led" aria-hidden="true"></span>Synchronisé · Illustration</p>
+</div>
+    <ul class="fichiers-points" data-anime="cascade"><li><strong>Synchronisation</strong><span>Ordinateur et téléphone, automatiquement.</span></li><li><strong>Partage par lien</strong><span>Un lien sécurisé pour envoyer un dossier.</span></li><li><strong>Contacts et agendas</strong><span>Synchronisés sur tous vos appareils.</span></li><li><strong>Documents en ligne</strong><span>Modifiez-les depuis un navigateur.</span></li></ul>
+    <p class="fichiers-fin"><span class="adieu">Adieu Google Drive et son espace qui se remplit.</span> <span class="propulse">Propulsé par <strong>OpenCloud</strong></span></p>
+  </div>
+</section>
+<section class="promesses bande bande--nuit" id="promesses">
+  <div class="promesses-ruban" data-fx="mots-geants" aria-hidden="true" data-ruban data-visuel>
+    <p data-fx-rangee>Vos photos · chez vous · sans abonnement · Vos photos · chez vous · sans abonnement · Vos photos · chez vous · sans abonnement ·</p>
+  </div>
+  <div class="conteneur">
+    <h2 class="titre" data-anime="lignes">Trois promesses, tenues.</h2>
+    <ol class="promesses-liste" data-anime="cascade"><li><p class="promesse-chiffre">Chez vous</p><h3>Vos données restent à la maison</h3><p>Personne ne consulte, n&#39;analyse ni ne revend vos photos.</p></li><li><p class="promesse-chiffre">0 €</p><h3>Par mois, pour toujours</h3><p>Un seul achat, pas de hausse annuelle.</p></li><li><p class="promesse-chiffre">1 humain</p><h3>Installé et expliqué</h3><p>Je viens chez vous, j&#39;installe tout et je vous montre.</p></li></ol>
+  </div>
+</section>
+<section class="materiel bande" id="boitier">
+  <div class="conteneur materiel-grille">
+    <div class="materiel-scene" data-materiel>
+      <div class="boitier boitier--grand" role="img" aria-label="Le boîtier MTCloud, dessin" data-visuel data-effet="boitier">
+  <div class="boitier-ombre" aria-hidden="true"></div>
+  <div class="boitier-corps" aria-hidden="true">
+    <span class="face face--avant"><span class="boitier-fente"></span><span class="boitier-led"></span></span>
+    <span class="face face--dessus"><span class="boitier-logo"></span></span>
+    <span class="face face--droite"></span>
+    <span class="face face--gauche"></span>
+    <span class="face face--arriere" data-face="dos"></span>
+    <span class="face face--dessous" data-face="dos"></span>
+  </div>
+</div>
+      <p class="materiel-legende">Illustration</p>
+    </div>
+    <div class="materiel-texte">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Le matériel</p>
+      <h2 class="titre " data-anime="lignes">Un petit boîtier discret, <em>un vrai coffre-fort pour vos souvenirs.</em></h2>
+      <p data-anime>Compact et silencieux, de la taille d&#39;un petit routeur, il se pose à côté de votre box internet et se fait oublier.</p>
+      <dl class="specs" data-anime="cascade"><div><dt><span data-compteur="6">6</span><small>W</small></dt><dd>en continu, basse consommation</dd></div><div><dt><span data-compteur="16">16</span><small>Go</small></dt><dd>de mémoire au plus</dd></div><div><dt><span data-compteur="1">1</span><small>Gbit/s</small></dt><dd>Ethernet, et le WiFi</dd></div><div><dt>Alu</dt><dd>boîtier aluminium, silencieux</dd></div></dl>
+      <p><a href="/boitier" class="lien-fleche" data-libelle="Le boîtier">Découvrir le boîtier</a></p>
+    </div>
+  </div>
+</section>
+<section class="tarif bande bande--lin" id="tarif">
+  <div class="conteneur">
+    <div class="tarif-tete">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Votre cloud</p>
+      <h2 class="titre " data-anime="lignes">Combien ça coûte ? <em>Une fois, c'est tout.</em></h2>
+      <p data-anime>Choisissez la place qu&#39;il vous faut : le total se calcule tout de suite. <a href="/boitier#configurateur" class="lien-fleche" data-libelle="Le boîtier">Configurer en détail</a></p>
+    </div>
+    <div class="config config--compact" data-config data-base="150" data-langue="fr" data-memoire-defaut="85" data-effet="configurateur" role="group" aria-label="Configurateur, prix en direct"
+    data-noms='{"memoire":{"8":"Essentiel 8 Go","16":"Confort 16 Go"},"stockage":{"250":"250 Go","500":"500 Go","1000":"1 To","2000":"2 To"},"acces":{"local":"À la maison","partout":"Accès partout"}}'
+    data-texte-rentable="Le boîtier est rentabilisé en {mois} mois." data-texte-vide="Tapez un montant pour voir en combien de mois le boîtier est rentabilisé." data-texte-recap="Ma configuration : {config}">
+  <div class="config-choix">
+    <fieldset class="config-groupe">
+    <legend><span class="config-num">2</span>Le stockage</legend>
+    <p class="config-aide">Prenez de la place pour les années à venir : vos photos s&#39;accumulent.</p>
+    <div class="config-options config-options--stockage"><label class="config-option">
+      <input type="radio" name="cfg-accueil-stockage" value="250" data-prix="40" data-jauge="0.125" checked>
+      <span class="config-option-corps"><span class="config-option-nom">250 Go</span><span class="config-option-detail">Confort</span><span class="config-option-prix" data-prix>+40 €</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-accueil-stockage" value="500" data-prix="65" data-jauge="0.25">
+      <span class="config-option-corps"><span class="config-option-nom">500 Go</span><span class="config-option-detail">Sérénité</span><span class="config-option-prix" data-prix>+65 €</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-accueil-stockage" value="1000" data-prix="110" data-jauge="0.5">
+      <span class="config-option-corps"><span class="config-option-nom">1 To</span><span class="config-option-detail">Expert</span><span class="config-option-prix" data-prix>+110 €</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-accueil-stockage" value="2000" data-prix="180" data-jauge="1">
+      <span class="config-option-corps"><span class="config-option-nom">2 To</span><span class="config-option-detail">Ultime</span><span class="config-option-prix" data-prix>+180 €</span></span>
+    </label></div>
+  </fieldset>
+    <fieldset class="config-groupe">
+    <legend><span class="config-num">3</span>L&#39;accès</legend>
+    <p class="config-aide">À la maison, ou partout dans le monde.</p>
+    <div class="config-options config-options--acces"><label class="config-option">
+      <input type="radio" name="cfg-accueil-acces" value="local" data-prix="0" checked>
+      <span class="config-option-corps"><span class="config-option-nom">À la maison</span><span class="config-option-detail">Accès depuis votre réseau</span><span class="config-option-prix" data-prix>+0 €</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-accueil-acces" value="partout" data-prix="50">
+      <span class="config-option-corps"><span class="config-option-nom">Accès partout</span><span class="config-option-detail">En déplacement, par une adresse personnelle sécurisée (HTTPS)</span><span class="config-option-prix" data-prix>+50 €</span></span>
+    </label></div>
+  </fieldset>
+  </div>
+  <div class="config-recap" data-grille="retour">
+    <div class="config-jauge" aria-hidden="true" data-visuel>
+      <div class="config-jauge-boite"><span class="config-jauge-plein" data-config-jauge style="--jauge:0.125"></span><span class="led"></span></div>
+      <p>Place pour vos souvenirs</p>
+    </div>
+    <p class="config-total-libelle">Total</p>
+    <p class="config-total" data-prix aria-live="polite"><span data-config-total>275</span> €</p>
+    <p class="config-unique">une fois, pas par mois</p>
+    <div class="config-economie">
+      <label for="cfg-accueil-mois">Vous payez aujourd&#39;hui</label>
+      <span class="config-economie-champ"><input id="cfg-accueil-mois" type="number" inputmode="decimal" min="0" max="500" step="0.01" placeholder="0" data-config-mois><span>€ par mois</span></span>
+      <p class="config-rentable" data-config-rentable aria-live="polite">Tapez un montant pour voir en combien de mois le boîtier est rentabilisé.</p>
+      <p class="config-note">Calcul indicatif, hors électricité (6 W en continu).</p>
+    </div>
+    <a class="bouton bouton--ambre" href="/contact#demande" data-config-devis data-libelle="Contact" data-survol="magnetique">Recevoir mon devis</a>
+    <p class="config-note">Prix du site actuel, le devis final confirme le total.</p>
+  </div>
+</div>
+  </div>
+</section>
+<section class="artisan bande" id="artisan">
+  <div class="conteneur artisan-grille">
+    <figure class="media artisan-media" data-grok data-anime="rideau" style="--cadrage:50% 60%">
+  <picture>
+    <img src="/assets/images/grok/apropos-visite-960.webp" srcset="/assets/images/grok/apropos-visite-480.webp 480w, /assets/images/grok/apropos-visite-640.webp 640w, /assets/images/grok/apropos-visite-960.webp 960w" sizes="(max-width: 760px) 100vw, 42vw" alt="Escalier de pierre fleuri qui mène à la porte d&#39;une maison" width="960" height="1280" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="artisan-texte">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Qui installe ?</p>
+      <h2 class="titre titre--grand" data-anime="lignes">Un humain, <em>du début à la fin.</em></h2>
+      <p data-anime>Michael Tourneur, artisan indépendant à Mandelieu-la-Napoule, plus de 15 ans d&#39;expérience en informatique. Je me déplace, j&#39;installe, je vous montre, et je reste joignable.</p>
+      <ul class="formules" data-anime="cascade"><li class="formule formule--domicile"><p class="formule-zone">De Bandol à Menton</p><h3>À domicile</h3><p>Je viens chez vous, j&#39;installe le boîtier et je vous forme.</p></li><li class="formule formule--envoi"><p class="formule-zone">Envoi du boîtier</p><h3>Partout en France</h3><p>Il arrive préconfiguré, je vous accompagne à distance.</p></li></ul>
+      <p><a href="/a-propos" class="lien-fleche" data-libelle="À propos">Mon parcours</a></p>
+    </div>
+  </div>
+</section>
+<section class="etapes bande bande--lin" id="etapes">
+  <div class="conteneur">
+    <p class="surtitre"><span class="led" aria-hidden="true"></span>Comment ça se passe</p>
+    <h2 class="titre " data-anime="lignes">Quatre étapes, <em>et vous n'avez rien à faire.</em></h2>
+    <div class="etapes-piste">
+      <svg class="etapes-trait" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M10 20 C 200 4, 300 36, 500 20 S 800 4, 990 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      <ol class="etapes-liste" data-anime="cascade"><li><span class="etape-num">1</span><h3>On en parle</h3><p>Par téléphone, WhatsApp ou le formulaire : vos photos, vos appareils, la place qu&#39;il vous faut.</p></li><li><span class="etape-num">2</span><h3>Je prépare le boîtier</h3><p>Je le configure pour vous : mémoire, stockage, accès à la maison ou partout.</p></li><li><span class="etape-num">3</span><h3>J&#39;installe et je vous montre</h3><p>À côté de votre box : téléphone, télé, ordinateur, tout est réglé et expliqué.</p></li><li><span class="etape-num">4</span><h3>Je reste joignable</h3><p>Mises à jour, dépannage, évolution du matériel : vous gardez un interlocuteur.</p></li></ol>
+    </div>
+  </div>
+</section>
+<section class="appel" id="appel">
+  <div class="appel-grille conteneur">
+    <div class="appel-texte">
+      <h2 class="titre" data-anime="lignes">Parlons de votre <em>futur cloud.</em></h2>
+      <p data-anime>Envoyez votre configuration ou posez votre question : réponse sous 24 h, du lundi au vendredi de 9 h à 18 h.</p>
+      <p class="appel-actions" data-anime>
+        <a href="/contact#demande" class="bouton bouton--ambre" data-libelle="Contact" data-survol="magnetique">Recevoir mon devis</a>
+        <a class="bouton bouton--contour-clair" href="tel:+33770015781" data-survol="magnetique">Appeler 07 70 01 57 81</a>
+      </p>
+    </div>
+    <figure class="media appel-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/appel-village-1200.webp" srcset="/assets/images/grok/appel-village-640.webp 640w, /assets/images/grok/appel-village-960.webp 960w, /assets/images/grok/appel-village-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Village perché à la nuit tombante, fenêtres allumées" width="1200" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.svg" alt="" width="48" height="48">
+      <p><strong>MTCloud</strong><br>Mon Terminal Cloud · installation artisanale de Bandol à Menton, envoi partout en France.</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/services" data-libelle="Services">Services</a></li><li><a href="/boitier" data-libelle="Le boîtier">Le boîtier</a></li><li><a href="/a-propos" data-libelle="À propos">À propos</a></li><li><a href="/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Contact</p>
+      <p>290 boulevard Jean Saint Martin, 06210 Mandelieu-la-Napoule<br><a href="tel:+33770015781">07 70 01 57 81</a><br><span class="email">contact@mtcloud.tourneur.work</span></p>
+      <p>Du lundi au vendredi, de 9 h à 18 h<br>Réponse sous 24 h</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Entrepreneur individuel · SIREN 850 275 496 · TVA non applicable, art. 293 B du CGI</p>
+    <p>Mentions légales et politique de confidentialité : à compléter</p>
+    <p>Maquette de présentation : formulaires et configurateur simulés, rien n&#39;est envoyé.</p>
+    <p>© 2026 MTCloud · <a href="#haut" data-sans-transition>Retour en haut</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33770015781">Appeler</a>
+  <a class="bouton" href="/boitier#configurateur" data-libelle="Le boîtier">Configurer</a>
+</div>
+</body>
+</html>

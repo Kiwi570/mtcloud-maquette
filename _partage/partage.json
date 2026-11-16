@@ -1,0 +1,355 @@
+{
+  "avertissements": [],
+  "cartes": [
+    {
+      "page": "a-propos",
+      "langue": "fr",
+      "fichier": "assets/partage/a-propos-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/apropos-ouverture-1280.webp",
+      "poids": 78139,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "a-propos",
+      "langue": "en",
+      "fichier": "assets/partage/a-propos-en.jpg",
+      "gabarit": "droite",
+      "image": "grok/apropos-ouverture-1280.webp",
+      "poids": 80191,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "accueil",
+      "langue": "fr",
+      "fichier": "assets/partage/accueil-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/accueil-ouverture-1280.webp",
+      "poids": 88305,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "accueil",
+      "langue": "en",
+      "fichier": "assets/partage/accueil-en.jpg",
+      "gabarit": "droite",
+      "image": "grok/accueil-ouverture-1280.webp",
+      "poids": 86339,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "boitier",
+      "langue": "fr",
+      "fichier": "assets/partage/boitier-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/boitier-etagere-1200.webp",
+      "poids": 72424,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 602
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "boitier",
+      "langue": "en",
+      "fichier": "assets/partage/boitier-en.jpg",
+      "gabarit": "droite",
+      "image": "grok/boitier-etagere-1200.webp",
+      "poids": 71540,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 602
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "contact",
+      "langue": "fr",
+      "fichier": "assets/partage/contact-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/contact-ouverture-1280.webp",
+      "poids": 50265,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "contact",
+      "langue": "en",
+      "fichier": "assets/partage/contact-en.jpg",
+      "gabarit": "droite",
+      "image": "grok/contact-ouverture-1280.webp",
+      "poids": 52109,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "services",
+      "langue": "fr",
+      "fichier": "assets/partage/services-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/services-ouverture-1280.webp",
+      "poids": 55285,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 595
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "services",
+      "langue": "en",
+      "fichier": "assets/partage/services-en.jpg",
+      "gabarit": "droite",
+      "image": "grok/services-ouverture-1280.webp",
+      "poids": 52388,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 595
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}

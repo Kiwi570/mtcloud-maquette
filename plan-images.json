@@ -1,0 +1,283 @@
+[
+ {
+  "source": "recu/logo.svg",
+  "nom": "logo",
+  "role": "logo",
+  "alt": "MTCloud"
+ },
+ {
+  "source": "recu/grok/accueil-ouverture.jpg",
+  "source_mobile": "recu/grok/accueil-ouverture-mobile.jpg",
+  "nom": "grok/accueil-ouverture",
+  "role": "ouverture",
+  "page": "accueil",
+  "emplacement": "Ouverture de l'accueil, grand cadre arrondi à droite du titre",
+  "priorite": "Indispensable",
+  "mobile": "9:16",
+  "zone_texte": "gauche",
+  "consigne_scene": "A bright, airy living room in a Mediterranean family home on the French Riviera, a tall open French window with sheer white linen curtains moving slightly, the deep blue sea and a clear pale sky beyond the balcony, terracotta tile floor, lime-washed walls, a low light-oak sideboard along the lower right with a ceramic vase and a small stack of framed family photos seen from the back, nobody in the room, the upper third of the frame is open sky through the window, calm and uncluttered",
+  "beaute": 4,
+  "alt": "Porte-fenêtre ouverte sur un balcon face à la mer, olivier en pot et tomettes",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ]
+ },
+ {
+  "source": "recu/grok/accueil-boite-souvenirs.jpg",
+  "nom": "grok/accueil-boite-souvenirs",
+  "role": "section-fond",
+  "page": "accueil",
+  "emplacement": "Section « Et si vos souvenirs… », grande image à côté du titre",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "consigne_scene": "An old cardboard shoebox overflowing with printed family photographs on a light oak table, a few prints spilling out face down or showing only soft blurred landscapes and sea, a pair of reading glasses beside it, soft golden window light, nostalgic and tender, subject on the right, calm empty table surface on the left",
+  "beaute": 4,
+  "alt": "Album photo ouvert et boîte de tirages sur une table, bouquet de mimosa",
+  "largeurs": [
+   640,
+   960,
+   1200
+  ]
+ },
+ {
+  "source": "recu/grok/souvenir-plage.jpg",
+  "nom": "grok/souvenir-plage",
+  "role": "galerie",
+  "page": "accueil",
+  "emplacement": "Grille de souvenirs du téléphone (Lieux, Dates)",
+  "priorite": "Conseillée",
+  "consigne_scene": "Holiday snapshot: a pebble beach on the Mediterranean in summer, a striped towel, a straw hat and a pair of sandals in the foreground, turquoise water, no people",
+  "beaute": 4,
+  "alt": "Plage de sable, serviette rayée et chapeau de paille"
+ },
+ {
+  "source": "recu/grok/souvenir-anniversaire.jpg",
+  "nom": "grok/souvenir-anniversaire",
+  "role": "galerie",
+  "page": "accueil",
+  "emplacement": "Grille de souvenirs (Dates)",
+  "priorite": "Conseillée",
+  "consigne_scene": "Family snapshot from above: a homemade birthday cake with lit candles on a garden table with a linen tablecloth, paper cups and scattered confetti, only the edge of a sleeve visible, warm late-afternoon light",
+  "beaute": 4,
+  "alt": "Gâteau d'anniversaire aux fruits rouges et bougies allumées"
+ },
+ {
+  "source": "recu/grok/souvenir-mains.jpg",
+  "nom": "grok/souvenir-mains",
+  "role": "galerie",
+  "page": "accueil",
+  "emplacement": "Grille de souvenirs (Personnes)",
+  "priorite": "Conseillée",
+  "consigne_scene": "Close-up of an elderly woman's hands holding an old faded print of a seaside village, sitting on a sofa with a knitted cardigan, soft window light, tender, the face is outside the frame",
+  "beaute": 4,
+  "alt": "Mains d'une personne âgée tenues par une main plus jeune"
+ },
+ {
+  "source": "recu/grok/souvenir-chien.jpg",
+  "nom": "grok/souvenir-chien",
+  "role": "galerie",
+  "page": "accueil",
+  "emplacement": "Grille de souvenirs (Personnes)",
+  "priorite": "Conseillée",
+  "consigne_scene": "A happy golden dog lying on a sunny terracotta terrace next to a pot of geraniums, the sea far away in the background, family snapshot, natural colours",
+  "beaute": 4,
+  "alt": "Chien couché sur des tomettes"
+ },
+ {
+  "source": "recu/grok/souvenir-voilier.jpg",
+  "nom": "grok/souvenir-voilier",
+  "role": "galerie",
+  "page": "accueil",
+  "emplacement": "Grille de souvenirs (Lieux)",
+  "priorite": "Conseillée",
+  "consigne_scene": "Holiday snapshot taken from a small boat: a white sail and a wooden deck in the foreground, red rocky coastline with umbrella pines in the distance, bright blue water, no people",
+  "beaute": 4,
+  "alt": "Voilier blanc devant une côte boisée"
+ },
+ {
+  "source": "recu/grok/souvenir-village.jpg",
+  "nom": "grok/souvenir-village",
+  "role": "galerie",
+  "page": "accueil",
+  "emplacement": "Grille de souvenirs (Lieux)",
+  "priorite": "Conseillée",
+  "consigne_scene": "Holiday snapshot of a narrow cobbled street in a Provençal hilltop village, ochre houses with pale blue shutters, bougainvillea, a cat on a doorstep, soft morning light, no people",
+  "beaute": 4,
+  "alt": "Village perché aux toits de tuiles"
+ },
+ {
+  "source": "recu/grok/souvenir-velo.jpg",
+  "nom": "grok/souvenir-velo",
+  "role": "galerie",
+  "page": "accueil",
+  "emplacement": "Grille de souvenirs (Personnes)",
+  "priorite": "Conseillée",
+  "consigne_scene": "Family snapshot: a parent and a child seen strictly from behind, cycling side by side on a seaside promenade lined with palm trees at sunset, both small in the frame, no face visible",
+  "beaute": 4,
+  "alt": "Vélo à panier contre un mur de pierre"
+ },
+ {
+  "source": "recu/grok/souvenir-repas.jpg",
+  "nom": "grok/souvenir-repas",
+  "role": "galerie",
+  "page": "accueil",
+  "emplacement": "Grille de souvenirs (Dates)",
+  "priorite": "Conseillée",
+  "consigne_scene": "Family lunch seen from above on a shaded terrace: a long table with bowls of salad, bread, a carafe of water and glasses, several pairs of hands passing dishes, no faces, dappled light under a vine",
+  "beaute": 4,
+  "alt": "Table dressée sur une terrasse face à la mer"
+ },
+ {
+  "source": "recu/grok/souvenir-neige.jpg",
+  "nom": "grok/souvenir-neige",
+  "role": "galerie",
+  "page": "accueil",
+  "emplacement": "Grille de souvenirs (Lieux, Dates)",
+  "priorite": "Conseillée",
+  "consigne_scene": "Winter holiday snapshot: a snowy mountain chalet balcony with two mugs of hot chocolate on the wooden railing, snow-covered fir trees and peaks behind, crisp blue sky, no people",
+  "beaute": 4,
+  "alt": "Montagnes enneigées et sapins"
+ },
+ {
+  "source": "recu/grok/services-ouverture.jpg",
+  "nom": "grok/services-ouverture",
+  "role": "ouverture",
+  "page": "services",
+  "emplacement": "Ouverture de Services, bandeau pleine largeur sous le grand titre",
+  "priorite": "Indispensable",
+  "mobile": "4:5",
+  "zone_texte": "bas",
+  "consigne_scene": "A cosy Mediterranean living room at dusk, a linen sofa seen from behind with a soft throw, a large flat television on a light-oak console glowing with a soft warm abstract gradient and no picture content, the last blue light of evening through a tall window, a table lamp on, nobody in the room",
+  "beaute": 4,
+  "alt": "Salon ouvert sur la mer, canapé clair et coussins bleus",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ]
+ },
+ {
+  "source": "recu/grok/services-bureau.jpg",
+  "nom": "grok/services-bureau",
+  "role": "section-fond",
+  "page": "services",
+  "emplacement": "Section Fichiers, grande image",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "consigne_scene": "A calm home desk by a sunny window, an open laptop with its screen turned away from the viewer, a few paper folders, a ceramic mug, a small olive tree in a pot, light oak and linen, tidy and peaceful, subject on the right",
+  "beaute": 4,
+  "alt": "Ordinateur portable sur une table en bois face aux oliviers",
+  "largeurs": [
+   640,
+   960,
+   1200
+  ]
+ },
+ {
+  "source": "recu/grok/boitier-etagere.jpg",
+  "nom": "grok/boitier-etagere",
+  "role": "section-fond",
+  "page": "boitier",
+  "emplacement": "Section « À côté de votre box », photo de l'étagère où le boîtier dessiné se pose",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "consigne_scene": "A tidy light-oak wall shelf in a bright hallway of a Mediterranean home, a small trailing plant, a woven basket and a ceramic bowl for keys on the right, a clear empty space in the middle of the shelf, lime-washed wall, soft side light, no electronic device, no cables",
+  "beaute": 4,
+  "alt": "Commode en chêne devant une porte-fenêtre ouverte sur la mer",
+  "largeurs": [
+   640,
+   960,
+   1200
+  ]
+ },
+ {
+  "source": "recu/grok/apropos-ouverture.jpg",
+  "nom": "grok/apropos-ouverture",
+  "role": "ouverture",
+  "page": "a-propos",
+  "emplacement": "Ouverture d'À propos, image de la moitié droite",
+  "priorite": "Indispensable",
+  "mobile": "4:5",
+  "zone_texte": "gauche",
+  "consigne_scene": "The Mediterranean coastline of the French Riviera at golden hour seen from a hillside path: red porphyry rocks plunging into deep blue water, umbrella pines in the foreground, small coves and a distant bay, warm light, no people, no boats in the foreground",
+  "beaute": 4,
+  "alt": "Pin parasol au-dessus d'une côte méditerranéenne",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ]
+ },
+ {
+  "source": "recu/grok/apropos-atelier.jpg",
+  "nom": "grok/apropos-atelier",
+  "role": "galerie",
+  "page": "a-propos",
+  "emplacement": "Section « Pourquoi MTCloud », image de l'atelier",
+  "priorite": "Conseillée",
+  "gabarit": "scene-metier",
+  "consigne_scene": "A calm, tidy light-oak workbench seen from a slight high angle: a precision screwdriver set in an open case, a neatly coiled blue network cable, a closed notebook with a pencil, a mug of coffee, warm morning light, plain and unbranded, no device, no screen",
+  "beaute": 3,
+  "alt": "Établi en bois au soleil, outils posés"
+ },
+ {
+  "source": "recu/grok/apropos-visite.jpg",
+  "nom": "grok/apropos-visite",
+  "role": "galerie",
+  "page": "a-propos",
+  "emplacement": "Section « Mes engagements », arrivée chez le client",
+  "priorite": "Conseillée",
+  "gabarit": "lieu",
+  "consigne_scene": "Bright entryway of a Mediterranean home: a sturdy canvas tool bag placed on terracotta tiles next to a wooden bench, the front door half open onto a sunny garden with olive trees, welcoming and calm, no people",
+  "beaute": 4,
+  "alt": "Escalier de pierre fleuri menant à une maison"
+ },
+ {
+  "source": "recu/grok/contact-ouverture.jpg",
+  "nom": "grok/contact-ouverture",
+  "role": "ouverture",
+  "page": "contact",
+  "emplacement": "Ouverture de Contact, image à droite",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "consigne_scene": "A small round mosaic table on a sunny terrace overlooking the sea, a cup of espresso, a notebook closed, a phone lying face down, a pot of lavender, soft morning light, nobody, calm",
+  "beaute": 4,
+  "alt": "Café, carnet et stylo sur une table au soleil",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "mobile": false
+ },
+ {
+  "source": "recu/grok/appel-village.jpg",
+  "nom": "grok/appel-village",
+  "role": "section-fond",
+  "page": "accueil",
+  "emplacement": "Appel final (fond bleu nuit), image des fenêtres allumées",
+  "priorite": "Indispensable",
+  "zone_texte": "gauche",
+  "consigne_scene": "A Riviera hillside village at blue hour, pastel houses stacked above the sea with warm lit windows, deep navy sky with the first star, calm water below, the left half of the frame mostly calm deep blue sky",
+  "beaute": 5,
+  "alt": "Village perché à la nuit tombante, fenêtres allumées",
+  "largeurs": [
+   640,
+   960,
+   1200
+  ]
+ },
+ {
+  "source": "recu/grok/page-404.jpg",
+  "nom": "grok/page-404",
+  "role": "404",
+  "page": "404",
+  "emplacement": "Tête de la page 404",
+  "priorite": "Conseillée",
+  "consigne_scene": "A lime-washed wall with several framed family photos seen from the side so their content is not visible, and one empty nail where a frame is missing, a faint lighter rectangle on the wall, soft warm light, slightly humorous, nobody",
+  "beaute": 4,
+  "alt": "Mur clair avec deux cadres et la trace d'un cadre manquant"
+ }
+]

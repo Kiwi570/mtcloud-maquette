@@ -1,0 +1,1611 @@
+{
+  "dossier": "/home/claude/mtcloud-maquette/recu/grok",
+  "date": "2026-11-16T17:00:25.143Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg",
+    "planche-2.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "accueil-boite-souvenirs.jpg",
+      "nom": "accueil-boite-souvenirs",
+      "drapeau": null,
+      "largeur": 1200,
+      "hauteur": 800,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 199005,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        48
+      ],
+      "cadrage_css": "48% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 5.2,
+        "bruit": 0.41,
+        "compression": 1.12,
+        "faible": true,
+        "raisons": [
+          "1200 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "ea7a7a8e0d30646d",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "accueil-ouverture-mobile.jpg",
+      "nom": "accueil-ouverture-mobile",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1600,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 417493,
+      "transparence": false,
+      "sujet": {
+        "x": 5.6,
+        "y": 3.1,
+        "l": 94.4,
+        "h": 93.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        57,
+        54
+      ],
+      "cadrage_css": "57% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.17,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        }
+      ],
+      "qualite": {
+        "nettete": 36.3,
+        "bruit": 0.7,
+        "compression": 0.96,
+        "faible": true,
+        "raisons": [
+          "900 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "aca49c8c95446448",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "accueil-ouverture.jpg",
+      "nom": "accueil-ouverture",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 900,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 518327,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        50
+      ],
+      "cadrage_css": "59% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0.05,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 73.8,
+        "bruit": 1.11,
+        "compression": 1.06,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f8f8383472e07830",
+      "drapeaux": []
+    },
+    {
+      "fichier": "appel-village.jpg",
+      "nom": "appel-village",
+      "drapeau": null,
+      "largeur": 1200,
+      "hauteur": 800,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 166731,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 13.6,
+        "l": 87.5,
+        "h": 81.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        58,
+        60
+      ],
+      "cadrage_css": "58% 60%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.58,
+          "ton": "sombre",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "gauche",
+          "score": 0.47,
+          "ton": "sombre",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "sombre",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "bas",
+          "score": 0.28,
+          "ton": "sombre",
+          "recouvre_sujet": 0.76
+        }
+      ],
+      "qualite": {
+        "nettete": 4.4,
+        "bruit": 0.38,
+        "compression": 1.16,
+        "faible": true,
+        "raisons": [
+          "1200 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f1c31b3869c70dcc",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "apropos-atelier.jpg",
+      "nom": "apropos-atelier",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 195664,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        43
+      ],
+      "cadrage_css": "53% 43%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 4.8,
+        "bruit": 0.4,
+        "compression": 1.17,
+        "faible": true,
+        "raisons": [
+          "900 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "fff9b0e1301c67e3",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "apropos-ouverture-mobile.jpg",
+      "nom": "apropos-ouverture-mobile",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1600,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 235040,
+      "transparence": false,
+      "sujet": {
+        "x": 5.6,
+        "y": 34.4,
+        "l": 88.9,
+        "h": 31.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        49
+      ],
+      "cadrage_css": "52% 49%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "haut",
+          "score": 0.75,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "droite",
+          "score": 0.54,
+          "ton": "moyen",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "gauche",
+          "score": 0.38,
+          "ton": "sombre",
+          "recouvre_sujet": 0.27
+        }
+      ],
+      "qualite": {
+        "nettete": 20.7,
+        "bruit": 0.41,
+        "compression": 1.1,
+        "faible": true,
+        "raisons": [
+          "900 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "b6f051f6ca5a303c",
+      "drapeaux": [
+        "petite",
+        "calme bas/haut"
+      ]
+    },
+    {
+      "fichier": "apropos-ouverture.jpg",
+      "nom": "apropos-ouverture",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 900,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 328283,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        44
+      ],
+      "cadrage_css": "44% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 6.9,
+        "bruit": 0.45,
+        "compression": 1.1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "d3b7f6ffdfcb6a4b",
+      "drapeaux": []
+    },
+    {
+      "fichier": "apropos-visite.jpg",
+      "nom": "apropos-visite",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 243026,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        42,
+        48
+      ],
+      "cadrage_css": "42% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 4.2,
+        "bruit": 0.46,
+        "compression": 1.09,
+        "faible": true,
+        "raisons": [
+          "900 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "d4d1d24670dcc0e0",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "boitier-etagere.jpg",
+      "nom": "boitier-etagere",
+      "drapeau": null,
+      "largeur": 1200,
+      "hauteur": 800,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 284339,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        41
+      ],
+      "cadrage_css": "47% 41%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 28.8,
+        "bruit": 0.62,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "1200 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "a3a1b99899d99296",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "contact-ouverture-mobile.jpg",
+      "nom": "contact-ouverture-mobile",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1600,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 193288,
+      "transparence": false,
+      "sujet": {
+        "x": 11.1,
+        "y": 31.3,
+        "l": 88.9,
+        "h": 68.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        52
+      ],
+      "cadrage_css": "56% 52%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.69,
+          "ton": "moyen",
+          "recouvre_sujet": 0.09
+        },
+        {
+          "cote": "gauche",
+          "score": 0.37,
+          "ton": "moyen",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "bas",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        }
+      ],
+      "qualite": {
+        "nettete": 6.9,
+        "bruit": 0.35,
+        "compression": 1.22,
+        "faible": true,
+        "raisons": [
+          "900 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3062f1b8c2628181",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "contact-ouverture.jpg",
+      "nom": "contact-ouverture",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 900,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 226642,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        50
+      ],
+      "cadrage_css": "56% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 3.6,
+        "bruit": 0.34,
+        "compression": 1.28,
+        "faible": true,
+        "raisons": [
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "78f8b8f0c313c3cb",
+      "drapeaux": [
+        "floue"
+      ]
+    },
+    {
+      "fichier": "page-404.jpg",
+      "nom": "page-404",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 900,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 310746,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 11.1,
+        "l": 87.5,
+        "h": 88.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        29,
+        64
+      ],
+      "cadrage_css": "29% 64%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "haut",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0.6
+        },
+        {
+          "cote": "bas",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.88
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        }
+      ],
+      "qualite": {
+        "nettete": 54.1,
+        "bruit": 0.56,
+        "compression": 1.25,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "3f3e1e7e3e1e5ed6",
+      "drapeaux": []
+    },
+    {
+      "fichier": "services-bureau.jpg",
+      "nom": "services-bureau",
+      "drapeau": null,
+      "largeur": 1200,
+      "hauteur": 800,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 204950,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        50
+      ],
+      "cadrage_css": "49% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 6.5,
+        "bruit": 0.39,
+        "compression": 1.11,
+        "faible": true,
+        "raisons": [
+          "1200 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "b1e9cdd696960ede",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "services-ouverture-mobile.jpg",
+      "nom": "services-ouverture-mobile",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1600,
+      "ratio": "9:16",
+      "ratio_valeur": 0.563,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 176905,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 94.4,
+        "h": 81.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        39,
+        50
+      ],
+      "cadrage_css": "39% 50%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.41,
+          "ton": "moyen",
+          "recouvre_sujet": 0.52
+        },
+        {
+          "cote": "droite",
+          "score": 0.37,
+          "ton": "moyen",
+          "recouvre_sujet": 0.7
+        },
+        {
+          "cote": "haut",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        }
+      ],
+      "qualite": {
+        "nettete": 3.9,
+        "bruit": 0.3,
+        "compression": 1.26,
+        "faible": true,
+        "raisons": [
+          "900 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "c272f8eecf9e1ed0",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "services-ouverture.jpg",
+      "nom": "services-ouverture",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 900,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 209825,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 96.9,
+        "h": 94.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        42,
+        46
+      ],
+      "cadrage_css": "42% 46%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "bas",
+          "score": 0.06,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.94
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 4.6,
+        "bruit": 0.3,
+        "compression": 1.28,
+        "faible": true,
+        "raisons": [
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "bbece83ea6a69ab7",
+      "drapeaux": [
+        "floue"
+      ]
+    },
+    {
+      "fichier": "souvenir-anniversaire.jpg",
+      "nom": "souvenir-anniversaire",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 200153,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 6.3,
+        "l": 100,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        58,
+        61
+      ],
+      "cadrage_css": "58% 61%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "sombre",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "gauche",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 4.2,
+        "bruit": 0.37,
+        "compression": 1.14,
+        "faible": true,
+        "raisons": [
+          "900 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "4e1369e9e967b77f",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "souvenir-chien.jpg",
+      "nom": "souvenir-chien",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 171613,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 90.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        48
+      ],
+      "cadrage_css": "54% 48%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.73
+        },
+        {
+          "cote": "gauche",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "haut",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 2.8,
+        "bruit": 0.39,
+        "compression": 1.2,
+        "faible": true,
+        "raisons": [
+          "900 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f0ec5efcd33b0c62",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "souvenir-mains.jpg",
+      "nom": "souvenir-mains",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 159761,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        61
+      ],
+      "cadrage_css": "47% 61%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.3,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0.08,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 3.3,
+        "bruit": 0.37,
+        "compression": 1.2,
+        "faible": true,
+        "raisons": [
+          "900 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "8eced01433e9f17f",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "souvenir-neige.jpg",
+      "nom": "souvenir-neige",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 236165,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 31.3,
+        "l": 100,
+        "h": 68.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        67
+      ],
+      "cadrage_css": "50% 67%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.75,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 8,
+        "bruit": 0.45,
+        "compression": 1.09,
+        "faible": true,
+        "raisons": [
+          "900 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "00018466b3cec9ef",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "souvenir-plage.jpg",
+      "nom": "souvenir-plage",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 246159,
+      "transparence": false,
+      "sujet": {
+        "x": 4.2,
+        "y": 15.6,
+        "l": 95.8,
+        "h": 84.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        65,
+        50
+      ],
+      "cadrage_css": "65% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "gauche",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.76
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 6.4,
+        "bruit": 0.45,
+        "compression": 1.14,
+        "faible": true,
+        "raisons": [
+          "900 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "0f020306c797b414",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "souvenir-repas.jpg",
+      "nom": "souvenir-repas",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 240434,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        50
+      ],
+      "cadrage_css": "49% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 5.6,
+        "bruit": 0.42,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "900 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "e7365080a564e0e8",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "souvenir-velo.jpg",
+      "nom": "souvenir-velo",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 280835,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        43
+      ],
+      "cadrage_css": "55% 43%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 5.9,
+        "bruit": 0.49,
+        "compression": 1.06,
+        "faible": true,
+        "raisons": [
+          "900 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "ec787d3d04252926",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "souvenir-village.jpg",
+      "nom": "souvenir-village",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 256472,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 100,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        53
+      ],
+      "cadrage_css": "49% 53%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 5.3,
+        "bruit": 0.42,
+        "compression": 1.08,
+        "faible": true,
+        "raisons": [
+          "900 px de large",
+          "floue"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "5b39c3f2fa0f41fc",
+      "drapeaux": [
+        "petite",
+        "floue"
+      ]
+    },
+    {
+      "fichier": "souvenir-voilier.jpg",
+      "nom": "souvenir-voilier",
+      "drapeau": null,
+      "largeur": 900,
+      "hauteur": 1200,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 183684,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 15.6,
+        "l": 100,
+        "h": 84.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        74
+      ],
+      "cadrage_css": "53% 74%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.66,
+          "ton": "clair",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "gauche",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "droite",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 6.3,
+        "bruit": 0.36,
+        "compression": 1.2,
+        "faible": true,
+        "raisons": [
+          "900 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "00040806341858d8",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    }
+  ]
+}

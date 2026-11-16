@@ -1,0 +1,16 @@
+{
+ "id": "20261116-173836-standard-cible-partiel",
+ "date": "2026-11-16T17:42:40.816Z",
+ "niveau": "standard",
+ "pages": "/,/404,/a-propos,/boitier,/contact,/services,/en,/en/a-propos,/en/boitier,/en/contact,/en/services",
+ "etapes": [
+  "fichiers",
+  "mesures"
+ ],
+ "version": "1",
+ "echecs": 0,
+ "aRegarder": 49,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "complet"
+}

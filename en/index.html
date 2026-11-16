@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MTCloud: your photos and files, finally at home</title>
+<meta name="description" content="A small box installed in your home replaces Google Photos and Google Drive. No subscription, from Bandol to Menton and across France.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://mtcloud-maquette.vercel.app/en">
+<link rel="alternate" hreflang="fr" href="https://mtcloud-maquette.vercel.app/">
+<link rel="alternate" hreflang="en" href="https://mtcloud-maquette.vercel.app/en">
+<link rel="alternate" hreflang="x-default" href="https://mtcloud-maquette.vercel.app/">
+<style>:root{--fond:#F4EEE3;--texte:#0F172A;--voile-fond:#0F172A;--ouverture-fond:#0F172A;--menu-fond:#0F172A}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#F4EEE3">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MTCloud">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="MTCloud: your photos and files, finally at home">
+<meta property="og:description" content="A small box installed in your home replaces Google Photos and Google Drive. No subscription, from Bandol to Menton and across France.">
+<meta property="og:url" content="https://mtcloud-maquette.vercel.app/en">
+<meta property="og:image" content="https://mtcloud-maquette.vercel.app/assets/partage/accueil-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MTCloud: your photos and files, finally at home">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"MTCloud","alternateName":"Mon Terminal Cloud","url":"https://mtcloud-maquette.vercel.app/","telephone":"+33770015781","email":"contact@mtcloud.tourneur.work","founder":{"@type":"Person","name":"Michael Tourneur"},"address":{"@type":"PostalAddress","streetAddress":"290 boulevard Jean Saint Martin","postalCode":"06210","addressLocality":"Mandelieu-la-Napoule","addressCountry":"FR"},"areaServed":["Var","Alpes-Maritimes","France"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}],"description":"In-home installation of a small box that keeps your photos and files at home, with no subscription, from Bandol to Menton and across France."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="56" height="56"><span data-voile-libelle>Home</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="64" height="64" data-ouverture-objet>
+  <p class="ouverture-nom">MTCloud</p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Mon Terminal Cloud</p>
+</div>
+<a class="evitement" href="#contenu">Skip to content</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/en" data-libelle="Home" aria-current="page">
+      <img src="/assets/images/logo.svg" alt="" width="36" height="36"><span>MTCloud</span>
+    </a>
+    <nav data-nav aria-label="Main navigation">
+      <ul><li><a href="/en/services" data-libelle="Services">Services</a></li><li><a href="/en/boitier" data-libelle="The box">The box</a></li><li><a href="/en/a-propos" data-libelle="About">About</a></li><li><a href="/en/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="entete-langue" href="/" hreflang="fr" lang="fr" data-langue="fr" aria-label="Version française">fr</a>
+      <a class="bouton" href="/en/boitier#configurateur" data-libelle="The box">Configure my cloud</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Close"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Close</a></p>
+  <ul><li style="--i:0"><a href="/en" class="menu-lien" data-libelle="Home" aria-current="page">Home</a></li><li style="--i:1"><a href="/en/services" class="menu-lien" data-libelle="Services">Services</a></li><li style="--i:2"><a href="/en/boitier" class="menu-lien" data-libelle="The box">The box</a></li><li style="--i:3"><a href="/en/a-propos" class="menu-lien" data-libelle="About">About</a></li><li style="--i:4"><a href="/en/contact" class="menu-lien" data-libelle="Contact">Contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33770015781">Call 07 70 01 57 81</a></p>
+  <p><a class="entete-langue" href="/" hreflang="fr" lang="fr" data-langue="fr">Version française</a></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero" id="debut">
+  <div class="hero-texte">
+    <p class="surtitre" data-anime="gsap"><span class="led" aria-hidden="true"></span>Craftsman in Mandelieu · Bandol to Menton</p>
+    <h1 class="hero-titre" data-anime="gsap">Your photos and files, <em>finally at home.</em></h1>
+    <p class="hero-intro" data-anime="gsap">No more rising subscriptions. I install a small, discreet box in your home that replaces Google Photos and Google Drive, on your phone, your TV and the web.</p>
+    <p class="hero-actions" data-anime="gsap">
+      <a href="/en/boitier#configurateur" class="bouton" data-libelle="The box" data-action-principale data-survol="magnetique">Configure my cloud</a>
+      <a class="lien-fleche" href="#constat" data-sans-transition>See what changes</a>
+    </p>
+    <p class="hero-info" data-info-cle data-anime="gsap"><span class="led" aria-hidden="true"></span>One-off purchase, from €275, no subscription</p>
+  </div>
+  <div class="hero-visuel" data-grok data-effet="souvenirs">
+    <figure class="media hero-photo" data-grok style="--cadrage:60% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-ouverture-mobile-640.webp 640w, /assets/images/grok/accueil-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 52vw">
+    <img src="/assets/images/grok/accueil-ouverture-1280.webp" srcset="/assets/images/grok/accueil-ouverture-640.webp 640w, /assets/images/grok/accueil-ouverture-1280.webp 1280w, /assets/images/grok/accueil-ouverture-1600.webp 1600w" sizes="(max-width: 760px) 100vw, 52vw" alt="French window open onto a sea-view balcony, potted olive tree and terracotta tiles" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+    <div class="hero-souvenirs" aria-hidden="true"><img class="tuile" style="--i:0" src="/assets/images/grok/souvenir-plage-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:1" src="/assets/images/grok/souvenir-mains-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:2" src="/assets/images/grok/souvenir-anniversaire-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:3" src="/assets/images/grok/souvenir-voilier-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:4" src="/assets/images/grok/souvenir-chien-480.webp" alt="" width="480" height="640" decoding="async"><img class="tuile" style="--i:5" src="/assets/images/grok/souvenir-village-480.webp" alt="" width="480" height="640" decoding="async"></div>
+    <div class="boitier boitier--hero" role="img" aria-label="The MTCloud box, drawing" data-visuel data-iris-centre>
+  <div class="boitier-ombre" aria-hidden="true"></div>
+  <div class="boitier-corps" aria-hidden="true">
+    <span class="face face--avant"><span class="boitier-fente"></span><span class="boitier-led"></span></span>
+    <span class="face face--dessus"><span class="boitier-logo"></span></span>
+    <span class="face face--droite"></span>
+    <span class="face face--gauche"></span>
+    <span class="face face--arriere" data-face="dos"></span>
+    <span class="face face--dessous" data-face="dos"></span>
+  </div>
+</div>
+    <p class="hero-toast" aria-hidden="true"><span class="hero-toast-coche"></span>Backup complete</p>
+  </div>
+</section>
+<section class="constat bande bande--lin" id="constat">
+  <div class="conteneur constat-grille">
+    <div class="constat-texte">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>The problem</p>
+      <h2 class="titre titre--grand" data-anime="lignes">What if your memories were no longer in <em>someone else's cloud?</em></h2>
+      <p data-anime>Today your photos and documents sit on faraway servers, for a fee every month. MTCloud is a small box in your home: no subscription, and your data never leaves the house.</p>
+      <ul class="pastilles" data-anime="cascade"><li>Mobile app</li><li>On your TV</li><li>From any browser</li><li>Also on the go</li></ul>
+    </div>
+    <figure class="media constat-media" data-grok data-fx="zoom" style="--cadrage:62% 55%">
+  <picture>
+    <img src="/assets/images/grok/accueil-boite-souvenirs-1200.webp" srcset="/assets/images/grok/accueil-boite-souvenirs-640.webp 640w, /assets/images/grok/accueil-boite-souvenirs-960.webp 960w, /assets/images/grok/accueil-boite-souvenirs-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 46vw" alt="Open photo album and a box of prints on a table, mimosa bouquet" width="1200" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  </div>
+</section>
+<section class="photos bande" id="photos">
+  <div class="conteneur photos-grille">
+    <div class="tel-bloc" data-grok>
+  <div class="tel" data-tri data-effet="tri-photos" data-grille="manipuler" role="group" aria-label="Demo: your photos sorted by people, places or dates">
+    <div class="tel-ecran">
+      <div class="tel-tete"><span class="tel-titre">Photos</span><img src="/assets/images/logo.svg" alt="" width="22" height="22"></div>
+      <div class="tel-tris"><button type="button" class="tel-tri" data-tri-choix="tout" aria-pressed="true" aria-controls="tel-accueil-grille">All</button><button type="button" class="tel-tri" data-tri-choix="personnes" aria-pressed="false" aria-controls="tel-accueil-grille">People</button><button type="button" class="tel-tri" data-tri-choix="lieux" aria-pressed="false" aria-controls="tel-accueil-grille">Places</button><button type="button" class="tel-tri" data-tri-choix="dates" aria-pressed="false" aria-controls="tel-accueil-grille">Dates</button></div>
+      <ul class="tel-grille" id="tel-accueil-grille"><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-plage-480.webp" alt="Sandy beach, striped towel and straw hat" width="480" height="640" loading="lazy" decoding="async"><span>Beach · July</span></li><li class="tel-photo" data-tags="personnes"><img src="/assets/images/grok/souvenir-mains-480.webp" alt="An elderly person&#39;s hands held by a younger hand" width="480" height="640" loading="lazy" decoding="async"><span>Grandma</span></li><li class="tel-photo" data-tags="dates personnes"><img src="/assets/images/grok/souvenir-anniversaire-480.webp" alt="Berry birthday cake with lit candles" width="480" height="640" loading="lazy" decoding="async"><span>Birthday · May</span></li><li class="tel-photo" data-tags="lieux"><img src="/assets/images/grok/souvenir-voilier-480.webp" alt="White sailing boat off a wooded coast" width="480" height="640" loading="lazy" decoding="async"><span>At sea</span></li><li class="tel-photo" data-tags="personnes"><img src="/assets/images/grok/souvenir-chien-480.webp" alt="Dog lying on terracotta tiles" width="480" height="640" loading="lazy" decoding="async"><span>The dog</span></li><li class="tel-photo" data-tags="lieux"><img src="/assets/images/grok/souvenir-village-480.webp" alt="Hilltop village with tiled roofs and a bell tower" width="480" height="640" loading="lazy" decoding="async"><span>Village</span></li><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-velo-480.webp" alt="Bicycle with a basket against a stone wall, under an olive tree" width="480" height="640" loading="lazy" decoding="async"><span>Ride · April</span></li><li class="tel-photo" data-tags="dates personnes"><img src="/assets/images/grok/souvenir-repas-480.webp" alt="Table laid on a sea-view terrace" width="480" height="640" loading="lazy" decoding="async"><span>Sunday · August</span></li><li class="tel-photo" data-tags="lieux dates"><img src="/assets/images/grok/souvenir-neige-480.webp" alt="Snowy mountains and fir trees under a blue sky" width="480" height="640" loading="lazy" decoding="async"><span>Mountains · February</span></li></ul>
+    </div>
+  </div>
+  <p class="tel-aide">Tap a filter: the grid sorts itself.</p>
+  <p class="mention-ia">AI-generated illustration</p>
+</div>
+    <div class="photos-texte">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Photos</p>
+      <h2 class="titre " data-anime="lignes">Your photos, like Google Photos. <em>But at home.</em></h2>
+      <ul class="coches" data-anime="cascade"><li>Automatic backup from iPhone and Android</li><li>Search by face, place or date</li><li>Albums shared with the family</li><li>TV viewer and mobile app</li></ul>
+      <p class="adieu" data-anime>Goodbye Google Photos and its rising subscription.</p>
+      <p class="propulse">Powered by <strong>Immich</strong></p>
+    </div>
+  </div>
+</section>
+<section class="fichiers bande bande--lin" id="fichiers">
+  <div class="conteneur">
+    <div class="fichiers-tete">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Files</p>
+      <h2 class="titre " data-anime="lignes">Your files, like Google Drive. <em>Without filling it up.</em></h2>
+      <p data-anime>Your documents travel from computer to phone on their own, and stay in your home.</p>
+    </div>
+    <div class="synchro" data-synchro data-effet="synchro" data-visuel>
+  <div class="synchro-appareil synchro-appareil--ordi" aria-hidden="true">
+    <div class="ordi"><div class="ordi-ecran"><span class="synchro-icone synchro-icone--0"></span><span class="synchro-icone synchro-icone--1"></span><span class="synchro-icone synchro-icone--2"></span><span class="synchro-icone synchro-icone--3"></span></div><div class="ordi-pied"></div></div>
+    <p>Computer</p>
+  </div>
+  <ol class="synchro-fichiers"><li class="synchro-fichier" style="--i:0"><span class="synchro-icone synchro-icone--0" aria-hidden="true"></span><span class="synchro-nom">Invoices 2026</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:1"><span class="synchro-icone synchro-icone--1" aria-hidden="true"></span><span class="synchro-nom">House contract.pdf</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:2"><span class="synchro-icone synchro-icone--2" aria-hidden="true"></span><span class="synchro-nom">Grandma&#39;s recipes.docx</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li><li class="synchro-fichier" style="--i:3"><span class="synchro-icone synchro-icone--3" aria-hidden="true"></span><span class="synchro-nom">Holidays.zip</span><span class="synchro-barre" aria-hidden="true"><span></span></span><span class="synchro-ok" aria-hidden="true"></span></li></ol>
+  <div class="synchro-appareil synchro-appareil--tel" aria-hidden="true">
+    <div class="mini-tel"><div class="mini-tel-ecran"><span class="synchro-icone synchro-icone--0"></span><span class="synchro-icone synchro-icone--1"></span><span class="synchro-icone synchro-icone--2"></span><span class="synchro-icone synchro-icone--3"></span></div></div>
+    <p>Phone</p>
+  </div>
+  <p class="synchro-etat"><span class="led" aria-hidden="true"></span>Synced · Illustration</p>
+</div>
+    <ul class="fichiers-points" data-anime="cascade"><li><strong>Sync</strong><span>Computer and phone, automatically.</span></li><li><strong>Link sharing</strong><span>A secure link to send a folder.</span></li><li><strong>Contacts and calendars</strong><span>Synced on all your devices.</span></li><li><strong>Online documents</strong><span>Edit them from a browser.</span></li></ul>
+    <p class="fichiers-fin"><span class="adieu">Goodbye Google Drive and its storage that keeps filling up.</span> <span class="propulse">Powered by <strong>OpenCloud</strong></span></p>
+  </div>
+</section>
+<section class="promesses bande bande--nuit" id="promesses">
+  <div class="promesses-ruban" data-fx="mots-geants" aria-hidden="true" data-ruban data-visuel>
+    <p data-fx-rangee>Your photos · at home · no subscription · Your photos · at home · no subscription · Your photos · at home · no subscription ·</p>
+  </div>
+  <div class="conteneur">
+    <h2 class="titre" data-anime="lignes">Three promises, kept.</h2>
+    <ol class="promesses-liste" data-anime="cascade"><li><p class="promesse-chiffre">At home</p><h3>Your data stays in the house</h3><p>Nobody views, analyses or resells your photos.</p></li><li><p class="promesse-chiffre">€0</p><h3>Per month, for good</h3><p>One purchase, no yearly price rises.</p></li><li><p class="promesse-chiffre">1 person</p><h3>Installed and explained</h3><p>I come to your home, set everything up and show you how.</p></li></ol>
+  </div>
+</section>
+<section class="materiel bande" id="boitier">
+  <div class="conteneur materiel-grille">
+    <div class="materiel-scene" data-materiel>
+      <div class="boitier boitier--grand" role="img" aria-label="The MTCloud box, drawing" data-visuel data-effet="boitier">
+  <div class="boitier-ombre" aria-hidden="true"></div>
+  <div class="boitier-corps" aria-hidden="true">
+    <span class="face face--avant"><span class="boitier-fente"></span><span class="boitier-led"></span></span>
+    <span class="face face--dessus"><span class="boitier-logo"></span></span>
+    <span class="face face--droite"></span>
+    <span class="face face--gauche"></span>
+    <span class="face face--arriere" data-face="dos"></span>
+    <span class="face face--dessous" data-face="dos"></span>
+  </div>
+</div>
+      <p class="materiel-legende">Illustration</p>
+    </div>
+    <div class="materiel-texte">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>The hardware</p>
+      <h2 class="titre " data-anime="lignes">A small, discreet box, <em>a real safe for your memories.</em></h2>
+      <p data-anime>Compact and silent, the size of a small router, it sits next to your internet box and you forget it is there.</p>
+      <dl class="specs" data-anime="cascade"><div><dt><span data-compteur="6">6</span><small>W</small></dt><dd>running continuously, low power</dd></div><div><dt><span data-compteur="16">16</span><small>GB</small></dt><dd>of memory at most</dd></div><div><dt><span data-compteur="1">1</span><small>Gbit/s</small></dt><dd>Ethernet, plus WiFi</dd></div><div><dt>Alu</dt><dd>aluminium case, silent</dd></div></dl>
+      <p><a href="/en/boitier" class="lien-fleche" data-libelle="The box">Discover the box</a></p>
+    </div>
+  </div>
+</section>
+<section class="tarif bande bande--lin" id="tarif">
+  <div class="conteneur">
+    <div class="tarif-tete">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Your cloud</p>
+      <h2 class="titre " data-anime="lignes">How much is it? <em>Once, that's all.</em></h2>
+      <p data-anime>Choose the space you need: the total updates straight away. <a href="/en/boitier#configurateur" class="lien-fleche" data-libelle="The box">Configure in detail</a></p>
+    </div>
+    <div class="config config--compact" data-config data-base="150" data-langue="en" data-memoire-defaut="85" data-effet="configurateur" role="group" aria-label="Configurator, live price"
+    data-noms='{"memoire":{"8":"Essential 8 GB","16":"Comfort 16 GB"},"stockage":{"250":"250 GB","500":"500 GB","1000":"1 TB","2000":"2 TB"},"acces":{"local":"At home","partout":"Everywhere access"}}'
+    data-texte-rentable="The box pays for itself in {mois} months." data-texte-vide="Type in an amount to see how many months it takes for the box to pay for itself." data-texte-recap="My configuration: {config}">
+  <div class="config-choix">
+    <fieldset class="config-groupe">
+    <legend><span class="config-num">2</span>Storage</legend>
+    <p class="config-aide">Leave room for the years ahead: photos keep piling up.</p>
+    <div class="config-options config-options--stockage"><label class="config-option">
+      <input type="radio" name="cfg-accueil-stockage" value="250" data-prix="40" data-jauge="0.125" checked>
+      <span class="config-option-corps"><span class="config-option-nom">250 GB</span><span class="config-option-detail">Comfort</span><span class="config-option-prix" data-prix>+€40</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-accueil-stockage" value="500" data-prix="65" data-jauge="0.25">
+      <span class="config-option-corps"><span class="config-option-nom">500 GB</span><span class="config-option-detail">Peace of mind</span><span class="config-option-prix" data-prix>+€65</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-accueil-stockage" value="1000" data-prix="110" data-jauge="0.5">
+      <span class="config-option-corps"><span class="config-option-nom">1 TB</span><span class="config-option-detail">Expert</span><span class="config-option-prix" data-prix>+€110</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-accueil-stockage" value="2000" data-prix="180" data-jauge="1">
+      <span class="config-option-corps"><span class="config-option-nom">2 TB</span><span class="config-option-detail">Ultimate</span><span class="config-option-prix" data-prix>+€180</span></span>
+    </label></div>
+  </fieldset>
+    <fieldset class="config-groupe">
+    <legend><span class="config-num">3</span>Access</legend>
+    <p class="config-aide">At home, or anywhere in the world.</p>
+    <div class="config-options config-options--acces"><label class="config-option">
+      <input type="radio" name="cfg-accueil-acces" value="local" data-prix="0" checked>
+      <span class="config-option-corps"><span class="config-option-nom">At home</span><span class="config-option-detail">Access from your home network</span><span class="config-option-prix" data-prix>+€0</span></span>
+    </label><label class="config-option">
+      <input type="radio" name="cfg-accueil-acces" value="partout" data-prix="50">
+      <span class="config-option-corps"><span class="config-option-nom">Everywhere access</span><span class="config-option-detail">On the go, through a secure personal address (HTTPS)</span><span class="config-option-prix" data-prix>+€50</span></span>
+    </label></div>
+  </fieldset>
+  </div>
+  <div class="config-recap" data-grille="retour">
+    <div class="config-jauge" aria-hidden="true" data-visuel>
+      <div class="config-jauge-boite"><span class="config-jauge-plein" data-config-jauge style="--jauge:0.125"></span><span class="led"></span></div>
+      <p>Room for your memories</p>
+    </div>
+    <p class="config-total-libelle">Total</p>
+    <p class="config-total" data-prix aria-live="polite">€<span data-config-total>275</span></p>
+    <p class="config-unique">once, not per month</p>
+    <div class="config-economie">
+      <label for="cfg-accueil-mois">You pay today</label>
+      <span class="config-economie-champ"><input id="cfg-accueil-mois" type="number" inputmode="decimal" min="0" max="500" step="0.01" placeholder="0" data-config-mois><span>€ per month</span></span>
+      <p class="config-rentable" data-config-rentable aria-live="polite">Type in an amount to see how many months it takes for the box to pay for itself.</p>
+      <p class="config-note">Rough estimate, electricity not included (6 W, running continuously).</p>
+    </div>
+    <a class="bouton bouton--ambre" href="/en/contact#demande" data-config-devis data-libelle="Contact" data-survol="magnetique">Get my quote</a>
+    <p class="config-note">Prices from the current website; the final quote confirms the total.</p>
+  </div>
+</div>
+  </div>
+</section>
+<section class="artisan bande" id="artisan">
+  <div class="conteneur artisan-grille">
+    <figure class="media artisan-media" data-grok data-anime="rideau" style="--cadrage:50% 60%">
+  <picture>
+    <img src="/assets/images/grok/apropos-visite-960.webp" srcset="/assets/images/grok/apropos-visite-480.webp 480w, /assets/images/grok/apropos-visite-640.webp 640w, /assets/images/grok/apropos-visite-960.webp 960w" sizes="(max-width: 760px) 100vw, 42vw" alt="Flower-lined stone steps leading to a front door" width="960" height="1280" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+    <div class="artisan-texte">
+      <p class="surtitre"><span class="led" aria-hidden="true"></span>Who installs it?</p>
+      <h2 class="titre titre--grand" data-anime="lignes">A real person, <em>from start to finish.</em></h2>
+      <p data-anime>Michael Tourneur, independent craftsman in Mandelieu-la-Napoule, with over 15 years of IT experience. I come to you, install everything, show you how it works and stay reachable.</p>
+      <ul class="formules" data-anime="cascade"><li class="formule formule--domicile"><p class="formule-zone">From Bandol to Menton</p><h3>In your home</h3><p>I come to your home, install the box and train you.</p></li><li class="formule formule--envoi"><p class="formule-zone">The box is shipped</p><h3>Anywhere in France</h3><p>It arrives pre-configured and I support you remotely.</p></li></ul>
+      <p><a href="/en/a-propos" class="lien-fleche" data-libelle="About">My background</a></p>
+    </div>
+  </div>
+</section>
+<section class="etapes bande bande--lin" id="etapes">
+  <div class="conteneur">
+    <p class="surtitre"><span class="led" aria-hidden="true"></span>How it works</p>
+    <h2 class="titre " data-anime="lignes">Four steps, <em>and nothing for you to do.</em></h2>
+    <div class="etapes-piste">
+      <svg class="etapes-trait" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" data-fx="trace"><path d="M10 20 C 200 4, 300 36, 500 20 S 800 4, 990 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      <ol class="etapes-liste" data-anime="cascade"><li><span class="etape-num">1</span><h3>We talk</h3><p>By phone, WhatsApp or the form: your photos, your devices, the space you need.</p></li><li><span class="etape-num">2</span><h3>I prepare the box</h3><p>I configure it for you: memory, storage, access at home or everywhere.</p></li><li><span class="etape-num">3</span><h3>I install it and show you</h3><p>Next to your internet box: phone, TV, computer, all set up and explained.</p></li><li><span class="etape-num">4</span><h3>I stay reachable</h3><p>Updates, troubleshooting, hardware upgrades: you keep one contact.</p></li></ol>
+    </div>
+  </div>
+</section>
+<section class="appel" id="appel">
+  <div class="appel-grille conteneur">
+    <div class="appel-texte">
+      <h2 class="titre" data-anime="lignes">Let's talk about your <em>future cloud.</em></h2>
+      <p data-anime>Send your configuration or ask your question: reply within 24 hours, Monday to Friday, 9am to 6pm.</p>
+      <p class="appel-actions" data-anime>
+        <a href="/en/contact#demande" class="bouton bouton--ambre" data-libelle="Contact" data-survol="magnetique">Get my quote</a>
+        <a class="bouton bouton--contour-clair" href="tel:+33770015781" data-survol="magnetique">Call 07 70 01 57 81</a>
+      </p>
+    </div>
+    <figure class="media appel-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/appel-village-1200.webp" srcset="/assets/images/grok/appel-village-640.webp 640w, /assets/images/grok/appel-village-960.webp 960w, /assets/images/grok/appel-village-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 50vw" alt="Hillside village at nightfall, lit windows" width="1200" height="800" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">AI-generated illustration</figcaption>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-clair.svg" alt="" width="48" height="48">
+      <p><strong>MTCloud</strong><br>Mon Terminal Cloud · hand-installed from Bandol to Menton, shipped anywhere in France.</p>
+    </div>
+    <nav aria-label="Site map">
+      <p class="pied-titre">Site map</p>
+      <ul><li><a href="/en" data-libelle="Home" aria-current="page">Home</a></li><li><a href="/en/services" data-libelle="Services">Services</a></li><li><a href="/en/boitier" data-libelle="The box">The box</a></li><li><a href="/en/a-propos" data-libelle="About">About</a></li><li><a href="/en/contact" data-libelle="Contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Contact</p>
+      <p>290 boulevard Jean Saint Martin, 06210 Mandelieu-la-Napoule<br><a href="tel:+33770015781">07 70 01 57 81</a><br><span class="email">contact@mtcloud.tourneur.work</span></p>
+      <p>Monday to Friday, 9am to 6pm<br>Reply within 24 hours</p>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Sole trader · SIREN 850 275 496 · VAT not applicable, art. 293 B of the French Tax Code</p>
+    <p>Legal notice and privacy policy: to be completed</p>
+    <p>Presentation mock-up: forms and configurator are simulated, nothing is sent.</p>
+    <p>© 2026 MTCloud · <a href="#haut" data-sans-transition>Back to top</a></p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33770015781">Call</a>
+  <a class="bouton" href="/en/boitier#configurateur" data-libelle="The box">Configure</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "base": 150,
+  "memoire": [
+    { "id": "8", "nom": { "fr": "Essentiel", "en": "Essential" }, "detail": { "fr": "8 Go de mémoire", "en": "8 GB of memory" }, "prix": 85, "defaut": true },
+    { "id": "16", "nom": { "fr": "Confort", "en": "Comfort" }, "detail": { "fr": "16 Go de mémoire", "en": "16 GB of memory" }, "prix": 115 }
+  ],
+  "stockage": [
+    { "id": "250", "taille": { "fr": "250 Go", "en": "250 GB" }, "nom": { "fr": "Confort", "en": "Comfort" }, "prix": 40, "defaut": true, "jauge": 0.125 },
+    { "id": "500", "taille": { "fr": "500 Go", "en": "500 GB" }, "nom": { "fr": "Sérénité", "en": "Peace of mind" }, "prix": 65, "jauge": 0.25 },
+    { "id": "1000", "taille": { "fr": "1 To", "en": "1 TB" }, "nom": { "fr": "Expert", "en": "Expert" }, "prix": 110, "jauge": 0.5 },
+    { "id": "2000", "taille": { "fr": "2 To", "en": "2 TB" }, "nom": { "fr": "Ultime", "en": "Ultimate" }, "prix": 180, "jauge": 1 }
+  ],
+  "acces": [
+    { "id": "local", "nom": { "fr": "À la maison", "en": "At home" }, "detail": { "fr": "Accès depuis votre réseau", "en": "Access from your home network" }, "prix": 0, "defaut": true },
+    { "id": "partout", "nom": { "fr": "Accès partout", "en": "Everywhere access" }, "detail": { "fr": "En déplacement, par une adresse personnelle sécurisée (HTTPS)", "en": "On the go, through a secure personal address (HTTPS)" }, "prix": 50 }
+  ]
+}
